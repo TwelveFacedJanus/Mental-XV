@@ -2,8 +2,10 @@
 <doxygen xmlns:xsi="http://www.w3.org/2001/XMLSchema-instance" xsi:noNamespaceSchemaLocation="compound.xsd" version="1.9.8" xml:lang="en-US">
   <compounddef id="dir_d44c64559bbebec7f509842c48db8b23" kind="dir">
     <compoundname>include</compoundname>
+    <innerfile refid="mental__xv__controls_8h">mental_xv_controls.h</innerfile>
     <innerfile refid="mental__xv__core_8h">mental_xv_core.h</innerfile>
     <innerfile refid="mental__xv__math_8h">mental_xv_math.h</innerfile>
+    <innerfile refid="mental__xv__windows_8h">mental_xv_windows.h</innerfile>
     <briefdescription>
     </briefdescription>
     <detaileddescription>

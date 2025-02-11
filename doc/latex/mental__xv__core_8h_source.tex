@@ -10,60 +10,108 @@
 \DoxyCodeLine{00006\ \textcolor{preprocessor}{\#endif}}
 \DoxyCodeLine{00007\ }
 \DoxyCodeLine{00008\ \textcolor{preprocessor}{\#define\ MENTAL\_XV\_VERSION\_1\_0}}
-\DoxyCodeLine{00009\ \textcolor{preprocessor}{\#include\ <stdint.h>}}
-\DoxyCodeLine{00010\ }
-\DoxyCodeLine{00021\ \textcolor{preprocessor}{\#define\ MENTAL\_XV\_VERSION\_VARIANT(version)\ ((uint32\_t)(version)\ >>\ 29U)}}
-\DoxyCodeLine{00022\ }
-\DoxyCodeLine{00033\ \textcolor{preprocessor}{\#define\ MENTAL\_XV\_VERSION\_MAJOR(version)\ (((uint32\_t)(version)\ >>\ 22U)\ \&\ 0x7FU)}}
-\DoxyCodeLine{00034\ }
-\DoxyCodeLine{00045\ \textcolor{preprocessor}{\#define\ MENTAL\_XV\_VERSION\_MINOR(version)\ (((uint32\_t)(version)\ >>\ 12U)\ \&\ 0x3FFU)}}
-\DoxyCodeLine{00046\ }
-\DoxyCodeLine{00057\ \textcolor{preprocessor}{\#define\ MENTAL\_XV\_VERSION\_PATCH(version)\ ((uint32\_t)(version)\ \&\ 0xFFFU)}}
-\DoxyCodeLine{00058\ }
-\DoxyCodeLine{00092\ \textcolor{keyword}{typedef}\ uint32\_t\ \mbox{\hyperlink{mental__xv__core_8h_a85c06e36c77c7cb291a034a60400d96e}{MentalFlags}};}
-\DoxyCodeLine{00093\ }
-\DoxyCodeLine{00110\ \textcolor{keyword}{typedef}\ \textcolor{keyword}{enum}\ \mbox{\hyperlink{mental__xv__core_8h_af7302d331733011c84091974c3ba1e99}{MentalResult}}}
-\DoxyCodeLine{00111\ \{}
-\DoxyCodeLine{00112\ \ \ \ \ \mbox{\hyperlink{mental__xv__core_8h_af7302d331733011c84091974c3ba1e99a078bb99cd4b22a8242ae80d329a15b48}{MT\_SUCCESS}}\ \ \ \ \ =\ 0,\ \ \ \ \ }
-\DoxyCodeLine{00113\ \ \ \ \ \mbox{\hyperlink{mental__xv__core_8h_af7302d331733011c84091974c3ba1e99a257f20243d6089a1f80b98212076ee6f}{MT\_NOT\_READY}}\ \ \ =\ 1,\ \ \ \ \ }
-\DoxyCodeLine{00114\ \ \ \ \ \mbox{\hyperlink{mental__xv__core_8h_af7302d331733011c84091974c3ba1e99a78ff5b702dc962d56b91b15acb9c9c95}{MT\_EVENT\_SET}}\ \ \ =\ 3,\ \ \ \ \ }
-\DoxyCodeLine{00115\ \ \ \ \ \mbox{\hyperlink{mental__xv__core_8h_af7302d331733011c84091974c3ba1e99a3bdf3a9790312087808d00e29188136d}{MT\_EVENT\_RESET}}\ =\ 4,\ \ \ \ \ }
-\DoxyCodeLine{00116\ \ \ \ \ \mbox{\hyperlink{mental__xv__core_8h_af7302d331733011c84091974c3ba1e99a89e7f0e8457ef03254f379fa0313d894}{MT\_INCOMPLETE}}\ \ =\ 5,\ \ \ \ \ }
-\DoxyCodeLine{00117\ \ \ \ \ \mbox{\hyperlink{mental__xv__core_8h_af7302d331733011c84091974c3ba1e99a53ef8696bc290003828824a413777589}{MT\_ERROR}}\ \ \ \ \ \ \ =\ 6\ \ \ \ \ \ }
-\DoxyCodeLine{00118\ \}\ \mbox{\hyperlink{mental__xv__core_8h_af7302d331733011c84091974c3ba1e99}{MentalResult}};}
-\DoxyCodeLine{00119\ }
-\DoxyCodeLine{00132\ \textcolor{keyword}{typedef}\ \textcolor{keyword}{enum}\ \mbox{\hyperlink{mental__xv__core_8h_a4040728f3adc443389084c52cc3dacf8}{MentalStructureType}}\ \{}
-\DoxyCodeLine{00133\ \ \ \ \ \mbox{\hyperlink{mental__xv__core_8h_a4040728f3adc443389084c52cc3dacf8a8a101966e58321e3f45a94199d024d2b}{MT\_STRUCTURE\_TYPE\_APPLICATION\_INFO}}\ \ =\ 0,\ }
-\DoxyCodeLine{00134\ \ \ \ \ \mbox{\hyperlink{mental__xv__core_8h_a4040728f3adc443389084c52cc3dacf8a10dc2ca6e0779e1e2bae1ae2ac1d2bbe}{MT\_STRUCTURE\_TYPE\_ENGINE\_INFO}}\ \ \ \ \ \ \ =\ 1,\ }
-\DoxyCodeLine{00135\ \}\ \mbox{\hyperlink{mental__xv__core_8h_a4040728f3adc443389084c52cc3dacf8}{MentalStructureType}};}
-\DoxyCodeLine{00136\ }
-\DoxyCodeLine{00143\ \textcolor{keyword}{typedef}\ \mbox{\hyperlink{mental__xv__core_8h_a85c06e36c77c7cb291a034a60400d96e}{MentalFlags}}\ \mbox{\hyperlink{mental__xv__core_8h_a8001f712b14b0ececd970c22c972969a}{MentalInstanceCreateFlags}};}
-\DoxyCodeLine{00144\ }
-\DoxyCodeLine{00151\ \textcolor{keyword}{typedef}\ \textcolor{keyword}{struct\ }\mbox{\hyperlink{structMentalApplicationInfo}{MentalApplicationInfo}}\ \{}
-\DoxyCodeLine{00152\ \ \ \ \ \mbox{\hyperlink{mental__xv__core_8h_a4040728f3adc443389084c52cc3dacf8}{MentalStructureType}}\ \ \ \ \mbox{\hyperlink{structMentalApplicationInfo_a78354ca5ff3d4b2f0077822c30973d84}{sType}};\ \ \ \ \ \ \ \ \ \ \ \ \ \ }
-\DoxyCodeLine{00153\ \ \ \ \ \textcolor{keyword}{const}\ \textcolor{keywordtype}{void}*\ \ \ \ \ \ \ \ \ \ \ \ \mbox{\hyperlink{structMentalApplicationInfo_a42f026a9c165b1f7841f22145707c723}{pNext}};\ \ \ \ \ \ \ \ \ \ \ \ \ \ }
-\DoxyCodeLine{00154\ \ \ \ \ \textcolor{keyword}{const}\ \textcolor{keywordtype}{char}*\ \ \ \ \ \ \ \ \ \ \ \ \mbox{\hyperlink{structMentalApplicationInfo_ad62d689d5ee1bbc561454a4e6fe762ad}{pApplicationName}};\ \ \ }
-\DoxyCodeLine{00155\ \ \ \ \ uint32\_t\ \ \ \ \ \ \ \ \ \ \ \ \ \ \ \mbox{\hyperlink{structMentalApplicationInfo_a3172706bb52464086f3548c97271cbc6}{applicationVersion}};\ }
-\DoxyCodeLine{00156\ \ \ \ \ \textcolor{keyword}{const}\ \textcolor{keywordtype}{char}*\ \ \ \ \ \ \ \ \ \ \ \ \mbox{\hyperlink{structMentalApplicationInfo_a32fe1ca61f17300b4bd8a6a6d0b95b66}{pEngineName}};\ \ \ \ \ \ \ \ }
-\DoxyCodeLine{00157\ \ \ \ \ uint32\_t\ \ \ \ \ \ \ \ \ \ \ \ \ \ \ \mbox{\hyperlink{structMentalApplicationInfo_a7ec42998c0d337df529ac9010d53a320}{engineVersion}};\ \ \ \ \ \ }
-\DoxyCodeLine{00158\ \ \ \ \ uint32\_t\ \ \ \ \ \ \ \ \ \ \ \ \ \ \ \mbox{\hyperlink{structMentalApplicationInfo_a31c14901186b58ad1801a618bc8e8121}{apiVersion}};\ \ \ \ \ \ \ \ \ }
-\DoxyCodeLine{00159\ \}\ \mbox{\hyperlink{structMentalApplicationInfo}{MentalApplicationInfo}};}
-\DoxyCodeLine{00160\ }
-\DoxyCodeLine{00167\ \textcolor{keyword}{typedef}\ \textcolor{keyword}{struct\ }\mbox{\hyperlink{structMentalInstanceCreateInfo}{MentalInstanceCreateInfo}}\ \{}
-\DoxyCodeLine{00168\ \ \ \ \ \mbox{\hyperlink{mental__xv__core_8h_a4040728f3adc443389084c52cc3dacf8}{MentalStructureType}}\ \ \ \ \ \ \ \ \ \ \ \ \ \mbox{\hyperlink{structMentalInstanceCreateInfo_a98666ccff1ea1f483cbe13161023c8aa}{sType}};\ \ \ \ \ \ \ \ \ \ \ \ \ \ \ \ \ \ \ \ \ }
-\DoxyCodeLine{00169\ \ \ \ \ \textcolor{keyword}{const}\ \textcolor{keywordtype}{void}*\ \ \ \ \ \ \ \ \ \ \ \ \ \ \ \ \ \ \ \ \ \mbox{\hyperlink{structMentalInstanceCreateInfo_adf1491d6421cfcb15ad3e5996f592848}{pNext}};\ \ \ \ \ \ \ \ \ \ \ \ \ \ \ \ \ \ \ \ \ }
-\DoxyCodeLine{00170\ \ \ \ \ \mbox{\hyperlink{mental__xv__core_8h_a8001f712b14b0ececd970c22c972969a}{MentalInstanceCreateFlags}}\ \ \ \ \ \ \ \mbox{\hyperlink{structMentalInstanceCreateInfo_aaa26a260d2575c6a4581cddc5a8aaa62}{flags}};\ \ \ \ \ \ \ \ \ \ \ \ \ \ \ \ \ \ \ \ \ }
-\DoxyCodeLine{00171\ \ \ \ \ \textcolor{keyword}{const}\ \mbox{\hyperlink{structMentalApplicationInfo}{MentalApplicationInfo}}*\ \ \ \ \mbox{\hyperlink{structMentalInstanceCreateInfo_a727f4c194e46fb87f1f093442a0a6674}{pApplicationInfo}};\ \ \ \ \ \ \ \ \ \ }
-\DoxyCodeLine{00172\ \ \ \ \ uint32\_t\ \ \ \ \ \ \ \ \ \ \ \ \ \ \ \ \ \ \ \ \ \ \ \ \mbox{\hyperlink{structMentalInstanceCreateInfo_a89911e7d11c0208b449d1c4b7a127da5}{enabledLayerCount}};\ \ \ \ \ \ \ \ \ }
-\DoxyCodeLine{00173\ \ \ \ \ \textcolor{keyword}{const}\ \textcolor{keywordtype}{char}*\ \textcolor{keyword}{const}*\ \ \ \ \ \ \ \ \ \ \ \ \ \ \mbox{\hyperlink{structMentalInstanceCreateInfo_aa39f2523416b30281105df7ebb1a9a22}{ppEnabledLayerNames}};\ \ \ \ \ \ \ }
-\DoxyCodeLine{00174\ \ \ \ \ uint32\_t\ \ \ \ \ \ \ \ \ \ \ \ \ \ \ \ \ \ \ \ \ \ \ \ \mbox{\hyperlink{structMentalInstanceCreateInfo_af29f97fa6365e2f365699ccf5fa6cc86}{enabledExtensionCount}};\ \ \ \ \ }
-\DoxyCodeLine{00175\ \ \ \ \ \textcolor{keyword}{const}\ \textcolor{keywordtype}{char}*\ \textcolor{keyword}{const}*\ \ \ \ \ \ \ \ \ \ \ \ \ \ \mbox{\hyperlink{structMentalInstanceCreateInfo_a859a0d0dd65217b9e66a28958be09d52}{ppEnabledExtensionNames}};\ \ \ }
-\DoxyCodeLine{00176\ \}\ \mbox{\hyperlink{structMentalInstanceCreateInfo}{MentalInstanceCreateInfo}};}
-\DoxyCodeLine{00177\ }
-\DoxyCodeLine{00178\ \textcolor{preprocessor}{\#ifdef\ \_\_cplusplus}}
-\DoxyCodeLine{00179\ \ \ \ \ \}}
-\DoxyCodeLine{00180\ \textcolor{preprocessor}{\#endif}}
-\DoxyCodeLine{00181\ }
-\DoxyCodeLine{00182\ \textcolor{preprocessor}{\#endif\ }\textcolor{comment}{//\ MENTAL\_XV\_CORE\_H\_}}
+\DoxyCodeLine{00009\ }
+\DoxyCodeLine{00010\ \textcolor{preprocessor}{\#ifndef\ MENTAL\_API\_ENTRY}}
+\DoxyCodeLine{00011\ \textcolor{preprocessor}{\ \ \ \ \#define\ MENTAL\_API\_ENTRY}}
+\DoxyCodeLine{00012\ }
+\DoxyCodeLine{00013\ \textcolor{preprocessor}{\ \ \ \ \#ifndef\ MENTAL\_API\_CALL}}
+\DoxyCodeLine{00014\ \textcolor{preprocessor}{\ \ \ \ \ \ \ \ \#define\ MENTAL\_API\_CALL}}
+\DoxyCodeLine{00015\ \textcolor{preprocessor}{\ \ \ \ \#endif}}
+\DoxyCodeLine{00016\ \textcolor{preprocessor}{\#endif}}
+\DoxyCodeLine{00017\ }
+\DoxyCodeLine{00018\ \textcolor{preprocessor}{\#define\ MT\_API\_SUFFIX\_\_VERSION\_1\_0\ MT\_API\_SUFFIX\_COMMON}}
+\DoxyCodeLine{00019\ }
+\DoxyCodeLine{00020\ }
+\DoxyCodeLine{00021\ }
+\DoxyCodeLine{00022\ \textcolor{preprocessor}{\#include\ <stdint.h>}}
+\DoxyCodeLine{00023\ }
+\DoxyCodeLine{00034\ \textcolor{preprocessor}{\#define\ MENTAL\_XV\_VERSION\_VARIANT(version)\ ((uint32\_t)(version)\ >>\ 29U)}}
+\DoxyCodeLine{00035\ }
+\DoxyCodeLine{00046\ \textcolor{preprocessor}{\#define\ MENTAL\_XV\_VERSION\_MAJOR(version)\ (((uint32\_t)(version)\ >>\ 22U)\ \&\ 0x7FU)}}
+\DoxyCodeLine{00047\ }
+\DoxyCodeLine{00058\ \textcolor{preprocessor}{\#define\ MENTAL\_XV\_VERSION\_MINOR(version)\ (((uint32\_t)(version)\ >>\ 12U)\ \&\ 0x3FFU)}}
+\DoxyCodeLine{00059\ }
+\DoxyCodeLine{00070\ \textcolor{preprocessor}{\#define\ MENTAL\_XV\_VERSION\_PATCH(version)\ ((uint32\_t)(version)\ \&\ 0xFFFU)}}
+\DoxyCodeLine{00071\ }
+\DoxyCodeLine{00105\ \textcolor{keyword}{typedef}\ uint32\_t\ \mbox{\hyperlink{mental__xv__core_8h_a85c06e36c77c7cb291a034a60400d96e}{MentalFlags}};}
+\DoxyCodeLine{00106\ }
+\DoxyCodeLine{00123\ \textcolor{keyword}{typedef}\ \textcolor{keyword}{enum}\ \mbox{\hyperlink{mental__xv__core_8h_af7302d331733011c84091974c3ba1e99}{MentalResult}}}
+\DoxyCodeLine{00124\ \{}
+\DoxyCodeLine{00125\ \ \ \ \ \mbox{\hyperlink{mental__xv__core_8h_af7302d331733011c84091974c3ba1e99a078bb99cd4b22a8242ae80d329a15b48}{MT\_SUCCESS}}\ \ \ \ \ =\ 0,\ \ \ \ \ }
+\DoxyCodeLine{00126\ \ \ \ \ \mbox{\hyperlink{mental__xv__core_8h_af7302d331733011c84091974c3ba1e99a257f20243d6089a1f80b98212076ee6f}{MT\_NOT\_READY}}\ \ \ =\ 1,\ \ \ \ \ }
+\DoxyCodeLine{00127\ \ \ \ \ \mbox{\hyperlink{mental__xv__core_8h_af7302d331733011c84091974c3ba1e99a78ff5b702dc962d56b91b15acb9c9c95}{MT\_EVENT\_SET}}\ \ \ =\ 3,\ \ \ \ \ }
+\DoxyCodeLine{00128\ \ \ \ \ \mbox{\hyperlink{mental__xv__core_8h_af7302d331733011c84091974c3ba1e99a3bdf3a9790312087808d00e29188136d}{MT\_EVENT\_RESET}}\ =\ 4,\ \ \ \ \ }
+\DoxyCodeLine{00129\ \ \ \ \ \mbox{\hyperlink{mental__xv__core_8h_af7302d331733011c84091974c3ba1e99a89e7f0e8457ef03254f379fa0313d894}{MT\_INCOMPLETE}}\ \ =\ 5,\ \ \ \ \ }
+\DoxyCodeLine{00130\ \ \ \ \ \mbox{\hyperlink{mental__xv__core_8h_af7302d331733011c84091974c3ba1e99a53ef8696bc290003828824a413777589}{MT\_ERROR}}\ \ \ \ \ \ \ =\ 6\ \ \ \ \ \ }
+\DoxyCodeLine{00131\ \}\ \mbox{\hyperlink{mental__xv__core_8h_af7302d331733011c84091974c3ba1e99}{MentalResult}};}
+\DoxyCodeLine{00132\ }
+\DoxyCodeLine{00145\ \textcolor{keyword}{typedef}\ \textcolor{keyword}{enum}\ \mbox{\hyperlink{mental__xv__core_8h_a4040728f3adc443389084c52cc3dacf8}{MentalStructureType}}\ \{}
+\DoxyCodeLine{00146\ \ \ \ \ \mbox{\hyperlink{mental__xv__core_8h_a4040728f3adc443389084c52cc3dacf8a8a101966e58321e3f45a94199d024d2b}{MT\_STRUCTURE\_TYPE\_APPLICATION\_INFO}}\ \ =\ 0,\ }
+\DoxyCodeLine{00147\ \ \ \ \ \mbox{\hyperlink{mental__xv__core_8h_a4040728f3adc443389084c52cc3dacf8a10dc2ca6e0779e1e2bae1ae2ac1d2bbe}{MT\_STRUCTURE\_TYPE\_ENGINE\_INFO}}\ \ \ \ \ \ \ =\ 1,\ }
+\DoxyCodeLine{00148\ \}\ \mbox{\hyperlink{mental__xv__core_8h_a4040728f3adc443389084c52cc3dacf8}{MentalStructureType}};}
+\DoxyCodeLine{00149\ }
+\DoxyCodeLine{00156\ \textcolor{keyword}{typedef}\ \mbox{\hyperlink{mental__xv__core_8h_a85c06e36c77c7cb291a034a60400d96e}{MentalFlags}}\ \mbox{\hyperlink{mental__xv__core_8h_a8001f712b14b0ececd970c22c972969a}{MentalInstanceCreateFlags}};}
+\DoxyCodeLine{00157\ }
+\DoxyCodeLine{00164\ \textcolor{keyword}{typedef}\ \textcolor{keyword}{struct\ }\mbox{\hyperlink{structMentalApplicationInfo}{MentalApplicationInfo}}\ \{}
+\DoxyCodeLine{00165\ \ \ \ \ \mbox{\hyperlink{mental__xv__core_8h_a4040728f3adc443389084c52cc3dacf8}{MentalStructureType}}\ \ \ \ \mbox{\hyperlink{structMentalApplicationInfo_a78354ca5ff3d4b2f0077822c30973d84}{sType}};\ \ \ \ \ \ \ \ \ \ \ \ \ \ }
+\DoxyCodeLine{00166\ \ \ \ \ \textcolor{keyword}{const}\ \textcolor{keywordtype}{void}*\ \ \ \ \ \ \ \ \ \ \ \ \mbox{\hyperlink{structMentalApplicationInfo_a42f026a9c165b1f7841f22145707c723}{pNext}};\ \ \ \ \ \ \ \ \ \ \ \ \ \ }
+\DoxyCodeLine{00167\ \ \ \ \ \textcolor{keyword}{const}\ \textcolor{keywordtype}{char}*\ \ \ \ \ \ \ \ \ \ \ \ \mbox{\hyperlink{structMentalApplicationInfo_ad62d689d5ee1bbc561454a4e6fe762ad}{pApplicationName}};\ \ \ }
+\DoxyCodeLine{00168\ \ \ \ \ uint32\_t\ \ \ \ \ \ \ \ \ \ \ \ \ \ \ \mbox{\hyperlink{structMentalApplicationInfo_a3172706bb52464086f3548c97271cbc6}{applicationVersion}};\ }
+\DoxyCodeLine{00169\ \ \ \ \ \textcolor{keyword}{const}\ \textcolor{keywordtype}{char}*\ \ \ \ \ \ \ \ \ \ \ \ \mbox{\hyperlink{structMentalApplicationInfo_a32fe1ca61f17300b4bd8a6a6d0b95b66}{pEngineName}};\ \ \ \ \ \ \ \ }
+\DoxyCodeLine{00170\ \ \ \ \ uint32\_t\ \ \ \ \ \ \ \ \ \ \ \ \ \ \ \mbox{\hyperlink{structMentalApplicationInfo_a7ec42998c0d337df529ac9010d53a320}{engineVersion}};\ \ \ \ \ \ }
+\DoxyCodeLine{00171\ \ \ \ \ uint32\_t\ \ \ \ \ \ \ \ \ \ \ \ \ \ \ \mbox{\hyperlink{structMentalApplicationInfo_a31c14901186b58ad1801a618bc8e8121}{apiVersion}};\ \ \ \ \ \ \ \ \ }
+\DoxyCodeLine{00172\ \}\ \mbox{\hyperlink{structMentalApplicationInfo}{MentalApplicationInfo}};}
+\DoxyCodeLine{00173\ }
+\DoxyCodeLine{00180\ \textcolor{keyword}{typedef}\ \textcolor{keyword}{struct\ }\mbox{\hyperlink{structMentalInstanceCreateInfo}{MentalInstanceCreateInfo}}\ \{}
+\DoxyCodeLine{00181\ \ \ \ \ \mbox{\hyperlink{mental__xv__core_8h_a4040728f3adc443389084c52cc3dacf8}{MentalStructureType}}\ \ \ \ \ \ \ \ \ \ \ \ \ \mbox{\hyperlink{structMentalInstanceCreateInfo_a98666ccff1ea1f483cbe13161023c8aa}{sType}};\ \ \ \ \ \ \ \ \ \ \ \ \ \ \ \ \ \ \ \ \ }
+\DoxyCodeLine{00182\ \ \ \ \ \textcolor{keyword}{const}\ \textcolor{keywordtype}{void}*\ \ \ \ \ \ \ \ \ \ \ \ \ \ \ \ \ \ \ \ \ \mbox{\hyperlink{structMentalInstanceCreateInfo_adf1491d6421cfcb15ad3e5996f592848}{pNext}};\ \ \ \ \ \ \ \ \ \ \ \ \ \ \ \ \ \ \ \ \ }
+\DoxyCodeLine{00183\ \ \ \ \ \mbox{\hyperlink{mental__xv__core_8h_a8001f712b14b0ececd970c22c972969a}{MentalInstanceCreateFlags}}\ \ \ \ \ \ \ \mbox{\hyperlink{structMentalInstanceCreateInfo_aaa26a260d2575c6a4581cddc5a8aaa62}{flags}};\ \ \ \ \ \ \ \ \ \ \ \ \ \ \ \ \ \ \ \ \ }
+\DoxyCodeLine{00184\ \ \ \ \ \textcolor{keyword}{const}\ \mbox{\hyperlink{structMentalApplicationInfo}{MentalApplicationInfo}}*\ \ \ \ \mbox{\hyperlink{structMentalInstanceCreateInfo_a727f4c194e46fb87f1f093442a0a6674}{pApplicationInfo}};\ \ \ \ \ \ \ \ \ \ }
+\DoxyCodeLine{00185\ \ \ \ \ uint32\_t\ \ \ \ \ \ \ \ \ \ \ \ \ \ \ \ \ \ \ \ \ \ \ \ \mbox{\hyperlink{structMentalInstanceCreateInfo_a89911e7d11c0208b449d1c4b7a127da5}{enabledLayerCount}};\ \ \ \ \ \ \ \ \ }
+\DoxyCodeLine{00186\ \ \ \ \ \textcolor{keyword}{const}\ \textcolor{keywordtype}{char}*\ \textcolor{keyword}{const}*\ \ \ \ \ \ \ \ \ \ \ \ \ \ \mbox{\hyperlink{structMentalInstanceCreateInfo_aa39f2523416b30281105df7ebb1a9a22}{ppEnabledLayerNames}};\ \ \ \ \ \ \ }
+\DoxyCodeLine{00187\ \ \ \ \ uint32\_t\ \ \ \ \ \ \ \ \ \ \ \ \ \ \ \ \ \ \ \ \ \ \ \ \mbox{\hyperlink{structMentalInstanceCreateInfo_af29f97fa6365e2f365699ccf5fa6cc86}{enabledExtensionCount}};\ \ \ \ \ }
+\DoxyCodeLine{00188\ \ \ \ \ \textcolor{keyword}{const}\ \textcolor{keywordtype}{char}*\ \textcolor{keyword}{const}*\ \ \ \ \ \ \ \ \ \ \ \ \ \ \mbox{\hyperlink{structMentalInstanceCreateInfo_a859a0d0dd65217b9e66a28958be09d52}{ppEnabledExtensionNames}};\ \ \ }
+\DoxyCodeLine{00189\ \}\ \mbox{\hyperlink{structMentalInstanceCreateInfo}{MentalInstanceCreateInfo}};}
+\DoxyCodeLine{00190\ }
+\DoxyCodeLine{00191\ \textcolor{comment}{//\ TODO:\ implement\ it.}}
+\DoxyCodeLine{00192\ \textcolor{keyword}{typedef}\ \textcolor{keyword}{struct\ }\mbox{\hyperlink{structMentalInstance}{MentalInstance}}\ \{}
+\DoxyCodeLine{00193\ \ \ \ \ \mbox{\hyperlink{structMentalApplicationInfo}{MentalApplicationInfo}}\ \mbox{\hyperlink{structMentalInstance_a01215c57765e3a793614f119fa0fde48}{appInfo}};}
+\DoxyCodeLine{00194\ \ \ \ \ \mbox{\hyperlink{structMentalInstanceCreateInfo}{MentalInstanceCreateInfo}}\ \mbox{\hyperlink{structMentalInstance_aad5673f80ee12d52db6796962b5cb41a}{instanceInfo}};}
+\DoxyCodeLine{00195\ \}\ \mbox{\hyperlink{structMentalInstance}{MentalInstance}};}
+\DoxyCodeLine{00196\ }
+\DoxyCodeLine{00197\ \textcolor{comment}{//\ TODO:\ implement\ it.}}
+\DoxyCodeLine{00198\ \mbox{\hyperlink{structMentalInstance}{MentalInstance}}*\ \mbox{\hyperlink{mental__xv__core_8h_acc985910c263543ce653473dd919a6ab}{mentalCreateInstance}}(\textcolor{keyword}{const}\ \mbox{\hyperlink{structMentalInstanceCreateInfo}{MentalInstanceCreateInfo}}*\ instance\_info);}
+\DoxyCodeLine{00199\ }
+\DoxyCodeLine{00200\ \textcolor{comment}{/*}}
+\DoxyCodeLine{00201\ \textcolor{comment}{typedef\ struct\ \_mental\_platform\_id\ *\ \ \ \ \ \ \ \ mental\_platform\_id;}}
+\DoxyCodeLine{00202\ \textcolor{comment}{typedef\ struct\ \_mental\_device\_id\ *\ \ \ \ \ \ \ \ \ \ mental\_device\_id;}}
+\DoxyCodeLine{00203\ \textcolor{comment}{typedef\ struct\ \_mental\_context\ *\ \ \ \ \ \ \ \ \ \ \ \ mental\_context;}}
+\DoxyCodeLine{00204\ \textcolor{comment}{typedef\ mental\_bitfield\ \ \ \ \ \ \ \ \ \ \ \ \ \ mental\_device\_type;}}
+\DoxyCodeLine{00205\ \textcolor{comment}{}}
+\DoxyCodeLine{00206\ \textcolor{comment}{*/}}
+\DoxyCodeLine{00228\ \textcolor{comment}{/*}}
+\DoxyCodeLine{00229\ \textcolor{comment}{extern\ MENTAL\_API\_ENTRY\ uint32\_t\ MENTAL\_API\_CALL}}
+\DoxyCodeLine{00230\ \textcolor{comment}{mentalGetPlatfromIDs(}}
+\DoxyCodeLine{00231\ \textcolor{comment}{\ \ \ \ uint32\_t\ \ \ \ \ \ \ \ \ \ \ \ \ \ \ \ num\_entries,}}
+\DoxyCodeLine{00232\ \textcolor{comment}{\ \ \ \ mental\_platform\_id*\ \ \ \ \ platforms,}}
+\DoxyCodeLine{00233\ \textcolor{comment}{\ \ \ \ uint32\_t\ \ \ \ \ \ \ \ \ \ \ \ \ \ \ \ num\_platforms}}
+\DoxyCodeLine{00234\ \textcolor{comment}{);\ //\ MT\_API\_SUFFIX\_\_VERSION\_1\_0;}}
+\DoxyCodeLine{00235\ \textcolor{comment}{}}
+\DoxyCodeLine{00236\ \textcolor{comment}{extern\ MENTAL\_API\_ENTRY\ uint32\_t\ MENTAL\_API\_CALL}}
+\DoxyCodeLine{00237\ \textcolor{comment}{mentalGetDeviceIDs(}}
+\DoxyCodeLine{00238\ \textcolor{comment}{\ \ \ \ mental\_platform\_id\ \ \ \ \ \ platform,}}
+\DoxyCodeLine{00239\ \textcolor{comment}{\ \ \ \ mental\_device\_type\ \ \ \ \ \ device\_type,}}
+\DoxyCodeLine{00240\ \textcolor{comment}{\ \ \ \ uint32\_t\ \ \ \ \ \ \ \ \ \ \ \ \ \ \ \ num\_entries,}}
+\DoxyCodeLine{00241\ \textcolor{comment}{\ \ \ \ mental\_device\_id\ *\ \ \ \ \ \ device\_id}}
+\DoxyCodeLine{00242\ \textcolor{comment}{)}}
+\DoxyCodeLine{00243\ \textcolor{comment}{*/}}
+\DoxyCodeLine{00244\ }
+\DoxyCodeLine{00245\ }
+\DoxyCodeLine{00246\ }
+\DoxyCodeLine{00247\ \textcolor{preprocessor}{\#ifdef\ \_\_cplusplus}}
+\DoxyCodeLine{00248\ \ \ \ \ \}}
+\DoxyCodeLine{00249\ \textcolor{preprocessor}{\#endif}}
+\DoxyCodeLine{00250\ }
+\DoxyCodeLine{00251\ \textcolor{preprocessor}{\#endif\ }\textcolor{comment}{//\ MENTAL\_XV\_CORE\_H\_}}
 
 \end{DoxyCode}

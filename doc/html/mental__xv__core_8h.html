@@ -77,7 +77,8 @@ $(function() {
 <a href="#nested-classes">Data Structures</a> &#124;
 <a href="#define-members">Macros</a> &#124;
 <a href="#typedef-members">Typedefs</a> &#124;
-<a href="#enum-members">Enumerations</a>  </div>
+<a href="#enum-members">Enumerations</a> &#124;
+<a href="#func-members">Functions</a>  </div>
   <div class="headertitle"><div class="title">mental_xv_core.h File Reference</div></div>
 </div><!--header-->
 <div class="contents">
@@ -98,11 +99,19 @@ Data Structures</h2></td></tr>
 <tr class="memitem:"><td class="memItemLeft" align="right" valign="top">struct &#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="structMentalInstanceCreateInfo.html">MentalInstanceCreateInfo</a></td></tr>
 <tr class="memdesc:"><td class="mdescLeft">&#160;</td><td class="mdescRight">Structure containing information for creating an instance.  <a href="structMentalInstanceCreateInfo.html#details">More...</a><br /></td></tr>
 <tr class="separator:"><td class="memSeparator" colspan="2">&#160;</td></tr>
+<tr class="memitem:"><td class="memItemLeft" align="right" valign="top">struct &#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="structMentalInstance.html">MentalInstance</a></td></tr>
+<tr class="separator:"><td class="memSeparator" colspan="2">&#160;</td></tr>
 </table><table class="memberdecls">
 <tr class="heading"><td colspan="2"><h2 class="groupheader"><a id="define-members" name="define-members"></a>
 Macros</h2></td></tr>
 <tr class="memitem:a21917fcae9e377836c840ef4899957fb" id="r_a21917fcae9e377836c840ef4899957fb"><td class="memItemLeft" align="right" valign="top">#define&#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="mental__xv__core_8h.html#a21917fcae9e377836c840ef4899957fb">MENTAL_XV_VERSION_1_0</a></td></tr>
 <tr class="separator:a21917fcae9e377836c840ef4899957fb"><td class="memSeparator" colspan="2">&#160;</td></tr>
+<tr class="memitem:a9d4c08915de2b4f363d2e6273ebb78b1" id="r_a9d4c08915de2b4f363d2e6273ebb78b1"><td class="memItemLeft" align="right" valign="top">#define&#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="mental__xv__core_8h.html#a9d4c08915de2b4f363d2e6273ebb78b1">MENTAL_API_ENTRY</a></td></tr>
+<tr class="separator:a9d4c08915de2b4f363d2e6273ebb78b1"><td class="memSeparator" colspan="2">&#160;</td></tr>
+<tr class="memitem:acc03eaed49315df63b4d7bce1fefd2a3" id="r_acc03eaed49315df63b4d7bce1fefd2a3"><td class="memItemLeft" align="right" valign="top">#define&#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="mental__xv__core_8h.html#acc03eaed49315df63b4d7bce1fefd2a3">MENTAL_API_CALL</a></td></tr>
+<tr class="separator:acc03eaed49315df63b4d7bce1fefd2a3"><td class="memSeparator" colspan="2">&#160;</td></tr>
+<tr class="memitem:a40600f1f472f064ea2c91e957e969eba" id="r_a40600f1f472f064ea2c91e957e969eba"><td class="memItemLeft" align="right" valign="top">#define&#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="mental__xv__core_8h.html#a40600f1f472f064ea2c91e957e969eba">MT_API_SUFFIX__VERSION_1_0</a>&#160;&#160;&#160;MT_API_SUFFIX_COMMON</td></tr>
+<tr class="separator:a40600f1f472f064ea2c91e957e969eba"><td class="memSeparator" colspan="2">&#160;</td></tr>
 <tr class="memitem:ae0c9f90ac68f9340368d4174cdd635d7" id="r_ae0c9f90ac68f9340368d4174cdd635d7"><td class="memItemLeft" align="right" valign="top">#define&#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="mental__xv__core_8h.html#ae0c9f90ac68f9340368d4174cdd635d7">MENTAL_XV_VERSION_VARIANT</a>(version)&#160;&#160;&#160;((uint32_t)(version) &gt;&gt; 29U)</td></tr>
 <tr class="memdesc:ae0c9f90ac68f9340368d4174cdd635d7"><td class="mdescLeft">&#160;</td><td class="mdescRight">This macro retrieves the version variant of the API version.  <br /></td></tr>
 <tr class="separator:ae0c9f90ac68f9340368d4174cdd635d7"><td class="memSeparator" colspan="2">&#160;</td></tr>
@@ -136,6 +145,8 @@ Typedefs</h2></td></tr>
 <tr class="memitem:ae33b6aa8a1c3d466897d03c247cee793" id="r_ae33b6aa8a1c3d466897d03c247cee793"><td class="memItemLeft" align="right" valign="top">typedef struct <a class="el" href="structMentalInstanceCreateInfo.html">MentalInstanceCreateInfo</a>&#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="mental__xv__core_8h.html#ae33b6aa8a1c3d466897d03c247cee793">MentalInstanceCreateInfo</a></td></tr>
 <tr class="memdesc:ae33b6aa8a1c3d466897d03c247cee793"><td class="mdescLeft">&#160;</td><td class="mdescRight">Structure containing information for creating an instance.  <br /></td></tr>
 <tr class="separator:ae33b6aa8a1c3d466897d03c247cee793"><td class="memSeparator" colspan="2">&#160;</td></tr>
+<tr class="memitem:a7041fd4d22486ae44232796d8f9789b6" id="r_a7041fd4d22486ae44232796d8f9789b6"><td class="memItemLeft" align="right" valign="top">typedef struct <a class="el" href="structMentalInstance.html">MentalInstance</a>&#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="mental__xv__core_8h.html#a7041fd4d22486ae44232796d8f9789b6">MentalInstance</a></td></tr>
+<tr class="separator:a7041fd4d22486ae44232796d8f9789b6"><td class="memSeparator" colspan="2">&#160;</td></tr>
 </table><table class="memberdecls">
 <tr class="heading"><td colspan="2"><h2 class="groupheader"><a id="enum-members" name="enum-members"></a>
 Enumerations</h2></td></tr>
@@ -156,8 +167,41 @@ Enumerations</h2></td></tr>
  }</td></tr>
 <tr class="memdesc:a4040728f3adc443389084c52cc3dacf8"><td class="mdescLeft">&#160;</td><td class="mdescRight">Enumeration representing the possible structure types.  <a href="mental__xv__core_8h.html#a4040728f3adc443389084c52cc3dacf8">More...</a><br /></td></tr>
 <tr class="separator:a4040728f3adc443389084c52cc3dacf8"><td class="memSeparator" colspan="2">&#160;</td></tr>
+</table><table class="memberdecls">
+<tr class="heading"><td colspan="2"><h2 class="groupheader"><a id="func-members" name="func-members"></a>
+Functions</h2></td></tr>
+<tr class="memitem:acc985910c263543ce653473dd919a6ab" id="r_acc985910c263543ce653473dd919a6ab"><td class="memItemLeft" align="right" valign="top"><a class="el" href="structMentalInstance.html">MentalInstance</a> *&#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="mental__xv__core_8h.html#acc985910c263543ce653473dd919a6ab">mentalCreateInstance</a> (const <a class="el" href="structMentalInstanceCreateInfo.html">MentalInstanceCreateInfo</a> *instance_info)</td></tr>
+<tr class="separator:acc985910c263543ce653473dd919a6ab"><td class="memSeparator" colspan="2">&#160;</td></tr>
 </table>
 <h2 class="groupheader">Macro Definition Documentation</h2>
+<a id="acc03eaed49315df63b4d7bce1fefd2a3" name="acc03eaed49315df63b4d7bce1fefd2a3"></a>
+<h2 class="memtitle"><span class="permalink"><a href="#acc03eaed49315df63b4d7bce1fefd2a3">&#9670;&#160;</a></span>MENTAL_API_CALL</h2>
+
+<div class="memitem">
+<div class="memproto">
+      <table class="memname">
+        <tr>
+          <td class="memname">#define MENTAL_API_CALL</td>
+        </tr>
+      </table>
+</div><div class="memdoc">
+
+</div>
+</div>
+<a id="a9d4c08915de2b4f363d2e6273ebb78b1" name="a9d4c08915de2b4f363d2e6273ebb78b1"></a>
+<h2 class="memtitle"><span class="permalink"><a href="#a9d4c08915de2b4f363d2e6273ebb78b1">&#9670;&#160;</a></span>MENTAL_API_ENTRY</h2>
+
+<div class="memitem">
+<div class="memproto">
+      <table class="memname">
+        <tr>
+          <td class="memname">#define MENTAL_API_ENTRY</td>
+        </tr>
+      </table>
+</div><div class="memdoc">
+
+</div>
+</div>
 <a id="a21917fcae9e377836c840ef4899957fb" name="a21917fcae9e377836c840ef4899957fb"></a>
 <h2 class="memtitle"><span class="permalink"><a href="#a21917fcae9e377836c840ef4899957fb">&#9670;&#160;</a></span>MENTAL_XV_VERSION_1_0</h2>
 
@@ -284,6 +328,20 @@ Enumerations</h2></td></tr>
 
 </div>
 </div>
+<a id="a40600f1f472f064ea2c91e957e969eba" name="a40600f1f472f064ea2c91e957e969eba"></a>
+<h2 class="memtitle"><span class="permalink"><a href="#a40600f1f472f064ea2c91e957e969eba">&#9670;&#160;</a></span>MT_API_SUFFIX__VERSION_1_0</h2>
+
+<div class="memitem">
+<div class="memproto">
+      <table class="memname">
+        <tr>
+          <td class="memname">#define MT_API_SUFFIX__VERSION_1_0&#160;&#160;&#160;MT_API_SUFFIX_COMMON</td>
+        </tr>
+      </table>
+</div><div class="memdoc">
+
+</div>
+</div>
 <h2 class="groupheader">Typedef Documentation</h2>
 <a id="a613d35a7f8f04ca7ef8f7a683c6c9374" name="a613d35a7f8f04ca7ef8f7a683c6c9374"></a>
 <h2 class="memtitle"><span class="permalink"><a href="#a613d35a7f8f04ca7ef8f7a683c6c9374">&#9670;&#160;</a></span>MentalApplicationInfo</h2>
@@ -332,8 +390,22 @@ Enumerations</h2></td></tr>
 <div class="line">    clearFlag(&amp;flags, 0x00000001); <span class="comment">// Clear the first bit</span></div>
 <div class="line">    <span class="keywordflow">return</span> 0;</div>
 <div class="line">}</div>
-<div class="ttc" id="amental__xv__core_8h_html_a85c06e36c77c7cb291a034a60400d96e"><div class="ttname"><a href="mental__xv__core_8h.html#a85c06e36c77c7cb291a034a60400d96e">MentalFlags</a></div><div class="ttdeci">uint32_t MentalFlags</div><div class="ttdoc">Type definition for a 32-bit unsigned integer used to represent flags.</div><div class="ttdef"><b>Definition</b> mental_xv_core.h:92</div></div>
+<div class="ttc" id="amental__xv__core_8h_html_a85c06e36c77c7cb291a034a60400d96e"><div class="ttname"><a href="mental__xv__core_8h.html#a85c06e36c77c7cb291a034a60400d96e">MentalFlags</a></div><div class="ttdeci">uint32_t MentalFlags</div><div class="ttdoc">Type definition for a 32-bit unsigned integer used to represent flags.</div><div class="ttdef"><b>Definition</b> mental_xv_core.h:105</div></div>
 </div><!-- fragment --> 
+</div>
+</div>
+<a id="a7041fd4d22486ae44232796d8f9789b6" name="a7041fd4d22486ae44232796d8f9789b6"></a>
+<h2 class="memtitle"><span class="permalink"><a href="#a7041fd4d22486ae44232796d8f9789b6">&#9670;&#160;</a></span>MentalInstance</h2>
+
+<div class="memitem">
+<div class="memproto">
+      <table class="memname">
+        <tr>
+          <td class="memname">typedef struct <a class="el" href="structMentalInstance.html">MentalInstance</a> <a class="el" href="structMentalInstance.html">MentalInstance</a></td>
+        </tr>
+      </table>
+</div><div class="memdoc">
+
 </div>
 </div>
 <a id="a8001f712b14b0ececd970c22c972969a" name="a8001f712b14b0ececd970c22c972969a"></a>
@@ -480,6 +552,25 @@ Enumerations</h2></td></tr>
 <tr><td class="fieldname"><a id="a4040728f3adc443389084c52cc3dacf8a10dc2ca6e0779e1e2bae1ae2ac1d2bbe" name="a4040728f3adc443389084c52cc3dacf8a10dc2ca6e0779e1e2bae1ae2ac1d2bbe"></a>MT_STRUCTURE_TYPE_ENGINE_INFO&#160;</td><td class="fielddoc"><p>Structure for engine info. </p>
 </td></tr>
 </table>
+
+</div>
+</div>
+<h2 class="groupheader">Function Documentation</h2>
+<a id="acc985910c263543ce653473dd919a6ab" name="acc985910c263543ce653473dd919a6ab"></a>
+<h2 class="memtitle"><span class="permalink"><a href="#acc985910c263543ce653473dd919a6ab">&#9670;&#160;</a></span>mentalCreateInstance()</h2>
+
+<div class="memitem">
+<div class="memproto">
+      <table class="memname">
+        <tr>
+          <td class="memname"><a class="el" href="structMentalInstance.html">MentalInstance</a> * mentalCreateInstance </td>
+          <td>(</td>
+          <td class="paramtype">const <a class="el" href="structMentalInstanceCreateInfo.html">MentalInstanceCreateInfo</a> *&#160;</td>
+          <td class="paramname"><em>instance_info</em></td><td>)</td>
+          <td></td>
+        </tr>
+      </table>
+</div><div class="memdoc">
 
 </div>
 </div>

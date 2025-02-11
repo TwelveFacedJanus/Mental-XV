@@ -9,6 +9,10 @@
     <member refid="structMentalApplicationInfo_1a7ec42998c0d337df529ac9010d53a320" kind="variable"><name>engineVersion</name></member>
     <member refid="structMentalApplicationInfo_1a31c14901186b58ad1801a618bc8e8121" kind="variable"><name>apiVersion</name></member>
   </compound>
+  <compound refid="structMentalInstance" kind="struct"><name>MentalInstance</name>
+    <member refid="structMentalInstance_1a01215c57765e3a793614f119fa0fde48" kind="variable"><name>appInfo</name></member>
+    <member refid="structMentalInstance_1aad5673f80ee12d52db6796962b5cb41a" kind="variable"><name>instanceInfo</name></member>
+  </compound>
   <compound refid="structMentalInstanceCreateInfo" kind="struct"><name>MentalInstanceCreateInfo</name>
     <member refid="structMentalInstanceCreateInfo_1a98666ccff1ea1f483cbe13161023c8aa" kind="variable"><name>sType</name></member>
     <member refid="structMentalInstanceCreateInfo_1adf1491d6421cfcb15ad3e5996f592848" kind="variable"><name>pNext</name></member>
@@ -19,8 +23,148 @@
     <member refid="structMentalInstanceCreateInfo_1af29f97fa6365e2f365699ccf5fa6cc86" kind="variable"><name>enabledExtensionCount</name></member>
     <member refid="structMentalInstanceCreateInfo_1a859a0d0dd65217b9e66a28958be09d52" kind="variable"><name>ppEnabledExtensionNames</name></member>
   </compound>
+  <compound refid="mental-doc_8md" kind="file"><name>mental-doc.md</name>
+  </compound>
+  <compound refid="mental__xv__controls_8h" kind="file"><name>mental_xv_controls.h</name>
+    <member refid="group__keys_1gabbd96281b5ec9b1ae13407059c1c9ab8" kind="define"><name>MENTAL_KEY_SPACE</name></member>
+    <member refid="group__keys_1gae3df7efa2b8ba264f484f07ddca5fc08" kind="define"><name>MENTAL_KEY_APOSTROPHE</name></member>
+    <member refid="group__keys_1ga2b1f8fd7de2eb0eec37f9cd62d8a7213" kind="define"><name>MENTAL_KEY_COMMA</name></member>
+    <member refid="group__keys_1ga14b00ad726a001a1642ae9f5a4dbe029" kind="define"><name>MENTAL_KEY_MINUS</name></member>
+    <member refid="group__keys_1gaf25350d331b1053d6ea43e239828b168" kind="define"><name>MENTAL_KEY_PERIOD</name></member>
+    <member refid="group__keys_1ga2a0d327f94f194bc673606eae0c2007b" kind="define"><name>MENTAL_KEY_SLASH</name></member>
+    <member refid="group__keys_1gab28e1b0773002db519b706212144e5d6" kind="define"><name>MENTAL_KEY_0</name></member>
+    <member refid="group__keys_1ga21fa7d54d192766f2f39489e5badf494" kind="define"><name>MENTAL_KEY_1</name></member>
+    <member refid="group__keys_1ga89454cfd335140ec516996a6a1d4eae6" kind="define"><name>MENTAL_KEY_2</name></member>
+    <member refid="group__keys_1ga672a3234061e7d83c53e9087ec8d75b2" kind="define"><name>MENTAL_KEY_3</name></member>
+    <member refid="group__keys_1gae7c9e60eefe471b0d50281d243ab332c" kind="define"><name>MENTAL_KEY_4</name></member>
+    <member refid="group__keys_1ga9bb18a71db7c9405c77809bffa5c8c7d" kind="define"><name>MENTAL_KEY_5</name></member>
+    <member refid="group__keys_1ga943662574a840be6752a93015c774384" kind="define"><name>MENTAL_KEY_6</name></member>
+    <member refid="group__keys_1gad5e5c5121192fd73e10b6ebe7fdcbba5" kind="define"><name>MENTAL_KEY_7</name></member>
+    <member refid="group__keys_1ga087a9a74febd40c18a039434da27cf55" kind="define"><name>MENTAL_KEY_8</name></member>
+    <member refid="group__keys_1gaa330e82c82926b9d2ff972f1475347ba" kind="define"><name>MENTAL_KEY_9</name></member>
+    <member refid="group__keys_1ga57149ab39990ad445631717730bd1ea3" kind="define"><name>MENTAL_KEY_SEMICOLON</name></member>
+    <member refid="group__keys_1gab1d5f820d53842cc00e4d918653a1f62" kind="define"><name>MENTAL_KEY_EQUAL</name></member>
+    <member refid="group__keys_1ga58fb24990010604ad9d54aba4e37a7d5" kind="define"><name>MENTAL_KEY_A</name></member>
+    <member refid="group__keys_1gafcdfbeb01698cef7a3d0ea118869e623" kind="define"><name>MENTAL_KEY_B</name></member>
+    <member refid="group__keys_1gacca194a1b90b6eb908b29e68c77cae33" kind="define"><name>MENTAL_KEY_C</name></member>
+    <member refid="group__keys_1ga756f6371c039e0b6a50ce487f9ba8bd5" kind="define"><name>MENTAL_KEY_D</name></member>
+    <member refid="group__keys_1gae9faf8bcc4022d6ac682d337ff428c7f" kind="define"><name>MENTAL_KEY_E</name></member>
+    <member refid="group__keys_1ga4249d06361adfe14cacb6de93456a95e" kind="define"><name>MENTAL_KEY_F</name></member>
+    <member refid="group__keys_1gaf99fb70beaf6b25ce54944b19717ae0f" kind="define"><name>MENTAL_KEY_G</name></member>
+    <member refid="group__keys_1gaec26c06823fde0af3d05fed9c9792ae0" kind="define"><name>MENTAL_KEY_H</name></member>
+    <member refid="group__keys_1gaea34e6d5ed664028eb15881317607634" kind="define"><name>MENTAL_KEY_I</name></member>
+    <member refid="group__keys_1gae3f9dea1a82343dde83e36458ad15050" kind="define"><name>MENTAL_KEY_J</name></member>
+    <member refid="group__keys_1ga57b92c833f15b0734f441dd51dc1a47b" kind="define"><name>MENTAL_KEY_K</name></member>
+    <member refid="group__keys_1gab6b211e64c3fe4afed8176ffc3e7bddc" kind="define"><name>MENTAL_KEY_L</name></member>
+    <member refid="group__keys_1ga8be78e51686f6c4842adc8737f7312c4" kind="define"><name>MENTAL_KEY_M</name></member>
+    <member refid="group__keys_1gae05f3ee30ea63e699ade9418ff6e30de" kind="define"><name>MENTAL_KEY_N</name></member>
+    <member refid="group__keys_1ga0f0c1c3fb4f051ccb7ad871679e88c77" kind="define"><name>MENTAL_KEY_O</name></member>
+    <member refid="group__keys_1gab46e3246b62c565b516552df6af241bd" kind="define"><name>MENTAL_KEY_P</name></member>
+    <member refid="group__keys_1ga8ae94b3812e5a557ff8334e1e4c61d0a" kind="define"><name>MENTAL_KEY_Q</name></member>
+    <member refid="group__keys_1gaa2de6b2af8e92b56a21e65b5ec4691d3" kind="define"><name>MENTAL_KEY_R</name></member>
+    <member refid="group__keys_1gab38c95862f618e9ceae0f83101bfd18b" kind="define"><name>MENTAL_KEY_S</name></member>
+    <member refid="group__keys_1gad59821f0f82d5f84c728bfec28af8e62" kind="define"><name>MENTAL_KEY_T</name></member>
+    <member refid="group__keys_1ga5ba397e23d0d134d6ab2a36d0c719935" kind="define"><name>MENTAL_KEY_U</name></member>
+    <member refid="group__keys_1gaf76b41d70a3fa6a58e30d2a36c47758f" kind="define"><name>MENTAL_KEY_V</name></member>
+    <member refid="group__keys_1gaa17161cdeb8b696e4b5595c720ef5175" kind="define"><name>MENTAL_KEY_W</name></member>
+    <member refid="group__keys_1gad36a5d7b10377b994e5345a24c552bf6" kind="define"><name>MENTAL_KEY_X</name></member>
+    <member refid="group__keys_1ga7a5dff41a9c7eecf8b6dd1697c53ef8f" kind="define"><name>MENTAL_KEY_Y</name></member>
+    <member refid="group__keys_1ga4ca96dba8dd07013af444c7da0f1ad31" kind="define"><name>MENTAL_KEY_Z</name></member>
+    <member refid="group__keys_1ga613f5ba7225da7c80da1dbdd0495a1cc" kind="define"><name>MENTAL_KEY_LEFT_BRACKET</name></member>
+    <member refid="group__keys_1gae06ebf4a1469df26bcf635d449fb0c86" kind="define"><name>MENTAL_KEY_BACKSLASH</name></member>
+    <member refid="group__keys_1ga51e83041347b0e6587af834398d8ccf6" kind="define"><name>MENTAL_KEY_RIGHT_BRACKET</name></member>
+    <member refid="group__keys_1gada3f9feb182ec0ed7306d56c3be03df6" kind="define"><name>MENTAL_KEY_GRAVE_ACCENT</name></member>
+    <member refid="group__keys_1gae3da42baa90fce2af76fb9e50cc28723" kind="define"><name>MENTAL_KEY_WORLD_1</name></member>
+    <member refid="group__keys_1ga337583be66a47f69fcae79a6b7f12b1b" kind="define"><name>MENTAL_KEY_WORLD_2</name></member>
+    <member refid="group__keys_1gaf1542194f14d3c665dc9e21d93e5958f" kind="define"><name>MENTAL_KEY_ESCAPE</name></member>
+    <member refid="group__keys_1ga02ddb15778f86707d1dbc7c95991be80" kind="define"><name>MENTAL_KEY_ENTER</name></member>
+    <member refid="group__keys_1gaaf77d75db421c5deda9644bd8ff4ad8f" kind="define"><name>MENTAL_KEY_TAB</name></member>
+    <member refid="group__keys_1ga88582a9ee1cbfc2c9349618fd04c7a5f" kind="define"><name>MENTAL_KEY_BACKSPACE</name></member>
+    <member refid="group__keys_1ga14ca6ac053e156c463ff3baaf86ac1d1" kind="define"><name>MENTAL_KEY_INSERT</name></member>
+    <member refid="group__keys_1ga5ebfdf46d822f2f9a1b6f3f4c65d9078" kind="define"><name>MENTAL_KEY_DELETE</name></member>
+    <member refid="group__keys_1ga07aa73327b95ab3f50ef9e8db94c9cd4" kind="define"><name>MENTAL_KEY_RIGHT</name></member>
+    <member refid="group__keys_1ga3075e648df466035246c18adc64aac2e" kind="define"><name>MENTAL_KEY_LEFT</name></member>
+    <member refid="group__keys_1gaa535b9f986c6350a26b21a21b1e61972" kind="define"><name>MENTAL_KEY_DOWN</name></member>
+    <member refid="group__keys_1gae7643680a2c60a047a20810a4311b9c5" kind="define"><name>MENTAL_KEY_UP</name></member>
+    <member refid="group__keys_1ga606e4b0399283b00f08fc039c9f486bd" kind="define"><name>MENTAL_KEY_PAGE_UP</name></member>
+    <member refid="group__keys_1ga2d6a966b8062df4a9e970b618d8a58a8" kind="define"><name>MENTAL_KEY_PAGE_DOWN</name></member>
+    <member refid="group__keys_1ga85817d404e70db93b0ebead1913a2f8e" kind="define"><name>MENTAL_KEY_HOME</name></member>
+    <member refid="group__keys_1gac7a86209ec66e7eb6fa690cf133e70ba" kind="define"><name>MENTAL_KEY_END</name></member>
+    <member refid="group__keys_1gaee30f15adefd993ddb85d608d0bb5d31" kind="define"><name>MENTAL_KEY_CAPS_LOCK</name></member>
+    <member refid="group__keys_1gaf39096ef82d9607618737b12096944f8" kind="define"><name>MENTAL_KEY_SCROLL_LOCK</name></member>
+    <member refid="group__keys_1ga7ae3fa0b947fd8572a1ad3e240f29b33" kind="define"><name>MENTAL_KEY_NUM_LOCK</name></member>
+    <member refid="group__keys_1gac75d793839cf95d2a0068e95be7f01e2" kind="define"><name>MENTAL_KEY_PRINT_SCREEN</name></member>
+    <member refid="group__keys_1ga6051e8838e49c471ce7143b9bc696280" kind="define"><name>MENTAL_KEY_PAUSE</name></member>
+    <member refid="group__keys_1gaac9ce363d00f189f000930e29cb11415" kind="define"><name>MENTAL_KEY_F1</name></member>
+    <member refid="group__keys_1ga74c4e085779a826d5d26ef008c718421" kind="define"><name>MENTAL_KEY_F2</name></member>
+    <member refid="group__keys_1gac0d3963598a9bc365cfd12589768fbba" kind="define"><name>MENTAL_KEY_F3</name></member>
+    <member refid="group__keys_1gaf50ea6aa03bce37db97fabdd789b0214" kind="define"><name>MENTAL_KEY_F4</name></member>
+    <member refid="group__keys_1gaa8c424adb36e8e6fb5b383e3301aa58f" kind="define"><name>MENTAL_KEY_F5</name></member>
+    <member refid="group__keys_1gafc1d9f37e89fee3649b13c87363e6837" kind="define"><name>MENTAL_KEY_F6</name></member>
+    <member refid="group__keys_1gad40b5cfe2f756ca2e79c668779d1cb7d" kind="define"><name>MENTAL_KEY_F7</name></member>
+    <member refid="group__keys_1ga7f50443b161ea678f2a65ffdfa055274" kind="define"><name>MENTAL_KEY_F8</name></member>
+    <member refid="group__keys_1gaed883287b594e16af5ccdb7101f1b92b" kind="define"><name>MENTAL_KEY_F9</name></member>
+    <member refid="group__keys_1ga56491a465d6592504cc9739bc0c4d8bf" kind="define"><name>MENTAL_KEY_F10</name></member>
+    <member refid="group__keys_1gafd83cd6b021f12ccc60465c351ee0e39" kind="define"><name>MENTAL_KEY_F11</name></member>
+    <member refid="group__keys_1ga1cacfdc4f842e94c3c4917b1a29fba28" kind="define"><name>MENTAL_KEY_F12</name></member>
+    <member refid="group__keys_1gae9783a5cf42f21ec54bce56edafbe6b6" kind="define"><name>MENTAL_KEY_F13</name></member>
+    <member refid="group__keys_1ga04bb9a13d0bbb78fe6c38f11ee285828" kind="define"><name>MENTAL_KEY_F14</name></member>
+    <member refid="group__keys_1ga04fc3f8f0f52978391d52266337e788b" kind="define"><name>MENTAL_KEY_F15</name></member>
+    <member refid="group__keys_1ga9e7c4de1e0f2f30166e1bf7f3acde2c2" kind="define"><name>MENTAL_KEY_F16</name></member>
+    <member refid="group__keys_1ga0f7458c245bf6c44ba22a70a179b4cbd" kind="define"><name>MENTAL_KEY_F17</name></member>
+    <member refid="group__keys_1gaeef4ffb4f2c504cde870ee4ea42cbccc" kind="define"><name>MENTAL_KEY_F18</name></member>
+    <member refid="group__keys_1ga444ce34cc619d3bb699ce764e6599d3e" kind="define"><name>MENTAL_KEY_F19</name></member>
+    <member refid="group__keys_1ga8ffe2a7f746a52a925824235ad4257f5" kind="define"><name>MENTAL_KEY_F20</name></member>
+    <member refid="group__keys_1ga7e4c834fb45094755db95e556dd900ef" kind="define"><name>MENTAL_KEY_F21</name></member>
+    <member refid="group__keys_1ga04a8f8725d1da462c5a0bbac09853f1d" kind="define"><name>MENTAL_KEY_F22</name></member>
+    <member refid="group__keys_1gabe8fa776d0a9169c6b768ee27a0a7595" kind="define"><name>MENTAL_KEY_F23</name></member>
+    <member refid="group__keys_1ga7ff7a597aca831ece7cea41b0235d5ee" kind="define"><name>MENTAL_KEY_F24</name></member>
+    <member refid="group__keys_1gaf2a67ec5d6608c73337d1edd603263ae" kind="define"><name>MENTAL_KEY_F25</name></member>
+    <member refid="group__keys_1gae115a40ac2634f4bf28e4bc9d54cc0aa" kind="define"><name>MENTAL_KEY_KP_0</name></member>
+    <member refid="group__keys_1ga4b0ac56999ff48743ee5a974a3c7ed64" kind="define"><name>MENTAL_KEY_KP_1</name></member>
+    <member refid="group__keys_1ga71f314a982f805eb1adce21ac2172e51" kind="define"><name>MENTAL_KEY_KP_2</name></member>
+    <member refid="group__keys_1ga659c83a691fcc3a0d4317a2367d6d28b" kind="define"><name>MENTAL_KEY_KP_3</name></member>
+    <member refid="group__keys_1gab02eccdf98488154da196b7829ffc81b" kind="define"><name>MENTAL_KEY_KP_4</name></member>
+    <member refid="group__keys_1ga8c217def9e3640ab13df2e9d6a0f239f" kind="define"><name>MENTAL_KEY_KP_5</name></member>
+    <member refid="group__keys_1gad16659fe4fce764fe1435a904ea094b9" kind="define"><name>MENTAL_KEY_KP_6</name></member>
+    <member refid="group__keys_1ga8d1190362fe736491092cb1a7e0416f0" kind="define"><name>MENTAL_KEY_KP_7</name></member>
+    <member refid="group__keys_1ga697f8b45a9000ba0660fbdd65d8756b0" kind="define"><name>MENTAL_KEY_KP_8</name></member>
+    <member refid="group__keys_1ga2248a8c9860b1f72795e84329d42a7d0" kind="define"><name>MENTAL_KEY_KP_9</name></member>
+    <member refid="group__keys_1ga3f21b8678e8cc9508433e514cf2602ed" kind="define"><name>MENTAL_KEY_KP_DECIMAL</name></member>
+    <member refid="group__keys_1gad142dc3a2138f2677ca03a2c88e0469d" kind="define"><name>MENTAL_KEY_KP_DIVIDE</name></member>
+    <member refid="group__keys_1ga69dea34e321acf00a5f8a09416359ba3" kind="define"><name>MENTAL_KEY_KP_MULTIPLY</name></member>
+    <member refid="group__keys_1ga69d6c2b271a77d3a1e9eb216662a3a9b" kind="define"><name>MENTAL_KEY_KP_SUBTRACT</name></member>
+    <member refid="group__keys_1ga1e6aab9df82dd7619d4cc4a6c41867af" kind="define"><name>MENTAL_KEY_KP_ADD</name></member>
+    <member refid="group__keys_1gaa478a4483695963b3acfa246cdeb623f" kind="define"><name>MENTAL_KEY_KP_ENTER</name></member>
+    <member refid="group__keys_1ga79fc949e789e190698467a76aee375d0" kind="define"><name>MENTAL_KEY_KP_EQUAL</name></member>
+    <member refid="group__keys_1ga3529048f4fd90cc5d5d662cf078ff693" kind="define"><name>MENTAL_KEY_LEFT_SHIFT</name></member>
+    <member refid="group__keys_1gaeafdf4d1ec8f3e1da821e6c9514dbae1" kind="define"><name>MENTAL_KEY_LEFT_CONTROL</name></member>
+    <member refid="group__keys_1gad8dd7aaac11e3e5dda267f0b621e0147" kind="define"><name>MENTAL_KEY_LEFT_ALT</name></member>
+    <member refid="group__keys_1ga43ad8e741e986fcc70b506653990dab7" kind="define"><name>MENTAL_KEY_LEFT_SUPER</name></member>
+    <member refid="group__keys_1gaa9736ba84b66af3106c823aa71d8da4b" kind="define"><name>MENTAL_KEY_RIGHT_SHIFT</name></member>
+    <member refid="group__keys_1gaed4f71c0004d3331fcc8556e7ea81da5" kind="define"><name>MENTAL_KEY_RIGHT_CONTROL</name></member>
+    <member refid="group__keys_1gad6528a37deee350bfafdf404701454c7" kind="define"><name>MENTAL_KEY_RIGHT_ALT</name></member>
+    <member refid="group__keys_1ga4070324b5f7cbe08f716c58b8ab8b29a" kind="define"><name>MENTAL_KEY_RIGHT_SUPER</name></member>
+    <member refid="group__keys_1ga953e5bca97b2acf812046f5f25fe2d5e" kind="define"><name>MENTAL_KEY_MENU</name></member>
+    <member refid="group__keys_1ga0fd4c2fb05e20173ff07d05d64872fc7" kind="define"><name>MENTAL_KEY_LAST</name></member>
+    <member refid="group__buttons_1ga475dc4689b2367ed1d8d6a98a5b39d3e" kind="define"><name>MENTAL_MOUSE_BUTTON_1</name></member>
+    <member refid="group__buttons_1ga31df8c51fd916beb0b86ec1dfbc23bc1" kind="define"><name>MENTAL_MOUSE_BUTTON_2</name></member>
+    <member refid="group__buttons_1ga0fab653e1f35c91fc6dc245ba1e89377" kind="define"><name>MENTAL_MOUSE_BUTTON_3</name></member>
+    <member refid="group__buttons_1ga62ce3a07a3a20e2b99020f42bb9bcd0f" kind="define"><name>MENTAL_MOUSE_BUTTON_4</name></member>
+    <member refid="group__buttons_1ga9b1e0a08c1f4fea396bbddb890bd5e48" kind="define"><name>MENTAL_MOUSE_BUTTON_5</name></member>
+    <member refid="group__buttons_1ga81f32c80476ffc31b26086eeed0ba789" kind="define"><name>MENTAL_MOUSE_BUTTON_6</name></member>
+    <member refid="group__buttons_1ga6db080e8b95607774b6a59829034b8fe" kind="define"><name>MENTAL_MOUSE_BUTTON_7</name></member>
+    <member refid="group__buttons_1ga148ca7d97fe11327db8d3cf2313f46e9" kind="define"><name>MENTAL_MOUSE_BUTTON_8</name></member>
+    <member refid="group__buttons_1gadc674ab81c93128e5866383f4b66dbff" kind="define"><name>MENTAL_MOUSE_BUTTON_LAST</name></member>
+    <member refid="group__buttons_1gab372d95f1e8570eebee4bdaf88ccb9a2" kind="define"><name>MENTAL_MOUSE_BUTTON_LEFT</name></member>
+    <member refid="group__buttons_1ga4096c1e77a21fa0bef7a32beeb3c34ea" kind="define"><name>MENTAL_MOUSE_BUTTON_RIGHT</name></member>
+    <member refid="group__buttons_1ga49c409f880938397c7de64dd14466714" kind="define"><name>MENTAL_MOUSE_BUTTON_MIDDLE</name></member>
+  </compound>
   <compound refid="mental__xv__core_8h" kind="file"><name>mental_xv_core.h</name>
     <member refid="mental__xv__core_8h_1a21917fcae9e377836c840ef4899957fb" kind="define"><name>MENTAL_XV_VERSION_1_0</name></member>
+    <member refid="mental__xv__core_8h_1a9d4c08915de2b4f363d2e6273ebb78b1" kind="define"><name>MENTAL_API_ENTRY</name></member>
+    <member refid="mental__xv__core_8h_1acc03eaed49315df63b4d7bce1fefd2a3" kind="define"><name>MENTAL_API_CALL</name></member>
+    <member refid="mental__xv__core_8h_1a40600f1f472f064ea2c91e957e969eba" kind="define"><name>MT_API_SUFFIX__VERSION_1_0</name></member>
     <member refid="mental__xv__core_8h_1ae0c9f90ac68f9340368d4174cdd635d7" kind="define"><name>MENTAL_XV_VERSION_VARIANT</name></member>
     <member refid="mental__xv__core_8h_1abdb2bee204fe16ce94de34809b44d333" kind="define"><name>MENTAL_XV_VERSION_MAJOR</name></member>
     <member refid="mental__xv__core_8h_1a95cfa6f75ba9ec499f0f96478454a225" kind="define"><name>MENTAL_XV_VERSION_MINOR</name></member>
@@ -41,12 +185,157 @@
     <member refid="mental__xv__core_8h_1a8001f712b14b0ececd970c22c972969a" kind="typedef"><name>MentalInstanceCreateFlags</name></member>
     <member refid="mental__xv__core_8h_1a613d35a7f8f04ca7ef8f7a683c6c9374" kind="typedef"><name>MentalApplicationInfo</name></member>
     <member refid="mental__xv__core_8h_1ae33b6aa8a1c3d466897d03c247cee793" kind="typedef"><name>MentalInstanceCreateInfo</name></member>
+    <member refid="mental__xv__core_8h_1a7041fd4d22486ae44232796d8f9789b6" kind="typedef"><name>MentalInstance</name></member>
+    <member refid="mental__xv__core_8h_1acc985910c263543ce653473dd919a6ab" kind="function"><name>mentalCreateInstance</name></member>
   </compound>
   <compound refid="mental__xv__math_8h" kind="file"><name>mental_xv_math.h</name>
   </compound>
+  <compound refid="mental__xv__windows_8h" kind="file"><name>mental_xv_windows.h</name>
+  </compound>
   <compound refid="README_8md" kind="file"><name>README.md</name>
   </compound>
+  <compound refid="group__keys" kind="group"><name>keys</name>
+    <member refid="group__keys_1gabbd96281b5ec9b1ae13407059c1c9ab8" kind="define"><name>MENTAL_KEY_SPACE</name></member>
+    <member refid="group__keys_1gae3df7efa2b8ba264f484f07ddca5fc08" kind="define"><name>MENTAL_KEY_APOSTROPHE</name></member>
+    <member refid="group__keys_1ga2b1f8fd7de2eb0eec37f9cd62d8a7213" kind="define"><name>MENTAL_KEY_COMMA</name></member>
+    <member refid="group__keys_1ga14b00ad726a001a1642ae9f5a4dbe029" kind="define"><name>MENTAL_KEY_MINUS</name></member>
+    <member refid="group__keys_1gaf25350d331b1053d6ea43e239828b168" kind="define"><name>MENTAL_KEY_PERIOD</name></member>
+    <member refid="group__keys_1ga2a0d327f94f194bc673606eae0c2007b" kind="define"><name>MENTAL_KEY_SLASH</name></member>
+    <member refid="group__keys_1gab28e1b0773002db519b706212144e5d6" kind="define"><name>MENTAL_KEY_0</name></member>
+    <member refid="group__keys_1ga21fa7d54d192766f2f39489e5badf494" kind="define"><name>MENTAL_KEY_1</name></member>
+    <member refid="group__keys_1ga89454cfd335140ec516996a6a1d4eae6" kind="define"><name>MENTAL_KEY_2</name></member>
+    <member refid="group__keys_1ga672a3234061e7d83c53e9087ec8d75b2" kind="define"><name>MENTAL_KEY_3</name></member>
+    <member refid="group__keys_1gae7c9e60eefe471b0d50281d243ab332c" kind="define"><name>MENTAL_KEY_4</name></member>
+    <member refid="group__keys_1ga9bb18a71db7c9405c77809bffa5c8c7d" kind="define"><name>MENTAL_KEY_5</name></member>
+    <member refid="group__keys_1ga943662574a840be6752a93015c774384" kind="define"><name>MENTAL_KEY_6</name></member>
+    <member refid="group__keys_1gad5e5c5121192fd73e10b6ebe7fdcbba5" kind="define"><name>MENTAL_KEY_7</name></member>
+    <member refid="group__keys_1ga087a9a74febd40c18a039434da27cf55" kind="define"><name>MENTAL_KEY_8</name></member>
+    <member refid="group__keys_1gaa330e82c82926b9d2ff972f1475347ba" kind="define"><name>MENTAL_KEY_9</name></member>
+    <member refid="group__keys_1ga57149ab39990ad445631717730bd1ea3" kind="define"><name>MENTAL_KEY_SEMICOLON</name></member>
+    <member refid="group__keys_1gab1d5f820d53842cc00e4d918653a1f62" kind="define"><name>MENTAL_KEY_EQUAL</name></member>
+    <member refid="group__keys_1ga58fb24990010604ad9d54aba4e37a7d5" kind="define"><name>MENTAL_KEY_A</name></member>
+    <member refid="group__keys_1gafcdfbeb01698cef7a3d0ea118869e623" kind="define"><name>MENTAL_KEY_B</name></member>
+    <member refid="group__keys_1gacca194a1b90b6eb908b29e68c77cae33" kind="define"><name>MENTAL_KEY_C</name></member>
+    <member refid="group__keys_1ga756f6371c039e0b6a50ce487f9ba8bd5" kind="define"><name>MENTAL_KEY_D</name></member>
+    <member refid="group__keys_1gae9faf8bcc4022d6ac682d337ff428c7f" kind="define"><name>MENTAL_KEY_E</name></member>
+    <member refid="group__keys_1ga4249d06361adfe14cacb6de93456a95e" kind="define"><name>MENTAL_KEY_F</name></member>
+    <member refid="group__keys_1gaf99fb70beaf6b25ce54944b19717ae0f" kind="define"><name>MENTAL_KEY_G</name></member>
+    <member refid="group__keys_1gaec26c06823fde0af3d05fed9c9792ae0" kind="define"><name>MENTAL_KEY_H</name></member>
+    <member refid="group__keys_1gaea34e6d5ed664028eb15881317607634" kind="define"><name>MENTAL_KEY_I</name></member>
+    <member refid="group__keys_1gae3f9dea1a82343dde83e36458ad15050" kind="define"><name>MENTAL_KEY_J</name></member>
+    <member refid="group__keys_1ga57b92c833f15b0734f441dd51dc1a47b" kind="define"><name>MENTAL_KEY_K</name></member>
+    <member refid="group__keys_1gab6b211e64c3fe4afed8176ffc3e7bddc" kind="define"><name>MENTAL_KEY_L</name></member>
+    <member refid="group__keys_1ga8be78e51686f6c4842adc8737f7312c4" kind="define"><name>MENTAL_KEY_M</name></member>
+    <member refid="group__keys_1gae05f3ee30ea63e699ade9418ff6e30de" kind="define"><name>MENTAL_KEY_N</name></member>
+    <member refid="group__keys_1ga0f0c1c3fb4f051ccb7ad871679e88c77" kind="define"><name>MENTAL_KEY_O</name></member>
+    <member refid="group__keys_1gab46e3246b62c565b516552df6af241bd" kind="define"><name>MENTAL_KEY_P</name></member>
+    <member refid="group__keys_1ga8ae94b3812e5a557ff8334e1e4c61d0a" kind="define"><name>MENTAL_KEY_Q</name></member>
+    <member refid="group__keys_1gaa2de6b2af8e92b56a21e65b5ec4691d3" kind="define"><name>MENTAL_KEY_R</name></member>
+    <member refid="group__keys_1gab38c95862f618e9ceae0f83101bfd18b" kind="define"><name>MENTAL_KEY_S</name></member>
+    <member refid="group__keys_1gad59821f0f82d5f84c728bfec28af8e62" kind="define"><name>MENTAL_KEY_T</name></member>
+    <member refid="group__keys_1ga5ba397e23d0d134d6ab2a36d0c719935" kind="define"><name>MENTAL_KEY_U</name></member>
+    <member refid="group__keys_1gaf76b41d70a3fa6a58e30d2a36c47758f" kind="define"><name>MENTAL_KEY_V</name></member>
+    <member refid="group__keys_1gaa17161cdeb8b696e4b5595c720ef5175" kind="define"><name>MENTAL_KEY_W</name></member>
+    <member refid="group__keys_1gad36a5d7b10377b994e5345a24c552bf6" kind="define"><name>MENTAL_KEY_X</name></member>
+    <member refid="group__keys_1ga7a5dff41a9c7eecf8b6dd1697c53ef8f" kind="define"><name>MENTAL_KEY_Y</name></member>
+    <member refid="group__keys_1ga4ca96dba8dd07013af444c7da0f1ad31" kind="define"><name>MENTAL_KEY_Z</name></member>
+    <member refid="group__keys_1ga613f5ba7225da7c80da1dbdd0495a1cc" kind="define"><name>MENTAL_KEY_LEFT_BRACKET</name></member>
+    <member refid="group__keys_1gae06ebf4a1469df26bcf635d449fb0c86" kind="define"><name>MENTAL_KEY_BACKSLASH</name></member>
+    <member refid="group__keys_1ga51e83041347b0e6587af834398d8ccf6" kind="define"><name>MENTAL_KEY_RIGHT_BRACKET</name></member>
+    <member refid="group__keys_1gada3f9feb182ec0ed7306d56c3be03df6" kind="define"><name>MENTAL_KEY_GRAVE_ACCENT</name></member>
+    <member refid="group__keys_1gae3da42baa90fce2af76fb9e50cc28723" kind="define"><name>MENTAL_KEY_WORLD_1</name></member>
+    <member refid="group__keys_1ga337583be66a47f69fcae79a6b7f12b1b" kind="define"><name>MENTAL_KEY_WORLD_2</name></member>
+    <member refid="group__keys_1gaf1542194f14d3c665dc9e21d93e5958f" kind="define"><name>MENTAL_KEY_ESCAPE</name></member>
+    <member refid="group__keys_1ga02ddb15778f86707d1dbc7c95991be80" kind="define"><name>MENTAL_KEY_ENTER</name></member>
+    <member refid="group__keys_1gaaf77d75db421c5deda9644bd8ff4ad8f" kind="define"><name>MENTAL_KEY_TAB</name></member>
+    <member refid="group__keys_1ga88582a9ee1cbfc2c9349618fd04c7a5f" kind="define"><name>MENTAL_KEY_BACKSPACE</name></member>
+    <member refid="group__keys_1ga14ca6ac053e156c463ff3baaf86ac1d1" kind="define"><name>MENTAL_KEY_INSERT</name></member>
+    <member refid="group__keys_1ga5ebfdf46d822f2f9a1b6f3f4c65d9078" kind="define"><name>MENTAL_KEY_DELETE</name></member>
+    <member refid="group__keys_1ga07aa73327b95ab3f50ef9e8db94c9cd4" kind="define"><name>MENTAL_KEY_RIGHT</name></member>
+    <member refid="group__keys_1ga3075e648df466035246c18adc64aac2e" kind="define"><name>MENTAL_KEY_LEFT</name></member>
+    <member refid="group__keys_1gaa535b9f986c6350a26b21a21b1e61972" kind="define"><name>MENTAL_KEY_DOWN</name></member>
+    <member refid="group__keys_1gae7643680a2c60a047a20810a4311b9c5" kind="define"><name>MENTAL_KEY_UP</name></member>
+    <member refid="group__keys_1ga606e4b0399283b00f08fc039c9f486bd" kind="define"><name>MENTAL_KEY_PAGE_UP</name></member>
+    <member refid="group__keys_1ga2d6a966b8062df4a9e970b618d8a58a8" kind="define"><name>MENTAL_KEY_PAGE_DOWN</name></member>
+    <member refid="group__keys_1ga85817d404e70db93b0ebead1913a2f8e" kind="define"><name>MENTAL_KEY_HOME</name></member>
+    <member refid="group__keys_1gac7a86209ec66e7eb6fa690cf133e70ba" kind="define"><name>MENTAL_KEY_END</name></member>
+    <member refid="group__keys_1gaee30f15adefd993ddb85d608d0bb5d31" kind="define"><name>MENTAL_KEY_CAPS_LOCK</name></member>
+    <member refid="group__keys_1gaf39096ef82d9607618737b12096944f8" kind="define"><name>MENTAL_KEY_SCROLL_LOCK</name></member>
+    <member refid="group__keys_1ga7ae3fa0b947fd8572a1ad3e240f29b33" kind="define"><name>MENTAL_KEY_NUM_LOCK</name></member>
+    <member refid="group__keys_1gac75d793839cf95d2a0068e95be7f01e2" kind="define"><name>MENTAL_KEY_PRINT_SCREEN</name></member>
+    <member refid="group__keys_1ga6051e8838e49c471ce7143b9bc696280" kind="define"><name>MENTAL_KEY_PAUSE</name></member>
+    <member refid="group__keys_1gaac9ce363d00f189f000930e29cb11415" kind="define"><name>MENTAL_KEY_F1</name></member>
+    <member refid="group__keys_1ga74c4e085779a826d5d26ef008c718421" kind="define"><name>MENTAL_KEY_F2</name></member>
+    <member refid="group__keys_1gac0d3963598a9bc365cfd12589768fbba" kind="define"><name>MENTAL_KEY_F3</name></member>
+    <member refid="group__keys_1gaf50ea6aa03bce37db97fabdd789b0214" kind="define"><name>MENTAL_KEY_F4</name></member>
+    <member refid="group__keys_1gaa8c424adb36e8e6fb5b383e3301aa58f" kind="define"><name>MENTAL_KEY_F5</name></member>
+    <member refid="group__keys_1gafc1d9f37e89fee3649b13c87363e6837" kind="define"><name>MENTAL_KEY_F6</name></member>
+    <member refid="group__keys_1gad40b5cfe2f756ca2e79c668779d1cb7d" kind="define"><name>MENTAL_KEY_F7</name></member>
+    <member refid="group__keys_1ga7f50443b161ea678f2a65ffdfa055274" kind="define"><name>MENTAL_KEY_F8</name></member>
+    <member refid="group__keys_1gaed883287b594e16af5ccdb7101f1b92b" kind="define"><name>MENTAL_KEY_F9</name></member>
+    <member refid="group__keys_1ga56491a465d6592504cc9739bc0c4d8bf" kind="define"><name>MENTAL_KEY_F10</name></member>
+    <member refid="group__keys_1gafd83cd6b021f12ccc60465c351ee0e39" kind="define"><name>MENTAL_KEY_F11</name></member>
+    <member refid="group__keys_1ga1cacfdc4f842e94c3c4917b1a29fba28" kind="define"><name>MENTAL_KEY_F12</name></member>
+    <member refid="group__keys_1gae9783a5cf42f21ec54bce56edafbe6b6" kind="define"><name>MENTAL_KEY_F13</name></member>
+    <member refid="group__keys_1ga04bb9a13d0bbb78fe6c38f11ee285828" kind="define"><name>MENTAL_KEY_F14</name></member>
+    <member refid="group__keys_1ga04fc3f8f0f52978391d52266337e788b" kind="define"><name>MENTAL_KEY_F15</name></member>
+    <member refid="group__keys_1ga9e7c4de1e0f2f30166e1bf7f3acde2c2" kind="define"><name>MENTAL_KEY_F16</name></member>
+    <member refid="group__keys_1ga0f7458c245bf6c44ba22a70a179b4cbd" kind="define"><name>MENTAL_KEY_F17</name></member>
+    <member refid="group__keys_1gaeef4ffb4f2c504cde870ee4ea42cbccc" kind="define"><name>MENTAL_KEY_F18</name></member>
+    <member refid="group__keys_1ga444ce34cc619d3bb699ce764e6599d3e" kind="define"><name>MENTAL_KEY_F19</name></member>
+    <member refid="group__keys_1ga8ffe2a7f746a52a925824235ad4257f5" kind="define"><name>MENTAL_KEY_F20</name></member>
+    <member refid="group__keys_1ga7e4c834fb45094755db95e556dd900ef" kind="define"><name>MENTAL_KEY_F21</name></member>
+    <member refid="group__keys_1ga04a8f8725d1da462c5a0bbac09853f1d" kind="define"><name>MENTAL_KEY_F22</name></member>
+    <member refid="group__keys_1gabe8fa776d0a9169c6b768ee27a0a7595" kind="define"><name>MENTAL_KEY_F23</name></member>
+    <member refid="group__keys_1ga7ff7a597aca831ece7cea41b0235d5ee" kind="define"><name>MENTAL_KEY_F24</name></member>
+    <member refid="group__keys_1gaf2a67ec5d6608c73337d1edd603263ae" kind="define"><name>MENTAL_KEY_F25</name></member>
+    <member refid="group__keys_1gae115a40ac2634f4bf28e4bc9d54cc0aa" kind="define"><name>MENTAL_KEY_KP_0</name></member>
+    <member refid="group__keys_1ga4b0ac56999ff48743ee5a974a3c7ed64" kind="define"><name>MENTAL_KEY_KP_1</name></member>
+    <member refid="group__keys_1ga71f314a982f805eb1adce21ac2172e51" kind="define"><name>MENTAL_KEY_KP_2</name></member>
+    <member refid="group__keys_1ga659c83a691fcc3a0d4317a2367d6d28b" kind="define"><name>MENTAL_KEY_KP_3</name></member>
+    <member refid="group__keys_1gab02eccdf98488154da196b7829ffc81b" kind="define"><name>MENTAL_KEY_KP_4</name></member>
+    <member refid="group__keys_1ga8c217def9e3640ab13df2e9d6a0f239f" kind="define"><name>MENTAL_KEY_KP_5</name></member>
+    <member refid="group__keys_1gad16659fe4fce764fe1435a904ea094b9" kind="define"><name>MENTAL_KEY_KP_6</name></member>
+    <member refid="group__keys_1ga8d1190362fe736491092cb1a7e0416f0" kind="define"><name>MENTAL_KEY_KP_7</name></member>
+    <member refid="group__keys_1ga697f8b45a9000ba0660fbdd65d8756b0" kind="define"><name>MENTAL_KEY_KP_8</name></member>
+    <member refid="group__keys_1ga2248a8c9860b1f72795e84329d42a7d0" kind="define"><name>MENTAL_KEY_KP_9</name></member>
+    <member refid="group__keys_1ga3f21b8678e8cc9508433e514cf2602ed" kind="define"><name>MENTAL_KEY_KP_DECIMAL</name></member>
+    <member refid="group__keys_1gad142dc3a2138f2677ca03a2c88e0469d" kind="define"><name>MENTAL_KEY_KP_DIVIDE</name></member>
+    <member refid="group__keys_1ga69dea34e321acf00a5f8a09416359ba3" kind="define"><name>MENTAL_KEY_KP_MULTIPLY</name></member>
+    <member refid="group__keys_1ga69d6c2b271a77d3a1e9eb216662a3a9b" kind="define"><name>MENTAL_KEY_KP_SUBTRACT</name></member>
+    <member refid="group__keys_1ga1e6aab9df82dd7619d4cc4a6c41867af" kind="define"><name>MENTAL_KEY_KP_ADD</name></member>
+    <member refid="group__keys_1gaa478a4483695963b3acfa246cdeb623f" kind="define"><name>MENTAL_KEY_KP_ENTER</name></member>
+    <member refid="group__keys_1ga79fc949e789e190698467a76aee375d0" kind="define"><name>MENTAL_KEY_KP_EQUAL</name></member>
+    <member refid="group__keys_1ga3529048f4fd90cc5d5d662cf078ff693" kind="define"><name>MENTAL_KEY_LEFT_SHIFT</name></member>
+    <member refid="group__keys_1gaeafdf4d1ec8f3e1da821e6c9514dbae1" kind="define"><name>MENTAL_KEY_LEFT_CONTROL</name></member>
+    <member refid="group__keys_1gad8dd7aaac11e3e5dda267f0b621e0147" kind="define"><name>MENTAL_KEY_LEFT_ALT</name></member>
+    <member refid="group__keys_1ga43ad8e741e986fcc70b506653990dab7" kind="define"><name>MENTAL_KEY_LEFT_SUPER</name></member>
+    <member refid="group__keys_1gaa9736ba84b66af3106c823aa71d8da4b" kind="define"><name>MENTAL_KEY_RIGHT_SHIFT</name></member>
+    <member refid="group__keys_1gaed4f71c0004d3331fcc8556e7ea81da5" kind="define"><name>MENTAL_KEY_RIGHT_CONTROL</name></member>
+    <member refid="group__keys_1gad6528a37deee350bfafdf404701454c7" kind="define"><name>MENTAL_KEY_RIGHT_ALT</name></member>
+    <member refid="group__keys_1ga4070324b5f7cbe08f716c58b8ab8b29a" kind="define"><name>MENTAL_KEY_RIGHT_SUPER</name></member>
+    <member refid="group__keys_1ga953e5bca97b2acf812046f5f25fe2d5e" kind="define"><name>MENTAL_KEY_MENU</name></member>
+    <member refid="group__keys_1ga0fd4c2fb05e20173ff07d05d64872fc7" kind="define"><name>MENTAL_KEY_LAST</name></member>
+  </compound>
+  <compound refid="group__buttons" kind="group"><name>buttons</name>
+    <member refid="group__buttons_1ga475dc4689b2367ed1d8d6a98a5b39d3e" kind="define"><name>MENTAL_MOUSE_BUTTON_1</name></member>
+    <member refid="group__buttons_1ga31df8c51fd916beb0b86ec1dfbc23bc1" kind="define"><name>MENTAL_MOUSE_BUTTON_2</name></member>
+    <member refid="group__buttons_1ga0fab653e1f35c91fc6dc245ba1e89377" kind="define"><name>MENTAL_MOUSE_BUTTON_3</name></member>
+    <member refid="group__buttons_1ga62ce3a07a3a20e2b99020f42bb9bcd0f" kind="define"><name>MENTAL_MOUSE_BUTTON_4</name></member>
+    <member refid="group__buttons_1ga9b1e0a08c1f4fea396bbddb890bd5e48" kind="define"><name>MENTAL_MOUSE_BUTTON_5</name></member>
+    <member refid="group__buttons_1ga81f32c80476ffc31b26086eeed0ba789" kind="define"><name>MENTAL_MOUSE_BUTTON_6</name></member>
+    <member refid="group__buttons_1ga6db080e8b95607774b6a59829034b8fe" kind="define"><name>MENTAL_MOUSE_BUTTON_7</name></member>
+    <member refid="group__buttons_1ga148ca7d97fe11327db8d3cf2313f46e9" kind="define"><name>MENTAL_MOUSE_BUTTON_8</name></member>
+    <member refid="group__buttons_1gadc674ab81c93128e5866383f4b66dbff" kind="define"><name>MENTAL_MOUSE_BUTTON_LAST</name></member>
+    <member refid="group__buttons_1gab372d95f1e8570eebee4bdaf88ccb9a2" kind="define"><name>MENTAL_MOUSE_BUTTON_LEFT</name></member>
+    <member refid="group__buttons_1ga4096c1e77a21fa0bef7a32beeb3c34ea" kind="define"><name>MENTAL_MOUSE_BUTTON_RIGHT</name></member>
+    <member refid="group__buttons_1ga49c409f880938397c7de64dd14466714" kind="define"><name>MENTAL_MOUSE_BUTTON_MIDDLE</name></member>
+  </compound>
+  <compound refid="md_doc_2mental-doc" kind="page"><name>md_doc_2mental-doc</name>
+  </compound>
   <compound refid="md_README" kind="page"><name>md_README</name>
+  </compound>
+  <compound refid="dir_e68e8157741866f444e17edd764ebbae" kind="dir"><name>doc</name>
   </compound>
   <compound refid="dir_d44c64559bbebec7f509842c48db8b23" kind="dir"><name>include</name>
   </compound>

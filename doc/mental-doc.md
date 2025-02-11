@@ -3,6 +3,7 @@
  Members                        | Descriptions                                
 --------------------------------|---------------------------------------------
 `struct `[`MentalApplicationInfo`](#structMentalApplicationInfo) | Structure containing application information.
+`struct `[`MentalInstance`](#structMentalInstance) | 
 `struct `[`MentalInstanceCreateInfo`](#structMentalInstanceCreateInfo) | Structure containing information for creating an instance.
 
 # struct `MentalApplicationInfo` {#structMentalApplicationInfo}
@@ -52,6 +53,21 @@ Version of the engine.
 #### `public uint32_t `[`apiVersion`](#structMentalApplicationInfo_1a31c14901186b58ad1801a618bc8e8121) {#structMentalApplicationInfo_1a31c14901186b58ad1801a618bc8e8121}
 
 Version of the API.
+
+# struct `MentalInstance` {#structMentalInstance}
+
+## Summary
+
+ Members                        | Descriptions                                
+--------------------------------|---------------------------------------------
+`public `[`MentalApplicationInfo`](#structMentalApplicationInfo)` `[`appInfo`](#structMentalInstance_1a01215c57765e3a793614f119fa0fde48) | 
+`public `[`MentalInstanceCreateInfo`](#structMentalInstanceCreateInfo)` `[`instanceInfo`](#structMentalInstance_1aad5673f80ee12d52db6796962b5cb41a) | 
+
+## Members
+
+#### `public `[`MentalApplicationInfo`](#structMentalApplicationInfo)` `[`appInfo`](#structMentalInstance_1a01215c57765e3a793614f119fa0fde48) {#structMentalInstance_1a01215c57765e3a793614f119fa0fde48}
+
+#### `public `[`MentalInstanceCreateInfo`](#structMentalInstanceCreateInfo)` `[`instanceInfo`](#structMentalInstance_1aad5673f80ee12d52db6796962b5cb41a) {#structMentalInstance_1aad5673f80ee12d52db6796962b5cb41a}
 
 # struct `MentalInstanceCreateInfo` {#structMentalInstanceCreateInfo}
 

@@ -17,7 +17,7 @@
         </detaileddescription>
         <inbodydescription>
         </inbodydescription>
-        <location file="include/mental_xv_core.h" line="168" column="37" bodyfile="include/mental_xv_core.h" bodystart="168" bodyend="-1"/>
+        <location file="include/mental_xv_core.h" line="181" column="37" bodyfile="include/mental_xv_core.h" bodystart="181" bodyend="-1"/>
       </memberdef>
       <memberdef kind="variable" id="structMentalInstanceCreateInfo_1adf1491d6421cfcb15ad3e5996f592848" prot="public" static="no" mutable="no">
         <type>const void *</type>
@@ -32,7 +32,7 @@
         </detaileddescription>
         <inbodydescription>
         </inbodydescription>
-        <location file="include/mental_xv_core.h" line="169" column="36" bodyfile="include/mental_xv_core.h" bodystart="169" bodyend="-1"/>
+        <location file="include/mental_xv_core.h" line="182" column="36" bodyfile="include/mental_xv_core.h" bodystart="182" bodyend="-1"/>
       </memberdef>
       <memberdef kind="variable" id="structMentalInstanceCreateInfo_1aaa26a260d2575c6a4581cddc5a8aaa62" prot="public" static="no" mutable="no">
         <type><ref refid="mental__xv__core_8h_1a8001f712b14b0ececd970c22c972969a" kindref="member">MentalInstanceCreateFlags</ref></type>
@@ -47,7 +47,7 @@
         </detaileddescription>
         <inbodydescription>
         </inbodydescription>
-        <location file="include/mental_xv_core.h" line="170" column="37" bodyfile="include/mental_xv_core.h" bodystart="170" bodyend="-1"/>
+        <location file="include/mental_xv_core.h" line="183" column="37" bodyfile="include/mental_xv_core.h" bodystart="183" bodyend="-1"/>
       </memberdef>
       <memberdef kind="variable" id="structMentalInstanceCreateInfo_1a727f4c194e46fb87f1f093442a0a6674" prot="public" static="no" mutable="no">
         <type>const <ref refid="structMentalApplicationInfo" kindref="compound">MentalApplicationInfo</ref> *</type>
@@ -62,7 +62,7 @@
         </detaileddescription>
         <inbodydescription>
         </inbodydescription>
-        <location file="include/mental_xv_core.h" line="171" column="36" bodyfile="include/mental_xv_core.h" bodystart="171" bodyend="-1"/>
+        <location file="include/mental_xv_core.h" line="184" column="36" bodyfile="include/mental_xv_core.h" bodystart="184" bodyend="-1"/>
       </memberdef>
       <memberdef kind="variable" id="structMentalInstanceCreateInfo_1a89911e7d11c0208b449d1c4b7a127da5" prot="public" static="no" mutable="no">
         <type>uint32_t</type>
@@ -77,7 +77,7 @@
         </detaileddescription>
         <inbodydescription>
         </inbodydescription>
-        <location file="include/mental_xv_core.h" line="172" column="37" bodyfile="include/mental_xv_core.h" bodystart="172" bodyend="-1"/>
+        <location file="include/mental_xv_core.h" line="185" column="37" bodyfile="include/mental_xv_core.h" bodystart="185" bodyend="-1"/>
       </memberdef>
       <memberdef kind="variable" id="structMentalInstanceCreateInfo_1aa39f2523416b30281105df7ebb1a9a22" prot="public" static="no" mutable="no">
         <type>const char *const  *</type>
@@ -92,7 +92,7 @@
         </detaileddescription>
         <inbodydescription>
         </inbodydescription>
-        <location file="include/mental_xv_core.h" line="173" column="35" bodyfile="include/mental_xv_core.h" bodystart="173" bodyend="-1"/>
+        <location file="include/mental_xv_core.h" line="186" column="35" bodyfile="include/mental_xv_core.h" bodystart="186" bodyend="-1"/>
       </memberdef>
       <memberdef kind="variable" id="structMentalInstanceCreateInfo_1af29f97fa6365e2f365699ccf5fa6cc86" prot="public" static="no" mutable="no">
         <type>uint32_t</type>
@@ -107,7 +107,7 @@
         </detaileddescription>
         <inbodydescription>
         </inbodydescription>
-        <location file="include/mental_xv_core.h" line="174" column="37" bodyfile="include/mental_xv_core.h" bodystart="174" bodyend="-1"/>
+        <location file="include/mental_xv_core.h" line="187" column="37" bodyfile="include/mental_xv_core.h" bodystart="187" bodyend="-1"/>
       </memberdef>
       <memberdef kind="variable" id="structMentalInstanceCreateInfo_1a859a0d0dd65217b9e66a28958be09d52" prot="public" static="no" mutable="no">
         <type>const char *const  *</type>
@@ -122,7 +122,7 @@
         </detaileddescription>
         <inbodydescription>
         </inbodydescription>
-        <location file="include/mental_xv_core.h" line="175" column="35" bodyfile="include/mental_xv_core.h" bodystart="175" bodyend="-1"/>
+        <location file="include/mental_xv_core.h" line="188" column="35" bodyfile="include/mental_xv_core.h" bodystart="188" bodyend="-1"/>
       </memberdef>
     </sectiondef>
     <briefdescription>
@@ -144,7 +144,7 @@
         </childnode>
       </node>
     </collaborationgraph>
-    <location file="include/mental_xv_core.h" line="167" column="1" bodyfile="include/mental_xv_core.h" bodystart="167" bodyend="176"/>
+    <location file="include/mental_xv_core.h" line="180" column="1" bodyfile="include/mental_xv_core.h" bodystart="180" bodyend="189"/>
     <listofallmembers>
       <member refid="structMentalInstanceCreateInfo_1af29f97fa6365e2f365699ccf5fa6cc86" prot="public" virt="non-virtual"><scope>MentalInstanceCreateInfo</scope><name>enabledExtensionCount</name></member>
       <member refid="structMentalInstanceCreateInfo_1a89911e7d11c0208b449d1c4b7a127da5" prot="public" virt="non-virtual"><scope>MentalInstanceCreateInfo</scope><name>enabledLayerCount</name></member>

@@ -6,6 +6,19 @@
 #endif
 
 #define MENTAL_XV_VERSION_1_0
+
+#ifndef MENTAL_API_ENTRY
+    #define MENTAL_API_ENTRY
+
+    #ifndef MENTAL_API_CALL
+        #define MENTAL_API_CALL
+    #endif
+#endif
+
+#define MT_API_SUFFIX__VERSION_1_0 MT_API_SUFFIX_COMMON
+
+
+
 #include <stdint.h>
 
 /**
@@ -174,6 +187,62 @@ typedef struct MentalInstanceCreateInfo {
     uint32_t                        enabledExtensionCount;     /**< Number of enabled extensions. */
     const char* const*              ppEnabledExtensionNames;   /**< Array of enabled extension names. */
 } MentalInstanceCreateInfo;
+
+// TODO: implement it.
+typedef struct MentalInstance {
+    MentalApplicationInfo appInfo;
+    MentalInstanceCreateInfo instanceInfo;
+} MentalInstance;
+
+// TODO: implement it.
+MentalInstance* mentalCreateInstance(const MentalInstanceCreateInfo* instance_info);
+
+/*
+typedef struct _mental_platform_id *        mental_platform_id;
+typedef struct _mental_device_id *          mental_device_id;
+typedef struct _mental_context *            mental_context;
+typedef mental_bitfield              mental_device_type;
+
+*/
+/**
+ * @brief Retrieves the list of available MentalXV platforms.
+ *
+ * This function queries the number of available MentalXV platforms and returns
+ * their identifiers.
+ *
+ * @param num_entries The number of mt_platform_id entries that can be added to
+ *                    platforms. If platforms is not NULL, the number of
+ *                    mt_platform_id entries returned in the platforms array
+ *                    will be the minimum of the value specified by num_entries
+ *                    and the number of platforms available.
+ * @param platforms Returns a list of platform identifiers. The mt_platform_id
+ *                  values returned in platforms can be used to identify each
+ *                  available platform. If platforms is NULL, it is ignored.
+ * @param num_platforms Returns the number of platforms available. If
+ *                       num_platforms is NULL, it is ignored.
+ *
+ * @return MENTAL_SUCCESS if the function executed successfully. Otherwise, it
+ *         returns an error code indicating the type of error encountered.
+ */
+
+/*
+extern MENTAL_API_ENTRY uint32_t MENTAL_API_CALL
+mentalGetPlatfromIDs(
+    uint32_t                num_entries,
+    mental_platform_id*     platforms,
+    uint32_t                num_platforms
+); // MT_API_SUFFIX__VERSION_1_0;
+
+extern MENTAL_API_ENTRY uint32_t MENTAL_API_CALL
+mentalGetDeviceIDs(
+    mental_platform_id      platform,
+    mental_device_type      device_type,
+    uint32_t                num_entries,
+    mental_device_id *      device_id
+)
+*/
+
+
 
 #ifdef __cplusplus
     }

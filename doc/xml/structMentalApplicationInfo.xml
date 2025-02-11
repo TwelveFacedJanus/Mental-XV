@@ -17,7 +17,7 @@
         </detaileddescription>
         <inbodydescription>
         </inbodydescription>
-        <location file="include/mental_xv_core.h" line="152" column="28" bodyfile="include/mental_xv_core.h" bodystart="152" bodyend="-1"/>
+        <location file="include/mental_xv_core.h" line="165" column="28" bodyfile="include/mental_xv_core.h" bodystart="165" bodyend="-1"/>
       </memberdef>
       <memberdef kind="variable" id="structMentalApplicationInfo_1a42f026a9c165b1f7841f22145707c723" prot="public" static="no" mutable="no">
         <type>const void *</type>
@@ -32,7 +32,7 @@
         </detaileddescription>
         <inbodydescription>
         </inbodydescription>
-        <location file="include/mental_xv_core.h" line="153" column="27" bodyfile="include/mental_xv_core.h" bodystart="153" bodyend="-1"/>
+        <location file="include/mental_xv_core.h" line="166" column="27" bodyfile="include/mental_xv_core.h" bodystart="166" bodyend="-1"/>
       </memberdef>
       <memberdef kind="variable" id="structMentalApplicationInfo_1ad62d689d5ee1bbc561454a4e6fe762ad" prot="public" static="no" mutable="no">
         <type>const char *</type>
@@ -47,7 +47,7 @@
         </detaileddescription>
         <inbodydescription>
         </inbodydescription>
-        <location file="include/mental_xv_core.h" line="154" column="27" bodyfile="include/mental_xv_core.h" bodystart="154" bodyend="-1"/>
+        <location file="include/mental_xv_core.h" line="167" column="27" bodyfile="include/mental_xv_core.h" bodystart="167" bodyend="-1"/>
       </memberdef>
       <memberdef kind="variable" id="structMentalApplicationInfo_1a3172706bb52464086f3548c97271cbc6" prot="public" static="no" mutable="no">
         <type>uint32_t</type>
@@ -62,7 +62,7 @@
         </detaileddescription>
         <inbodydescription>
         </inbodydescription>
-        <location file="include/mental_xv_core.h" line="155" column="28" bodyfile="include/mental_xv_core.h" bodystart="155" bodyend="-1"/>
+        <location file="include/mental_xv_core.h" line="168" column="28" bodyfile="include/mental_xv_core.h" bodystart="168" bodyend="-1"/>
       </memberdef>
       <memberdef kind="variable" id="structMentalApplicationInfo_1a32fe1ca61f17300b4bd8a6a6d0b95b66" prot="public" static="no" mutable="no">
         <type>const char *</type>
@@ -77,7 +77,7 @@
         </detaileddescription>
         <inbodydescription>
         </inbodydescription>
-        <location file="include/mental_xv_core.h" line="156" column="27" bodyfile="include/mental_xv_core.h" bodystart="156" bodyend="-1"/>
+        <location file="include/mental_xv_core.h" line="169" column="27" bodyfile="include/mental_xv_core.h" bodystart="169" bodyend="-1"/>
       </memberdef>
       <memberdef kind="variable" id="structMentalApplicationInfo_1a7ec42998c0d337df529ac9010d53a320" prot="public" static="no" mutable="no">
         <type>uint32_t</type>
@@ -92,7 +92,7 @@
         </detaileddescription>
         <inbodydescription>
         </inbodydescription>
-        <location file="include/mental_xv_core.h" line="157" column="28" bodyfile="include/mental_xv_core.h" bodystart="157" bodyend="-1"/>
+        <location file="include/mental_xv_core.h" line="170" column="28" bodyfile="include/mental_xv_core.h" bodystart="170" bodyend="-1"/>
       </memberdef>
       <memberdef kind="variable" id="structMentalApplicationInfo_1a31c14901186b58ad1801a618bc8e8121" prot="public" static="no" mutable="no">
         <type>uint32_t</type>
@@ -107,7 +107,7 @@
         </detaileddescription>
         <inbodydescription>
         </inbodydescription>
-        <location file="include/mental_xv_core.h" line="158" column="28" bodyfile="include/mental_xv_core.h" bodystart="158" bodyend="-1"/>
+        <location file="include/mental_xv_core.h" line="171" column="28" bodyfile="include/mental_xv_core.h" bodystart="171" bodyend="-1"/>
       </memberdef>
     </sectiondef>
     <briefdescription>
@@ -116,7 +116,7 @@
     <detaileddescription>
 <para>This structure holds various pieces of information about the application, such as its name, version, engine name, and engine version. </para>
     </detaileddescription>
-    <location file="include/mental_xv_core.h" line="151" column="1" bodyfile="include/mental_xv_core.h" bodystart="151" bodyend="159"/>
+    <location file="include/mental_xv_core.h" line="164" column="1" bodyfile="include/mental_xv_core.h" bodystart="164" bodyend="172"/>
     <listofallmembers>
       <member refid="structMentalApplicationInfo_1a31c14901186b58ad1801a618bc8e8121" prot="public" virt="non-virtual"><scope>MentalApplicationInfo</scope><name>apiVersion</name></member>
       <member refid="structMentalApplicationInfo_1a3172706bb52464086f3548c97271cbc6" prot="public" virt="non-virtual"><scope>MentalApplicationInfo</scope><name>applicationVersion</name></member>

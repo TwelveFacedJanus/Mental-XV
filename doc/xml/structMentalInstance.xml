@@ -1,0 +1,69 @@
+<?xml version='1.0' encoding='UTF-8' standalone='no'?>
+<doxygen xmlns:xsi="http://www.w3.org/2001/XMLSchema-instance" xsi:noNamespaceSchemaLocation="compound.xsd" version="1.9.8" xml:lang="en-US">
+  <compounddef id="structMentalInstance" kind="struct" language="C++" prot="public">
+    <compoundname>MentalInstance</compoundname>
+    <includes refid="mental__xv__core_8h" local="no">mental_xv_core.h</includes>
+    <sectiondef kind="public-attrib">
+      <memberdef kind="variable" id="structMentalInstance_1a01215c57765e3a793614f119fa0fde48" prot="public" static="no" mutable="no">
+        <type><ref refid="structMentalApplicationInfo" kindref="compound">MentalApplicationInfo</ref></type>
+        <definition>MentalApplicationInfo MentalInstance::appInfo</definition>
+        <argsstring></argsstring>
+        <name>appInfo</name>
+        <qualifiedname>MentalInstance::appInfo</qualifiedname>
+        <briefdescription>
+        </briefdescription>
+        <detaileddescription>
+        </detaileddescription>
+        <inbodydescription>
+        </inbodydescription>
+        <location file="include/mental_xv_core.h" line="193" column="27" bodyfile="include/mental_xv_core.h" bodystart="193" bodyend="-1"/>
+      </memberdef>
+      <memberdef kind="variable" id="structMentalInstance_1aad5673f80ee12d52db6796962b5cb41a" prot="public" static="no" mutable="no">
+        <type><ref refid="structMentalInstanceCreateInfo" kindref="compound">MentalInstanceCreateInfo</ref></type>
+        <definition>MentalInstanceCreateInfo MentalInstance::instanceInfo</definition>
+        <argsstring></argsstring>
+        <name>instanceInfo</name>
+        <qualifiedname>MentalInstance::instanceInfo</qualifiedname>
+        <briefdescription>
+        </briefdescription>
+        <detaileddescription>
+        </detaileddescription>
+        <inbodydescription>
+        </inbodydescription>
+        <location file="include/mental_xv_core.h" line="194" column="30" bodyfile="include/mental_xv_core.h" bodystart="194" bodyend="-1"/>
+      </memberdef>
+    </sectiondef>
+    <briefdescription>
+    </briefdescription>
+    <detaileddescription>
+    </detaileddescription>
+    <collaborationgraph>
+      <node id="2">
+        <label>MentalApplicationInfo</label>
+        <link refid="structMentalApplicationInfo"/>
+      </node>
+      <node id="1">
+        <label>MentalInstance</label>
+        <link refid="structMentalInstance"/>
+        <childnode refid="2" relation="usage">
+          <edgelabel>appInfo</edgelabel>
+        </childnode>
+        <childnode refid="3" relation="usage">
+          <edgelabel>instanceInfo</edgelabel>
+        </childnode>
+      </node>
+      <node id="3">
+        <label>MentalInstanceCreateInfo</label>
+        <link refid="structMentalInstanceCreateInfo"/>
+        <childnode refid="2" relation="usage">
+          <edgelabel>pApplicationInfo</edgelabel>
+        </childnode>
+      </node>
+    </collaborationgraph>
+    <location file="include/mental_xv_core.h" line="192" column="1" bodyfile="include/mental_xv_core.h" bodystart="192" bodyend="195"/>
+    <listofallmembers>
+      <member refid="structMentalInstance_1a01215c57765e3a793614f119fa0fde48" prot="public" virt="non-virtual"><scope>MentalInstance</scope><name>appInfo</name></member>
+      <member refid="structMentalInstance_1aad5673f80ee12d52db6796962b5cb41a" prot="public" virt="non-virtual"><scope>MentalInstance</scope><name>instanceInfo</name></member>
+    </listofallmembers>
+  </compounddef>
+</doxygen>

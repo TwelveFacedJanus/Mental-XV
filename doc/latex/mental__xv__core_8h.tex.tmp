@@ -9,11 +9,19 @@ Include dependency graph for mental\+\_\+xv\+\_\+core.\+h\+:
 struct \mbox{\hyperlink{structMentalApplicationInfo}{Mental\+Application\+Info}}
 \begin{DoxyCompactList}\small\item\em Structure containing application information. \end{DoxyCompactList}\item 
 struct \mbox{\hyperlink{structMentalInstanceCreateInfo}{Mental\+Instance\+Create\+Info}}
-\begin{DoxyCompactList}\small\item\em Structure containing information for creating an instance. \end{DoxyCompactList}\end{DoxyCompactItemize}
+\begin{DoxyCompactList}\small\item\em Structure containing information for creating an instance. \end{DoxyCompactList}\item 
+struct \mbox{\hyperlink{structMentalInstance}{Mental\+Instance}}
+\end{DoxyCompactItemize}
 \doxysubsubsection*{Macros}
 \begin{DoxyCompactItemize}
 \item 
 \#define \mbox{\hyperlink{mental__xv__core_8h_a21917fcae9e377836c840ef4899957fb}{MENTAL\+\_\+\+XV\+\_\+\+VERSION\+\_\+1\+\_\+0}}
+\item 
+\#define \mbox{\hyperlink{mental__xv__core_8h_a9d4c08915de2b4f363d2e6273ebb78b1}{MENTAL\+\_\+\+API\+\_\+\+ENTRY}}
+\item 
+\#define \mbox{\hyperlink{mental__xv__core_8h_acc03eaed49315df63b4d7bce1fefd2a3}{MENTAL\+\_\+\+API\+\_\+\+CALL}}
+\item 
+\#define \mbox{\hyperlink{mental__xv__core_8h_a40600f1f472f064ea2c91e957e969eba}{MT\+\_\+\+API\+\_\+\+SUFFIX\+\_\+\+\_\+\+VERSION\+\_\+1\+\_\+0}}~MT\+\_\+\+API\+\_\+\+SUFFIX\+\_\+\+COMMON
 \item 
 \#define \mbox{\hyperlink{mental__xv__core_8h_ae0c9f90ac68f9340368d4174cdd635d7}{MENTAL\+\_\+\+XV\+\_\+\+VERSION\+\_\+\+VARIANT}}(version)~((uint32\+\_\+t)(version) $>$$>$ 29U)
 \begin{DoxyCompactList}\small\item\em This macro retrieves the version variant of the API version. \end{DoxyCompactList}\item 
@@ -37,7 +45,9 @@ typedef \mbox{\hyperlink{mental__xv__core_8h_a85c06e36c77c7cb291a034a60400d96e}{
 typedef struct \mbox{\hyperlink{structMentalApplicationInfo}{Mental\+Application\+Info}} \mbox{\hyperlink{mental__xv__core_8h_a613d35a7f8f04ca7ef8f7a683c6c9374}{Mental\+Application\+Info}}
 \begin{DoxyCompactList}\small\item\em Structure containing application information. \end{DoxyCompactList}\item 
 typedef struct \mbox{\hyperlink{structMentalInstanceCreateInfo}{Mental\+Instance\+Create\+Info}} \mbox{\hyperlink{mental__xv__core_8h_ae33b6aa8a1c3d466897d03c247cee793}{Mental\+Instance\+Create\+Info}}
-\begin{DoxyCompactList}\small\item\em Structure containing information for creating an instance. \end{DoxyCompactList}\end{DoxyCompactItemize}
+\begin{DoxyCompactList}\small\item\em Structure containing information for creating an instance. \end{DoxyCompactList}\item 
+typedef struct \mbox{\hyperlink{structMentalInstance}{Mental\+Instance}} \mbox{\hyperlink{mental__xv__core_8h_a7041fd4d22486ae44232796d8f9789b6}{Mental\+Instance}}
+\end{DoxyCompactItemize}
 \doxysubsubsection*{Enumerations}
 \begin{DoxyCompactItemize}
 \item 
@@ -55,9 +65,26 @@ enum \mbox{\hyperlink{mental__xv__core_8h_a4040728f3adc443389084c52cc3dacf8}{Men
 , \mbox{\hyperlink{mental__xv__core_8h_a4040728f3adc443389084c52cc3dacf8a10dc2ca6e0779e1e2bae1ae2ac1d2bbe}{MT\+\_\+\+STRUCTURE\+\_\+\+TYPE\+\_\+\+ENGINE\+\_\+\+INFO}} = 1
  \}
 \begin{DoxyCompactList}\small\item\em Enumeration representing the possible structure types. \end{DoxyCompactList}\end{DoxyCompactItemize}
+\doxysubsubsection*{Functions}
+\begin{DoxyCompactItemize}
+\item 
+\mbox{\hyperlink{structMentalInstance}{Mental\+Instance}} \texorpdfstring{$\ast$}{*} \mbox{\hyperlink{mental__xv__core_8h_acc985910c263543ce653473dd919a6ab}{mental\+Create\+Instance}} (const \mbox{\hyperlink{structMentalInstanceCreateInfo}{Mental\+Instance\+Create\+Info}} \texorpdfstring{$\ast$}{*}instance\+\_\+info)
+\end{DoxyCompactItemize}
 
 
 \doxysubsection{Macro Definition Documentation}
+\Hypertarget{mental__xv__core_8h_acc03eaed49315df63b4d7bce1fefd2a3}\label{mental__xv__core_8h_acc03eaed49315df63b4d7bce1fefd2a3} 
+\index{mental\_xv\_core.h@{mental\_xv\_core.h}!MENTAL\_API\_CALL@{MENTAL\_API\_CALL}}
+\index{MENTAL\_API\_CALL@{MENTAL\_API\_CALL}!mental\_xv\_core.h@{mental\_xv\_core.h}}
+\doxysubsubsection{\texorpdfstring{MENTAL\_API\_CALL}{MENTAL\_API\_CALL}}
+{\footnotesize\ttfamily \#define MENTAL\+\_\+\+API\+\_\+\+CALL}
+
+\Hypertarget{mental__xv__core_8h_a9d4c08915de2b4f363d2e6273ebb78b1}\label{mental__xv__core_8h_a9d4c08915de2b4f363d2e6273ebb78b1} 
+\index{mental\_xv\_core.h@{mental\_xv\_core.h}!MENTAL\_API\_ENTRY@{MENTAL\_API\_ENTRY}}
+\index{MENTAL\_API\_ENTRY@{MENTAL\_API\_ENTRY}!mental\_xv\_core.h@{mental\_xv\_core.h}}
+\doxysubsubsection{\texorpdfstring{MENTAL\_API\_ENTRY}{MENTAL\_API\_ENTRY}}
+{\footnotesize\ttfamily \#define MENTAL\+\_\+\+API\+\_\+\+ENTRY}
+
 \Hypertarget{mental__xv__core_8h_a21917fcae9e377836c840ef4899957fb}\label{mental__xv__core_8h_a21917fcae9e377836c840ef4899957fb} 
 \index{mental\_xv\_core.h@{mental\_xv\_core.h}!MENTAL\_XV\_VERSION\_1\_0@{MENTAL\_XV\_VERSION\_1\_0}}
 \index{MENTAL\_XV\_VERSION\_1\_0@{MENTAL\_XV\_VERSION\_1\_0}!mental\_xv\_core.h@{mental\_xv\_core.h}}
@@ -144,6 +171,12 @@ It shifts the 32-\/bit version integer to the right by 29 bits. This means that 
 \begin{DoxyReturn}{Returns}
 The version variant. 
 \end{DoxyReturn}
+\Hypertarget{mental__xv__core_8h_a40600f1f472f064ea2c91e957e969eba}\label{mental__xv__core_8h_a40600f1f472f064ea2c91e957e969eba} 
+\index{mental\_xv\_core.h@{mental\_xv\_core.h}!MT\_API\_SUFFIX\_\_VERSION\_1\_0@{MT\_API\_SUFFIX\_\_VERSION\_1\_0}}
+\index{MT\_API\_SUFFIX\_\_VERSION\_1\_0@{MT\_API\_SUFFIX\_\_VERSION\_1\_0}!mental\_xv\_core.h@{mental\_xv\_core.h}}
+\doxysubsubsection{\texorpdfstring{MT\_API\_SUFFIX\_\_VERSION\_1\_0}{MT\_API\_SUFFIX\_\_VERSION\_1\_0}}
+{\footnotesize\ttfamily \#define MT\+\_\+\+API\+\_\+\+SUFFIX\+\_\+\+\_\+\+VERSION\+\_\+1\+\_\+0~MT\+\_\+\+API\+\_\+\+SUFFIX\+\_\+\+COMMON}
+
 
 
 \doxysubsection{Typedef Documentation}
@@ -190,7 +223,13 @@ Example usage\+:
 \DoxyCodeLine{\}}
 
 \end{DoxyCode}
- \Hypertarget{mental__xv__core_8h_a8001f712b14b0ececd970c22c972969a}\label{mental__xv__core_8h_a8001f712b14b0ececd970c22c972969a} 
+ \Hypertarget{mental__xv__core_8h_a7041fd4d22486ae44232796d8f9789b6}\label{mental__xv__core_8h_a7041fd4d22486ae44232796d8f9789b6} 
+\index{mental\_xv\_core.h@{mental\_xv\_core.h}!MentalInstance@{MentalInstance}}
+\index{MentalInstance@{MentalInstance}!mental\_xv\_core.h@{mental\_xv\_core.h}}
+\doxysubsubsection{\texorpdfstring{MentalInstance}{MentalInstance}}
+{\footnotesize\ttfamily typedef struct \mbox{\hyperlink{structMentalInstance}{Mental\+Instance}} \mbox{\hyperlink{structMentalInstance}{Mental\+Instance}}}
+
+\Hypertarget{mental__xv__core_8h_a8001f712b14b0ececd970c22c972969a}\label{mental__xv__core_8h_a8001f712b14b0ececd970c22c972969a} 
 \index{mental\_xv\_core.h@{mental\_xv\_core.h}!MentalInstanceCreateFlags@{MentalInstanceCreateFlags}}
 \index{MentalInstanceCreateFlags@{MentalInstanceCreateFlags}!mental\_xv\_core.h@{mental\_xv\_core.h}}
 \doxysubsubsection{\texorpdfstring{MentalInstanceCreateFlags}{MentalInstanceCreateFlags}}
@@ -321,3 +360,12 @@ MT\+\_\+\+STRUCTURE\+\_\+\+TYPE\+\_\+\+ENGINE\+\_\+\+INFO&Structure for engine i
 \hline
 
 \end{DoxyEnumFields}
+
+
+\doxysubsection{Function Documentation}
+\Hypertarget{mental__xv__core_8h_acc985910c263543ce653473dd919a6ab}\label{mental__xv__core_8h_acc985910c263543ce653473dd919a6ab} 
+\index{mental\_xv\_core.h@{mental\_xv\_core.h}!mentalCreateInstance@{mentalCreateInstance}}
+\index{mentalCreateInstance@{mentalCreateInstance}!mental\_xv\_core.h@{mental\_xv\_core.h}}
+\doxysubsubsection{\texorpdfstring{mentalCreateInstance()}{mentalCreateInstance()}}
+{\footnotesize\ttfamily \mbox{\hyperlink{structMentalInstance}{Mental\+Instance}} \texorpdfstring{$\ast$}{*} mental\+Create\+Instance (\begin{DoxyParamCaption}\item[{const \mbox{\hyperlink{structMentalInstanceCreateInfo}{Mental\+Instance\+Create\+Info}} \texorpdfstring{$\ast$}{*}}]{instance\+\_\+info }\end{DoxyParamCaption})}
+

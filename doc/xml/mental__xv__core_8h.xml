@@ -16,6 +16,7 @@
     </incdepgraph>
     <innerclass refid="structMentalApplicationInfo" prot="public">MentalApplicationInfo</innerclass>
     <innerclass refid="structMentalInstanceCreateInfo" prot="public">MentalInstanceCreateInfo</innerclass>
+    <innerclass refid="structMentalInstance" prot="public">MentalInstance</innerclass>
     <sectiondef kind="define">
       <memberdef kind="define" id="mental__xv__core_8h_1a21917fcae9e377836c840ef4899957fb" prot="public" static="no">
         <name>MENTAL_XV_VERSION_1_0</name>
@@ -26,6 +27,37 @@
         <inbodydescription>
         </inbodydescription>
         <location file="include/mental_xv_core.h" line="8" column="9" bodyfile="include/mental_xv_core.h" bodystart="8" bodyend="-1"/>
+      </memberdef>
+      <memberdef kind="define" id="mental__xv__core_8h_1a9d4c08915de2b4f363d2e6273ebb78b1" prot="public" static="no">
+        <name>MENTAL_API_ENTRY</name>
+        <briefdescription>
+        </briefdescription>
+        <detaileddescription>
+        </detaileddescription>
+        <inbodydescription>
+        </inbodydescription>
+        <location file="include/mental_xv_core.h" line="11" column="13" bodyfile="include/mental_xv_core.h" bodystart="11" bodyend="-1"/>
+      </memberdef>
+      <memberdef kind="define" id="mental__xv__core_8h_1acc03eaed49315df63b4d7bce1fefd2a3" prot="public" static="no">
+        <name>MENTAL_API_CALL</name>
+        <briefdescription>
+        </briefdescription>
+        <detaileddescription>
+        </detaileddescription>
+        <inbodydescription>
+        </inbodydescription>
+        <location file="include/mental_xv_core.h" line="14" column="17" bodyfile="include/mental_xv_core.h" bodystart="14" bodyend="-1"/>
+      </memberdef>
+      <memberdef kind="define" id="mental__xv__core_8h_1a40600f1f472f064ea2c91e957e969eba" prot="public" static="no">
+        <name>MT_API_SUFFIX__VERSION_1_0</name>
+        <initializer>MT_API_SUFFIX_COMMON</initializer>
+        <briefdescription>
+        </briefdescription>
+        <detaileddescription>
+        </detaileddescription>
+        <inbodydescription>
+        </inbodydescription>
+        <location file="include/mental_xv_core.h" line="18" column="9" bodyfile="include/mental_xv_core.h" bodystart="18" bodyend="-1"/>
       </memberdef>
       <memberdef kind="define" id="mental__xv__core_8h_1ae0c9f90ac68f9340368d4174cdd635d7" prot="public" static="no">
         <name>MENTAL_XV_VERSION_VARIANT</name>
@@ -51,7 +83,7 @@
         </detaileddescription>
         <inbodydescription>
         </inbodydescription>
-        <location file="include/mental_xv_core.h" line="21" column="9" bodyfile="include/mental_xv_core.h" bodystart="21" bodyend="-1"/>
+        <location file="include/mental_xv_core.h" line="34" column="9" bodyfile="include/mental_xv_core.h" bodystart="34" bodyend="-1"/>
       </memberdef>
       <memberdef kind="define" id="mental__xv__core_8h_1abdb2bee204fe16ce94de34809b44d333" prot="public" static="no">
         <name>MENTAL_XV_VERSION_MAJOR</name>
@@ -77,7 +109,7 @@
         </detaileddescription>
         <inbodydescription>
         </inbodydescription>
-        <location file="include/mental_xv_core.h" line="33" column="9" bodyfile="include/mental_xv_core.h" bodystart="33" bodyend="-1"/>
+        <location file="include/mental_xv_core.h" line="46" column="9" bodyfile="include/mental_xv_core.h" bodystart="46" bodyend="-1"/>
       </memberdef>
       <memberdef kind="define" id="mental__xv__core_8h_1a95cfa6f75ba9ec499f0f96478454a225" prot="public" static="no">
         <name>MENTAL_XV_VERSION_MINOR</name>
@@ -103,7 +135,7 @@
         </detaileddescription>
         <inbodydescription>
         </inbodydescription>
-        <location file="include/mental_xv_core.h" line="45" column="9" bodyfile="include/mental_xv_core.h" bodystart="45" bodyend="-1"/>
+        <location file="include/mental_xv_core.h" line="58" column="9" bodyfile="include/mental_xv_core.h" bodystart="58" bodyend="-1"/>
       </memberdef>
       <memberdef kind="define" id="mental__xv__core_8h_1a72f4c99020cca6079dea03f6715f3c92" prot="public" static="no">
         <name>MENTAL_XV_VERSION_PATCH</name>
@@ -129,7 +161,7 @@
         </detaileddescription>
         <inbodydescription>
         </inbodydescription>
-        <location file="include/mental_xv_core.h" line="57" column="9" bodyfile="include/mental_xv_core.h" bodystart="57" bodyend="-1"/>
+        <location file="include/mental_xv_core.h" line="70" column="9" bodyfile="include/mental_xv_core.h" bodystart="70" bodyend="-1"/>
       </memberdef>
     </sectiondef>
     <sectiondef kind="enum">
@@ -207,7 +239,7 @@
         </detaileddescription>
         <inbodydescription>
         </inbodydescription>
-        <location file="include/mental_xv_core.h" line="110" column="1" bodyfile="include/mental_xv_core.h" bodystart="111" bodyend="118"/>
+        <location file="include/mental_xv_core.h" line="123" column="1" bodyfile="include/mental_xv_core.h" bodystart="124" bodyend="131"/>
       </memberdef>
       <memberdef kind="enum" id="mental__xv__core_8h_1a4040728f3adc443389084c52cc3dacf8" prot="public" static="no" strong="no">
         <type></type>
@@ -243,7 +275,7 @@
         </detaileddescription>
         <inbodydescription>
         </inbodydescription>
-        <location file="include/mental_xv_core.h" line="132" column="1" bodyfile="include/mental_xv_core.h" bodystart="132" bodyend="135"/>
+        <location file="include/mental_xv_core.h" line="145" column="1" bodyfile="include/mental_xv_core.h" bodystart="145" bodyend="148"/>
       </memberdef>
     </sectiondef>
     <sectiondef kind="typedef">
@@ -277,7 +309,7 @@
         </detaileddescription>
         <inbodydescription>
         </inbodydescription>
-        <location file="include/mental_xv_core.h" line="92" column="18" bodyfile="include/mental_xv_core.h" bodystart="92" bodyend="-1"/>
+        <location file="include/mental_xv_core.h" line="105" column="18" bodyfile="include/mental_xv_core.h" bodystart="105" bodyend="-1"/>
       </memberdef>
       <memberdef kind="typedef" id="mental__xv__core_8h_1a1335103b1e885f677af00aa47df4f1af" prot="public" static="no">
         <type>enum <ref refid="mental__xv__core_8h_1af7302d331733011c84091974c3ba1e99" kindref="member">MentalResult</ref></type>
@@ -301,7 +333,7 @@
         </detaileddescription>
         <inbodydescription>
         </inbodydescription>
-        <location file="include/mental_xv_core.h" line="118" column="14"/>
+        <location file="include/mental_xv_core.h" line="131" column="14"/>
       </memberdef>
       <memberdef kind="typedef" id="mental__xv__core_8h_1a829bce00e03e07c0d1b874776b0e5611" prot="public" static="no">
         <type>enum <ref refid="mental__xv__core_8h_1a4040728f3adc443389084c52cc3dacf8" kindref="member">MentalStructureType</ref></type>
@@ -321,7 +353,7 @@
         </detaileddescription>
         <inbodydescription>
         </inbodydescription>
-        <location file="include/mental_xv_core.h" line="135" column="21"/>
+        <location file="include/mental_xv_core.h" line="148" column="21"/>
       </memberdef>
       <memberdef kind="typedef" id="mental__xv__core_8h_1a8001f712b14b0ececd970c22c972969a" prot="public" static="no">
         <type><ref refid="mental__xv__core_8h_1a85c06e36c77c7cb291a034a60400d96e" kindref="member">MentalFlags</ref></type>
@@ -336,7 +368,7 @@
         </detaileddescription>
         <inbodydescription>
         </inbodydescription>
-        <location file="include/mental_xv_core.h" line="143" column="21" bodyfile="include/mental_xv_core.h" bodystart="143" bodyend="-1"/>
+        <location file="include/mental_xv_core.h" line="156" column="21" bodyfile="include/mental_xv_core.h" bodystart="156" bodyend="-1"/>
       </memberdef>
       <memberdef kind="typedef" id="mental__xv__core_8h_1a613d35a7f8f04ca7ef8f7a683c6c9374" prot="public" static="no">
         <type>struct <ref refid="structMentalApplicationInfo" kindref="compound">MentalApplicationInfo</ref></type>
@@ -351,7 +383,7 @@
         </detaileddescription>
         <inbodydescription>
         </inbodydescription>
-        <location file="include/mental_xv_core.h" line="159" column="23"/>
+        <location file="include/mental_xv_core.h" line="172" column="23"/>
       </memberdef>
       <memberdef kind="typedef" id="mental__xv__core_8h_1ae33b6aa8a1c3d466897d03c247cee793" prot="public" static="no">
         <type>struct <ref refid="structMentalInstanceCreateInfo" kindref="compound">MentalInstanceCreateInfo</ref></type>
@@ -366,7 +398,39 @@
         </detaileddescription>
         <inbodydescription>
         </inbodydescription>
-        <location file="include/mental_xv_core.h" line="176" column="26"/>
+        <location file="include/mental_xv_core.h" line="189" column="26"/>
+      </memberdef>
+      <memberdef kind="typedef" id="mental__xv__core_8h_1a7041fd4d22486ae44232796d8f9789b6" prot="public" static="no">
+        <type>struct <ref refid="structMentalInstance" kindref="compound">MentalInstance</ref></type>
+        <definition>typedef struct MentalInstance MentalInstance</definition>
+        <argsstring></argsstring>
+        <name>MentalInstance</name>
+        <briefdescription>
+        </briefdescription>
+        <detaileddescription>
+        </detaileddescription>
+        <inbodydescription>
+        </inbodydescription>
+        <location file="include/mental_xv_core.h" line="195" column="16"/>
+      </memberdef>
+    </sectiondef>
+    <sectiondef kind="func">
+      <memberdef kind="function" id="mental__xv__core_8h_1acc985910c263543ce653473dd919a6ab" prot="public" static="no" const="no" explicit="no" inline="no" virt="non-virtual">
+        <type><ref refid="structMentalInstance" kindref="compound">MentalInstance</ref> *</type>
+        <definition>MentalInstance * mentalCreateInstance</definition>
+        <argsstring>(const MentalInstanceCreateInfo *instance_info)</argsstring>
+        <name>mentalCreateInstance</name>
+        <param>
+          <type>const <ref refid="structMentalInstanceCreateInfo" kindref="compound">MentalInstanceCreateInfo</ref> *</type>
+          <declname>instance_info</declname>
+        </param>
+        <briefdescription>
+        </briefdescription>
+        <detaileddescription>
+        </detaileddescription>
+        <inbodydescription>
+        </inbodydescription>
+        <location file="include/mental_xv_core.h" line="198" column="16" declfile="include/mental_xv_core.h" declline="198" declcolumn="16"/>
       </memberdef>
     </sectiondef>
     <briefdescription>
@@ -382,61 +446,109 @@
 <codeline lineno="6"><highlight class="normal"></highlight><highlight class="preprocessor">#endif</highlight><highlight class="normal"></highlight></codeline>
 <codeline lineno="7"><highlight class="normal"></highlight></codeline>
 <codeline lineno="8" refid="mental__xv__core_8h_1a21917fcae9e377836c840ef4899957fb" refkind="member"><highlight class="normal"></highlight><highlight class="preprocessor">#define<sp/>MENTAL_XV_VERSION_1_0</highlight><highlight class="normal"></highlight></codeline>
-<codeline lineno="9"><highlight class="normal"></highlight><highlight class="preprocessor">#include<sp/>&lt;stdint.h&gt;</highlight><highlight class="normal"></highlight></codeline>
-<codeline lineno="10"><highlight class="normal"></highlight></codeline>
-<codeline lineno="21" refid="mental__xv__core_8h_1ae0c9f90ac68f9340368d4174cdd635d7" refkind="member"><highlight class="normal"></highlight><highlight class="preprocessor">#define<sp/>MENTAL_XV_VERSION_VARIANT(version)<sp/>((uint32_t)(version)<sp/>&gt;&gt;<sp/>29U)</highlight><highlight class="normal"></highlight></codeline>
-<codeline lineno="22"><highlight class="normal"></highlight></codeline>
-<codeline lineno="33" refid="mental__xv__core_8h_1abdb2bee204fe16ce94de34809b44d333" refkind="member"><highlight class="normal"></highlight><highlight class="preprocessor">#define<sp/>MENTAL_XV_VERSION_MAJOR(version)<sp/>(((uint32_t)(version)<sp/>&gt;&gt;<sp/>22U)<sp/>&amp;<sp/>0x7FU)</highlight><highlight class="normal"></highlight></codeline>
-<codeline lineno="34"><highlight class="normal"></highlight></codeline>
-<codeline lineno="45" refid="mental__xv__core_8h_1a95cfa6f75ba9ec499f0f96478454a225" refkind="member"><highlight class="normal"></highlight><highlight class="preprocessor">#define<sp/>MENTAL_XV_VERSION_MINOR(version)<sp/>(((uint32_t)(version)<sp/>&gt;&gt;<sp/>12U)<sp/>&amp;<sp/>0x3FFU)</highlight><highlight class="normal"></highlight></codeline>
-<codeline lineno="46"><highlight class="normal"></highlight></codeline>
-<codeline lineno="57" refid="mental__xv__core_8h_1a72f4c99020cca6079dea03f6715f3c92" refkind="member"><highlight class="normal"></highlight><highlight class="preprocessor">#define<sp/>MENTAL_XV_VERSION_PATCH(version)<sp/>((uint32_t)(version)<sp/>&amp;<sp/>0xFFFU)</highlight><highlight class="normal"></highlight></codeline>
-<codeline lineno="58"><highlight class="normal"></highlight></codeline>
-<codeline lineno="92" refid="mental__xv__core_8h_1a85c06e36c77c7cb291a034a60400d96e" refkind="member"><highlight class="normal"></highlight><highlight class="keyword">typedef</highlight><highlight class="normal"><sp/>uint32_t<sp/><ref refid="mental__xv__core_8h_1a85c06e36c77c7cb291a034a60400d96e" kindref="member">MentalFlags</ref>;</highlight></codeline>
-<codeline lineno="93"><highlight class="normal"></highlight></codeline>
-<codeline lineno="110" refid="mental__xv__core_8h_1af7302d331733011c84091974c3ba1e99" refkind="member"><highlight class="normal"></highlight><highlight class="keyword">typedef</highlight><highlight class="normal"><sp/></highlight><highlight class="keyword">enum</highlight><highlight class="normal"><sp/><ref refid="mental__xv__core_8h_1af7302d331733011c84091974c3ba1e99" kindref="member">MentalResult</ref></highlight></codeline>
-<codeline lineno="111"><highlight class="normal">{</highlight></codeline>
-<codeline lineno="112" refid="mental__xv__core_8h_1af7302d331733011c84091974c3ba1e99a078bb99cd4b22a8242ae80d329a15b48" refkind="member"><highlight class="normal"><sp/><sp/><sp/><sp/><ref refid="mental__xv__core_8h_1af7302d331733011c84091974c3ba1e99a078bb99cd4b22a8242ae80d329a15b48" kindref="member">MT_SUCCESS</ref><sp/><sp/><sp/><sp/><sp/>=<sp/>0,<sp/><sp/><sp/><sp/><sp/></highlight></codeline>
-<codeline lineno="113" refid="mental__xv__core_8h_1af7302d331733011c84091974c3ba1e99a257f20243d6089a1f80b98212076ee6f" refkind="member"><highlight class="normal"><sp/><sp/><sp/><sp/><ref refid="mental__xv__core_8h_1af7302d331733011c84091974c3ba1e99a257f20243d6089a1f80b98212076ee6f" kindref="member">MT_NOT_READY</ref><sp/><sp/><sp/>=<sp/>1,<sp/><sp/><sp/><sp/><sp/></highlight></codeline>
-<codeline lineno="114" refid="mental__xv__core_8h_1af7302d331733011c84091974c3ba1e99a78ff5b702dc962d56b91b15acb9c9c95" refkind="member"><highlight class="normal"><sp/><sp/><sp/><sp/><ref refid="mental__xv__core_8h_1af7302d331733011c84091974c3ba1e99a78ff5b702dc962d56b91b15acb9c9c95" kindref="member">MT_EVENT_SET</ref><sp/><sp/><sp/>=<sp/>3,<sp/><sp/><sp/><sp/><sp/></highlight></codeline>
-<codeline lineno="115" refid="mental__xv__core_8h_1af7302d331733011c84091974c3ba1e99a3bdf3a9790312087808d00e29188136d" refkind="member"><highlight class="normal"><sp/><sp/><sp/><sp/><ref refid="mental__xv__core_8h_1af7302d331733011c84091974c3ba1e99a3bdf3a9790312087808d00e29188136d" kindref="member">MT_EVENT_RESET</ref><sp/>=<sp/>4,<sp/><sp/><sp/><sp/><sp/></highlight></codeline>
-<codeline lineno="116" refid="mental__xv__core_8h_1af7302d331733011c84091974c3ba1e99a89e7f0e8457ef03254f379fa0313d894" refkind="member"><highlight class="normal"><sp/><sp/><sp/><sp/><ref refid="mental__xv__core_8h_1af7302d331733011c84091974c3ba1e99a89e7f0e8457ef03254f379fa0313d894" kindref="member">MT_INCOMPLETE</ref><sp/><sp/>=<sp/>5,<sp/><sp/><sp/><sp/><sp/></highlight></codeline>
-<codeline lineno="117"><highlight class="normal"><sp/><sp/><sp/><sp/><ref refid="mental__xv__core_8h_1af7302d331733011c84091974c3ba1e99a53ef8696bc290003828824a413777589" kindref="member">MT_ERROR</ref><sp/><sp/><sp/><sp/><sp/><sp/><sp/>=<sp/>6<sp/><sp/><sp/><sp/><sp/><sp/></highlight></codeline>
-<codeline lineno="118" refid="mental__xv__core_8h_1a1335103b1e885f677af00aa47df4f1af" refkind="member"><highlight class="normal">}<sp/><ref refid="mental__xv__core_8h_1af7302d331733011c84091974c3ba1e99" kindref="member">MentalResult</ref>;</highlight></codeline>
-<codeline lineno="119"><highlight class="normal"></highlight></codeline>
-<codeline lineno="132" refid="mental__xv__core_8h_1a4040728f3adc443389084c52cc3dacf8" refkind="member"><highlight class="normal"></highlight><highlight class="keyword">typedef</highlight><highlight class="normal"><sp/></highlight><highlight class="keyword">enum</highlight><highlight class="normal"><sp/><ref refid="mental__xv__core_8h_1a4040728f3adc443389084c52cc3dacf8" kindref="member">MentalStructureType</ref><sp/>{</highlight></codeline>
-<codeline lineno="133" refid="mental__xv__core_8h_1a4040728f3adc443389084c52cc3dacf8a8a101966e58321e3f45a94199d024d2b" refkind="member"><highlight class="normal"><sp/><sp/><sp/><sp/><ref refid="mental__xv__core_8h_1a4040728f3adc443389084c52cc3dacf8a8a101966e58321e3f45a94199d024d2b" kindref="member">MT_STRUCTURE_TYPE_APPLICATION_INFO</ref><sp/><sp/>=<sp/>0,<sp/></highlight></codeline>
-<codeline lineno="134" refid="mental__xv__core_8h_1a4040728f3adc443389084c52cc3dacf8a10dc2ca6e0779e1e2bae1ae2ac1d2bbe" refkind="member"><highlight class="normal"><sp/><sp/><sp/><sp/><ref refid="mental__xv__core_8h_1a4040728f3adc443389084c52cc3dacf8a10dc2ca6e0779e1e2bae1ae2ac1d2bbe" kindref="member">MT_STRUCTURE_TYPE_ENGINE_INFO</ref><sp/><sp/><sp/><sp/><sp/><sp/><sp/>=<sp/>1,<sp/></highlight></codeline>
-<codeline lineno="135" refid="mental__xv__core_8h_1a829bce00e03e07c0d1b874776b0e5611" refkind="member"><highlight class="normal">}<sp/><ref refid="mental__xv__core_8h_1a4040728f3adc443389084c52cc3dacf8" kindref="member">MentalStructureType</ref>;</highlight></codeline>
-<codeline lineno="136"><highlight class="normal"></highlight></codeline>
-<codeline lineno="143" refid="mental__xv__core_8h_1a8001f712b14b0ececd970c22c972969a" refkind="member"><highlight class="normal"></highlight><highlight class="keyword">typedef</highlight><highlight class="normal"><sp/><ref refid="mental__xv__core_8h_1a85c06e36c77c7cb291a034a60400d96e" kindref="member">MentalFlags</ref><sp/><ref refid="mental__xv__core_8h_1a8001f712b14b0ececd970c22c972969a" kindref="member">MentalInstanceCreateFlags</ref>;</highlight></codeline>
-<codeline lineno="144"><highlight class="normal"></highlight></codeline>
-<codeline lineno="151" refid="structMentalApplicationInfo" refkind="compound"><highlight class="normal"></highlight><highlight class="keyword">typedef</highlight><highlight class="normal"><sp/></highlight><highlight class="keyword">struct<sp/></highlight><highlight class="normal"><ref refid="structMentalApplicationInfo" kindref="compound">MentalApplicationInfo</ref><sp/>{</highlight></codeline>
-<codeline lineno="152" refid="structMentalApplicationInfo_1a78354ca5ff3d4b2f0077822c30973d84" refkind="member"><highlight class="normal"><sp/><sp/><sp/><sp/><ref refid="mental__xv__core_8h_1a4040728f3adc443389084c52cc3dacf8" kindref="member">MentalStructureType</ref><sp/><sp/><sp/><sp/><ref refid="structMentalApplicationInfo_1a78354ca5ff3d4b2f0077822c30973d84" kindref="member">sType</ref>;<sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/></highlight></codeline>
-<codeline lineno="153" refid="structMentalApplicationInfo_1a42f026a9c165b1f7841f22145707c723" refkind="member"><highlight class="normal"><sp/><sp/><sp/><sp/></highlight><highlight class="keyword">const</highlight><highlight class="normal"><sp/></highlight><highlight class="keywordtype">void</highlight><highlight class="normal">*<sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><ref refid="structMentalApplicationInfo_1a42f026a9c165b1f7841f22145707c723" kindref="member">pNext</ref>;<sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/></highlight></codeline>
-<codeline lineno="154" refid="structMentalApplicationInfo_1ad62d689d5ee1bbc561454a4e6fe762ad" refkind="member"><highlight class="normal"><sp/><sp/><sp/><sp/></highlight><highlight class="keyword">const</highlight><highlight class="normal"><sp/></highlight><highlight class="keywordtype">char</highlight><highlight class="normal">*<sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><ref refid="structMentalApplicationInfo_1ad62d689d5ee1bbc561454a4e6fe762ad" kindref="member">pApplicationName</ref>;<sp/><sp/><sp/></highlight></codeline>
-<codeline lineno="155" refid="structMentalApplicationInfo_1a3172706bb52464086f3548c97271cbc6" refkind="member"><highlight class="normal"><sp/><sp/><sp/><sp/>uint32_t<sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><ref refid="structMentalApplicationInfo_1a3172706bb52464086f3548c97271cbc6" kindref="member">applicationVersion</ref>;<sp/></highlight></codeline>
-<codeline lineno="156" refid="structMentalApplicationInfo_1a32fe1ca61f17300b4bd8a6a6d0b95b66" refkind="member"><highlight class="normal"><sp/><sp/><sp/><sp/></highlight><highlight class="keyword">const</highlight><highlight class="normal"><sp/></highlight><highlight class="keywordtype">char</highlight><highlight class="normal">*<sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><ref refid="structMentalApplicationInfo_1a32fe1ca61f17300b4bd8a6a6d0b95b66" kindref="member">pEngineName</ref>;<sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/></highlight></codeline>
-<codeline lineno="157" refid="structMentalApplicationInfo_1a7ec42998c0d337df529ac9010d53a320" refkind="member"><highlight class="normal"><sp/><sp/><sp/><sp/>uint32_t<sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><ref refid="structMentalApplicationInfo_1a7ec42998c0d337df529ac9010d53a320" kindref="member">engineVersion</ref>;<sp/><sp/><sp/><sp/><sp/><sp/></highlight></codeline>
-<codeline lineno="158" refid="structMentalApplicationInfo_1a31c14901186b58ad1801a618bc8e8121" refkind="member"><highlight class="normal"><sp/><sp/><sp/><sp/>uint32_t<sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><ref refid="structMentalApplicationInfo_1a31c14901186b58ad1801a618bc8e8121" kindref="member">apiVersion</ref>;<sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/></highlight></codeline>
-<codeline lineno="159" refid="mental__xv__core_8h_1a613d35a7f8f04ca7ef8f7a683c6c9374" refkind="member"><highlight class="normal">}<sp/><ref refid="structMentalApplicationInfo" kindref="compound">MentalApplicationInfo</ref>;</highlight></codeline>
-<codeline lineno="160"><highlight class="normal"></highlight></codeline>
-<codeline lineno="167" refid="structMentalInstanceCreateInfo" refkind="compound"><highlight class="normal"></highlight><highlight class="keyword">typedef</highlight><highlight class="normal"><sp/></highlight><highlight class="keyword">struct<sp/></highlight><highlight class="normal"><ref refid="structMentalInstanceCreateInfo" kindref="compound">MentalInstanceCreateInfo</ref><sp/>{</highlight></codeline>
-<codeline lineno="168" refid="structMentalInstanceCreateInfo_1a98666ccff1ea1f483cbe13161023c8aa" refkind="member"><highlight class="normal"><sp/><sp/><sp/><sp/><ref refid="mental__xv__core_8h_1a4040728f3adc443389084c52cc3dacf8" kindref="member">MentalStructureType</ref><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><ref refid="structMentalInstanceCreateInfo_1a98666ccff1ea1f483cbe13161023c8aa" kindref="member">sType</ref>;<sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/></highlight></codeline>
-<codeline lineno="169" refid="structMentalInstanceCreateInfo_1adf1491d6421cfcb15ad3e5996f592848" refkind="member"><highlight class="normal"><sp/><sp/><sp/><sp/></highlight><highlight class="keyword">const</highlight><highlight class="normal"><sp/></highlight><highlight class="keywordtype">void</highlight><highlight class="normal">*<sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><ref refid="structMentalInstanceCreateInfo_1adf1491d6421cfcb15ad3e5996f592848" kindref="member">pNext</ref>;<sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/></highlight></codeline>
-<codeline lineno="170" refid="structMentalInstanceCreateInfo_1aaa26a260d2575c6a4581cddc5a8aaa62" refkind="member"><highlight class="normal"><sp/><sp/><sp/><sp/><ref refid="mental__xv__core_8h_1a8001f712b14b0ececd970c22c972969a" kindref="member">MentalInstanceCreateFlags</ref><sp/><sp/><sp/><sp/><sp/><sp/><sp/><ref refid="structMentalInstanceCreateInfo_1aaa26a260d2575c6a4581cddc5a8aaa62" kindref="member">flags</ref>;<sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/></highlight></codeline>
-<codeline lineno="171" refid="structMentalInstanceCreateInfo_1a727f4c194e46fb87f1f093442a0a6674" refkind="member"><highlight class="normal"><sp/><sp/><sp/><sp/></highlight><highlight class="keyword">const</highlight><highlight class="normal"><sp/><ref refid="structMentalApplicationInfo" kindref="compound">MentalApplicationInfo</ref>*<sp/><sp/><sp/><sp/><ref refid="structMentalInstanceCreateInfo_1a727f4c194e46fb87f1f093442a0a6674" kindref="member">pApplicationInfo</ref>;<sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/></highlight></codeline>
-<codeline lineno="172" refid="structMentalInstanceCreateInfo_1a89911e7d11c0208b449d1c4b7a127da5" refkind="member"><highlight class="normal"><sp/><sp/><sp/><sp/>uint32_t<sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><ref refid="structMentalInstanceCreateInfo_1a89911e7d11c0208b449d1c4b7a127da5" kindref="member">enabledLayerCount</ref>;<sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/></highlight></codeline>
-<codeline lineno="173" refid="structMentalInstanceCreateInfo_1aa39f2523416b30281105df7ebb1a9a22" refkind="member"><highlight class="normal"><sp/><sp/><sp/><sp/></highlight><highlight class="keyword">const</highlight><highlight class="normal"><sp/></highlight><highlight class="keywordtype">char</highlight><highlight class="normal">*<sp/></highlight><highlight class="keyword">const</highlight><highlight class="normal">*<sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><ref refid="structMentalInstanceCreateInfo_1aa39f2523416b30281105df7ebb1a9a22" kindref="member">ppEnabledLayerNames</ref>;<sp/><sp/><sp/><sp/><sp/><sp/><sp/></highlight></codeline>
-<codeline lineno="174" refid="structMentalInstanceCreateInfo_1af29f97fa6365e2f365699ccf5fa6cc86" refkind="member"><highlight class="normal"><sp/><sp/><sp/><sp/>uint32_t<sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><ref refid="structMentalInstanceCreateInfo_1af29f97fa6365e2f365699ccf5fa6cc86" kindref="member">enabledExtensionCount</ref>;<sp/><sp/><sp/><sp/><sp/></highlight></codeline>
-<codeline lineno="175" refid="structMentalInstanceCreateInfo_1a859a0d0dd65217b9e66a28958be09d52" refkind="member"><highlight class="normal"><sp/><sp/><sp/><sp/></highlight><highlight class="keyword">const</highlight><highlight class="normal"><sp/></highlight><highlight class="keywordtype">char</highlight><highlight class="normal">*<sp/></highlight><highlight class="keyword">const</highlight><highlight class="normal">*<sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><ref refid="structMentalInstanceCreateInfo_1a859a0d0dd65217b9e66a28958be09d52" kindref="member">ppEnabledExtensionNames</ref>;<sp/><sp/><sp/></highlight></codeline>
-<codeline lineno="176" refid="mental__xv__core_8h_1ae33b6aa8a1c3d466897d03c247cee793" refkind="member"><highlight class="normal">}<sp/><ref refid="structMentalInstanceCreateInfo" kindref="compound">MentalInstanceCreateInfo</ref>;</highlight></codeline>
-<codeline lineno="177"><highlight class="normal"></highlight></codeline>
-<codeline lineno="178"><highlight class="normal"></highlight><highlight class="preprocessor">#ifdef<sp/>__cplusplus</highlight><highlight class="normal"></highlight></codeline>
-<codeline lineno="179"><highlight class="normal"><sp/><sp/><sp/><sp/>}</highlight></codeline>
-<codeline lineno="180"><highlight class="normal"></highlight><highlight class="preprocessor">#endif</highlight><highlight class="normal"></highlight></codeline>
-<codeline lineno="181"><highlight class="normal"></highlight></codeline>
-<codeline lineno="182"><highlight class="normal"></highlight><highlight class="preprocessor">#endif<sp/></highlight><highlight class="comment">//<sp/>MENTAL_XV_CORE_H_</highlight><highlight class="normal"></highlight></codeline>
+<codeline lineno="9"><highlight class="normal"></highlight></codeline>
+<codeline lineno="10"><highlight class="normal"></highlight><highlight class="preprocessor">#ifndef<sp/>MENTAL_API_ENTRY</highlight><highlight class="normal"></highlight></codeline>
+<codeline lineno="11" refid="mental__xv__core_8h_1a9d4c08915de2b4f363d2e6273ebb78b1" refkind="member"><highlight class="normal"></highlight><highlight class="preprocessor"><sp/><sp/><sp/><sp/>#define<sp/>MENTAL_API_ENTRY</highlight><highlight class="normal"></highlight></codeline>
+<codeline lineno="12"><highlight class="normal"></highlight></codeline>
+<codeline lineno="13"><highlight class="normal"></highlight><highlight class="preprocessor"><sp/><sp/><sp/><sp/>#ifndef<sp/>MENTAL_API_CALL</highlight><highlight class="normal"></highlight></codeline>
+<codeline lineno="14" refid="mental__xv__core_8h_1acc03eaed49315df63b4d7bce1fefd2a3" refkind="member"><highlight class="normal"></highlight><highlight class="preprocessor"><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/>#define<sp/>MENTAL_API_CALL</highlight><highlight class="normal"></highlight></codeline>
+<codeline lineno="15"><highlight class="normal"></highlight><highlight class="preprocessor"><sp/><sp/><sp/><sp/>#endif</highlight><highlight class="normal"></highlight></codeline>
+<codeline lineno="16"><highlight class="normal"></highlight><highlight class="preprocessor">#endif</highlight><highlight class="normal"></highlight></codeline>
+<codeline lineno="17"><highlight class="normal"></highlight></codeline>
+<codeline lineno="18" refid="mental__xv__core_8h_1a40600f1f472f064ea2c91e957e969eba" refkind="member"><highlight class="normal"></highlight><highlight class="preprocessor">#define<sp/>MT_API_SUFFIX__VERSION_1_0<sp/>MT_API_SUFFIX_COMMON</highlight><highlight class="normal"></highlight></codeline>
+<codeline lineno="19"><highlight class="normal"></highlight></codeline>
+<codeline lineno="20"><highlight class="normal"></highlight></codeline>
+<codeline lineno="21"><highlight class="normal"></highlight></codeline>
+<codeline lineno="22"><highlight class="normal"></highlight><highlight class="preprocessor">#include<sp/>&lt;stdint.h&gt;</highlight><highlight class="normal"></highlight></codeline>
+<codeline lineno="23"><highlight class="normal"></highlight></codeline>
+<codeline lineno="34" refid="mental__xv__core_8h_1ae0c9f90ac68f9340368d4174cdd635d7" refkind="member"><highlight class="normal"></highlight><highlight class="preprocessor">#define<sp/>MENTAL_XV_VERSION_VARIANT(version)<sp/>((uint32_t)(version)<sp/>&gt;&gt;<sp/>29U)</highlight><highlight class="normal"></highlight></codeline>
+<codeline lineno="35"><highlight class="normal"></highlight></codeline>
+<codeline lineno="46" refid="mental__xv__core_8h_1abdb2bee204fe16ce94de34809b44d333" refkind="member"><highlight class="normal"></highlight><highlight class="preprocessor">#define<sp/>MENTAL_XV_VERSION_MAJOR(version)<sp/>(((uint32_t)(version)<sp/>&gt;&gt;<sp/>22U)<sp/>&amp;<sp/>0x7FU)</highlight><highlight class="normal"></highlight></codeline>
+<codeline lineno="47"><highlight class="normal"></highlight></codeline>
+<codeline lineno="58" refid="mental__xv__core_8h_1a95cfa6f75ba9ec499f0f96478454a225" refkind="member"><highlight class="normal"></highlight><highlight class="preprocessor">#define<sp/>MENTAL_XV_VERSION_MINOR(version)<sp/>(((uint32_t)(version)<sp/>&gt;&gt;<sp/>12U)<sp/>&amp;<sp/>0x3FFU)</highlight><highlight class="normal"></highlight></codeline>
+<codeline lineno="59"><highlight class="normal"></highlight></codeline>
+<codeline lineno="70" refid="mental__xv__core_8h_1a72f4c99020cca6079dea03f6715f3c92" refkind="member"><highlight class="normal"></highlight><highlight class="preprocessor">#define<sp/>MENTAL_XV_VERSION_PATCH(version)<sp/>((uint32_t)(version)<sp/>&amp;<sp/>0xFFFU)</highlight><highlight class="normal"></highlight></codeline>
+<codeline lineno="71"><highlight class="normal"></highlight></codeline>
+<codeline lineno="105" refid="mental__xv__core_8h_1a85c06e36c77c7cb291a034a60400d96e" refkind="member"><highlight class="normal"></highlight><highlight class="keyword">typedef</highlight><highlight class="normal"><sp/>uint32_t<sp/><ref refid="mental__xv__core_8h_1a85c06e36c77c7cb291a034a60400d96e" kindref="member">MentalFlags</ref>;</highlight></codeline>
+<codeline lineno="106"><highlight class="normal"></highlight></codeline>
+<codeline lineno="123" refid="mental__xv__core_8h_1af7302d331733011c84091974c3ba1e99" refkind="member"><highlight class="normal"></highlight><highlight class="keyword">typedef</highlight><highlight class="normal"><sp/></highlight><highlight class="keyword">enum</highlight><highlight class="normal"><sp/><ref refid="mental__xv__core_8h_1af7302d331733011c84091974c3ba1e99" kindref="member">MentalResult</ref></highlight></codeline>
+<codeline lineno="124"><highlight class="normal">{</highlight></codeline>
+<codeline lineno="125" refid="mental__xv__core_8h_1af7302d331733011c84091974c3ba1e99a078bb99cd4b22a8242ae80d329a15b48" refkind="member"><highlight class="normal"><sp/><sp/><sp/><sp/><ref refid="mental__xv__core_8h_1af7302d331733011c84091974c3ba1e99a078bb99cd4b22a8242ae80d329a15b48" kindref="member">MT_SUCCESS</ref><sp/><sp/><sp/><sp/><sp/>=<sp/>0,<sp/><sp/><sp/><sp/><sp/></highlight></codeline>
+<codeline lineno="126" refid="mental__xv__core_8h_1af7302d331733011c84091974c3ba1e99a257f20243d6089a1f80b98212076ee6f" refkind="member"><highlight class="normal"><sp/><sp/><sp/><sp/><ref refid="mental__xv__core_8h_1af7302d331733011c84091974c3ba1e99a257f20243d6089a1f80b98212076ee6f" kindref="member">MT_NOT_READY</ref><sp/><sp/><sp/>=<sp/>1,<sp/><sp/><sp/><sp/><sp/></highlight></codeline>
+<codeline lineno="127" refid="mental__xv__core_8h_1af7302d331733011c84091974c3ba1e99a78ff5b702dc962d56b91b15acb9c9c95" refkind="member"><highlight class="normal"><sp/><sp/><sp/><sp/><ref refid="mental__xv__core_8h_1af7302d331733011c84091974c3ba1e99a78ff5b702dc962d56b91b15acb9c9c95" kindref="member">MT_EVENT_SET</ref><sp/><sp/><sp/>=<sp/>3,<sp/><sp/><sp/><sp/><sp/></highlight></codeline>
+<codeline lineno="128" refid="mental__xv__core_8h_1af7302d331733011c84091974c3ba1e99a3bdf3a9790312087808d00e29188136d" refkind="member"><highlight class="normal"><sp/><sp/><sp/><sp/><ref refid="mental__xv__core_8h_1af7302d331733011c84091974c3ba1e99a3bdf3a9790312087808d00e29188136d" kindref="member">MT_EVENT_RESET</ref><sp/>=<sp/>4,<sp/><sp/><sp/><sp/><sp/></highlight></codeline>
+<codeline lineno="129" refid="mental__xv__core_8h_1af7302d331733011c84091974c3ba1e99a89e7f0e8457ef03254f379fa0313d894" refkind="member"><highlight class="normal"><sp/><sp/><sp/><sp/><ref refid="mental__xv__core_8h_1af7302d331733011c84091974c3ba1e99a89e7f0e8457ef03254f379fa0313d894" kindref="member">MT_INCOMPLETE</ref><sp/><sp/>=<sp/>5,<sp/><sp/><sp/><sp/><sp/></highlight></codeline>
+<codeline lineno="130"><highlight class="normal"><sp/><sp/><sp/><sp/><ref refid="mental__xv__core_8h_1af7302d331733011c84091974c3ba1e99a53ef8696bc290003828824a413777589" kindref="member">MT_ERROR</ref><sp/><sp/><sp/><sp/><sp/><sp/><sp/>=<sp/>6<sp/><sp/><sp/><sp/><sp/><sp/></highlight></codeline>
+<codeline lineno="131" refid="mental__xv__core_8h_1a1335103b1e885f677af00aa47df4f1af" refkind="member"><highlight class="normal">}<sp/><ref refid="mental__xv__core_8h_1af7302d331733011c84091974c3ba1e99" kindref="member">MentalResult</ref>;</highlight></codeline>
+<codeline lineno="132"><highlight class="normal"></highlight></codeline>
+<codeline lineno="145" refid="mental__xv__core_8h_1a4040728f3adc443389084c52cc3dacf8" refkind="member"><highlight class="normal"></highlight><highlight class="keyword">typedef</highlight><highlight class="normal"><sp/></highlight><highlight class="keyword">enum</highlight><highlight class="normal"><sp/><ref refid="mental__xv__core_8h_1a4040728f3adc443389084c52cc3dacf8" kindref="member">MentalStructureType</ref><sp/>{</highlight></codeline>
+<codeline lineno="146" refid="mental__xv__core_8h_1a4040728f3adc443389084c52cc3dacf8a8a101966e58321e3f45a94199d024d2b" refkind="member"><highlight class="normal"><sp/><sp/><sp/><sp/><ref refid="mental__xv__core_8h_1a4040728f3adc443389084c52cc3dacf8a8a101966e58321e3f45a94199d024d2b" kindref="member">MT_STRUCTURE_TYPE_APPLICATION_INFO</ref><sp/><sp/>=<sp/>0,<sp/></highlight></codeline>
+<codeline lineno="147" refid="mental__xv__core_8h_1a4040728f3adc443389084c52cc3dacf8a10dc2ca6e0779e1e2bae1ae2ac1d2bbe" refkind="member"><highlight class="normal"><sp/><sp/><sp/><sp/><ref refid="mental__xv__core_8h_1a4040728f3adc443389084c52cc3dacf8a10dc2ca6e0779e1e2bae1ae2ac1d2bbe" kindref="member">MT_STRUCTURE_TYPE_ENGINE_INFO</ref><sp/><sp/><sp/><sp/><sp/><sp/><sp/>=<sp/>1,<sp/></highlight></codeline>
+<codeline lineno="148" refid="mental__xv__core_8h_1a829bce00e03e07c0d1b874776b0e5611" refkind="member"><highlight class="normal">}<sp/><ref refid="mental__xv__core_8h_1a4040728f3adc443389084c52cc3dacf8" kindref="member">MentalStructureType</ref>;</highlight></codeline>
+<codeline lineno="149"><highlight class="normal"></highlight></codeline>
+<codeline lineno="156" refid="mental__xv__core_8h_1a8001f712b14b0ececd970c22c972969a" refkind="member"><highlight class="normal"></highlight><highlight class="keyword">typedef</highlight><highlight class="normal"><sp/><ref refid="mental__xv__core_8h_1a85c06e36c77c7cb291a034a60400d96e" kindref="member">MentalFlags</ref><sp/><ref refid="mental__xv__core_8h_1a8001f712b14b0ececd970c22c972969a" kindref="member">MentalInstanceCreateFlags</ref>;</highlight></codeline>
+<codeline lineno="157"><highlight class="normal"></highlight></codeline>
+<codeline lineno="164" refid="structMentalApplicationInfo" refkind="compound"><highlight class="normal"></highlight><highlight class="keyword">typedef</highlight><highlight class="normal"><sp/></highlight><highlight class="keyword">struct<sp/></highlight><highlight class="normal"><ref refid="structMentalApplicationInfo" kindref="compound">MentalApplicationInfo</ref><sp/>{</highlight></codeline>
+<codeline lineno="165" refid="structMentalApplicationInfo_1a78354ca5ff3d4b2f0077822c30973d84" refkind="member"><highlight class="normal"><sp/><sp/><sp/><sp/><ref refid="mental__xv__core_8h_1a4040728f3adc443389084c52cc3dacf8" kindref="member">MentalStructureType</ref><sp/><sp/><sp/><sp/><ref refid="structMentalApplicationInfo_1a78354ca5ff3d4b2f0077822c30973d84" kindref="member">sType</ref>;<sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/></highlight></codeline>
+<codeline lineno="166" refid="structMentalApplicationInfo_1a42f026a9c165b1f7841f22145707c723" refkind="member"><highlight class="normal"><sp/><sp/><sp/><sp/></highlight><highlight class="keyword">const</highlight><highlight class="normal"><sp/></highlight><highlight class="keywordtype">void</highlight><highlight class="normal">*<sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><ref refid="structMentalApplicationInfo_1a42f026a9c165b1f7841f22145707c723" kindref="member">pNext</ref>;<sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/></highlight></codeline>
+<codeline lineno="167" refid="structMentalApplicationInfo_1ad62d689d5ee1bbc561454a4e6fe762ad" refkind="member"><highlight class="normal"><sp/><sp/><sp/><sp/></highlight><highlight class="keyword">const</highlight><highlight class="normal"><sp/></highlight><highlight class="keywordtype">char</highlight><highlight class="normal">*<sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><ref refid="structMentalApplicationInfo_1ad62d689d5ee1bbc561454a4e6fe762ad" kindref="member">pApplicationName</ref>;<sp/><sp/><sp/></highlight></codeline>
+<codeline lineno="168" refid="structMentalApplicationInfo_1a3172706bb52464086f3548c97271cbc6" refkind="member"><highlight class="normal"><sp/><sp/><sp/><sp/>uint32_t<sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><ref refid="structMentalApplicationInfo_1a3172706bb52464086f3548c97271cbc6" kindref="member">applicationVersion</ref>;<sp/></highlight></codeline>
+<codeline lineno="169" refid="structMentalApplicationInfo_1a32fe1ca61f17300b4bd8a6a6d0b95b66" refkind="member"><highlight class="normal"><sp/><sp/><sp/><sp/></highlight><highlight class="keyword">const</highlight><highlight class="normal"><sp/></highlight><highlight class="keywordtype">char</highlight><highlight class="normal">*<sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><ref refid="structMentalApplicationInfo_1a32fe1ca61f17300b4bd8a6a6d0b95b66" kindref="member">pEngineName</ref>;<sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/></highlight></codeline>
+<codeline lineno="170" refid="structMentalApplicationInfo_1a7ec42998c0d337df529ac9010d53a320" refkind="member"><highlight class="normal"><sp/><sp/><sp/><sp/>uint32_t<sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><ref refid="structMentalApplicationInfo_1a7ec42998c0d337df529ac9010d53a320" kindref="member">engineVersion</ref>;<sp/><sp/><sp/><sp/><sp/><sp/></highlight></codeline>
+<codeline lineno="171" refid="structMentalApplicationInfo_1a31c14901186b58ad1801a618bc8e8121" refkind="member"><highlight class="normal"><sp/><sp/><sp/><sp/>uint32_t<sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><ref refid="structMentalApplicationInfo_1a31c14901186b58ad1801a618bc8e8121" kindref="member">apiVersion</ref>;<sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/></highlight></codeline>
+<codeline lineno="172" refid="mental__xv__core_8h_1a613d35a7f8f04ca7ef8f7a683c6c9374" refkind="member"><highlight class="normal">}<sp/><ref refid="structMentalApplicationInfo" kindref="compound">MentalApplicationInfo</ref>;</highlight></codeline>
+<codeline lineno="173"><highlight class="normal"></highlight></codeline>
+<codeline lineno="180" refid="structMentalInstanceCreateInfo" refkind="compound"><highlight class="normal"></highlight><highlight class="keyword">typedef</highlight><highlight class="normal"><sp/></highlight><highlight class="keyword">struct<sp/></highlight><highlight class="normal"><ref refid="structMentalInstanceCreateInfo" kindref="compound">MentalInstanceCreateInfo</ref><sp/>{</highlight></codeline>
+<codeline lineno="181" refid="structMentalInstanceCreateInfo_1a98666ccff1ea1f483cbe13161023c8aa" refkind="member"><highlight class="normal"><sp/><sp/><sp/><sp/><ref refid="mental__xv__core_8h_1a4040728f3adc443389084c52cc3dacf8" kindref="member">MentalStructureType</ref><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><ref refid="structMentalInstanceCreateInfo_1a98666ccff1ea1f483cbe13161023c8aa" kindref="member">sType</ref>;<sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/></highlight></codeline>
+<codeline lineno="182" refid="structMentalInstanceCreateInfo_1adf1491d6421cfcb15ad3e5996f592848" refkind="member"><highlight class="normal"><sp/><sp/><sp/><sp/></highlight><highlight class="keyword">const</highlight><highlight class="normal"><sp/></highlight><highlight class="keywordtype">void</highlight><highlight class="normal">*<sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><ref refid="structMentalInstanceCreateInfo_1adf1491d6421cfcb15ad3e5996f592848" kindref="member">pNext</ref>;<sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/></highlight></codeline>
+<codeline lineno="183" refid="structMentalInstanceCreateInfo_1aaa26a260d2575c6a4581cddc5a8aaa62" refkind="member"><highlight class="normal"><sp/><sp/><sp/><sp/><ref refid="mental__xv__core_8h_1a8001f712b14b0ececd970c22c972969a" kindref="member">MentalInstanceCreateFlags</ref><sp/><sp/><sp/><sp/><sp/><sp/><sp/><ref refid="structMentalInstanceCreateInfo_1aaa26a260d2575c6a4581cddc5a8aaa62" kindref="member">flags</ref>;<sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/></highlight></codeline>
+<codeline lineno="184" refid="structMentalInstanceCreateInfo_1a727f4c194e46fb87f1f093442a0a6674" refkind="member"><highlight class="normal"><sp/><sp/><sp/><sp/></highlight><highlight class="keyword">const</highlight><highlight class="normal"><sp/><ref refid="structMentalApplicationInfo" kindref="compound">MentalApplicationInfo</ref>*<sp/><sp/><sp/><sp/><ref refid="structMentalInstanceCreateInfo_1a727f4c194e46fb87f1f093442a0a6674" kindref="member">pApplicationInfo</ref>;<sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/></highlight></codeline>
+<codeline lineno="185" refid="structMentalInstanceCreateInfo_1a89911e7d11c0208b449d1c4b7a127da5" refkind="member"><highlight class="normal"><sp/><sp/><sp/><sp/>uint32_t<sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><ref refid="structMentalInstanceCreateInfo_1a89911e7d11c0208b449d1c4b7a127da5" kindref="member">enabledLayerCount</ref>;<sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/></highlight></codeline>
+<codeline lineno="186" refid="structMentalInstanceCreateInfo_1aa39f2523416b30281105df7ebb1a9a22" refkind="member"><highlight class="normal"><sp/><sp/><sp/><sp/></highlight><highlight class="keyword">const</highlight><highlight class="normal"><sp/></highlight><highlight class="keywordtype">char</highlight><highlight class="normal">*<sp/></highlight><highlight class="keyword">const</highlight><highlight class="normal">*<sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><ref refid="structMentalInstanceCreateInfo_1aa39f2523416b30281105df7ebb1a9a22" kindref="member">ppEnabledLayerNames</ref>;<sp/><sp/><sp/><sp/><sp/><sp/><sp/></highlight></codeline>
+<codeline lineno="187" refid="structMentalInstanceCreateInfo_1af29f97fa6365e2f365699ccf5fa6cc86" refkind="member"><highlight class="normal"><sp/><sp/><sp/><sp/>uint32_t<sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><ref refid="structMentalInstanceCreateInfo_1af29f97fa6365e2f365699ccf5fa6cc86" kindref="member">enabledExtensionCount</ref>;<sp/><sp/><sp/><sp/><sp/></highlight></codeline>
+<codeline lineno="188" refid="structMentalInstanceCreateInfo_1a859a0d0dd65217b9e66a28958be09d52" refkind="member"><highlight class="normal"><sp/><sp/><sp/><sp/></highlight><highlight class="keyword">const</highlight><highlight class="normal"><sp/></highlight><highlight class="keywordtype">char</highlight><highlight class="normal">*<sp/></highlight><highlight class="keyword">const</highlight><highlight class="normal">*<sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><ref refid="structMentalInstanceCreateInfo_1a859a0d0dd65217b9e66a28958be09d52" kindref="member">ppEnabledExtensionNames</ref>;<sp/><sp/><sp/></highlight></codeline>
+<codeline lineno="189" refid="mental__xv__core_8h_1ae33b6aa8a1c3d466897d03c247cee793" refkind="member"><highlight class="normal">}<sp/><ref refid="structMentalInstanceCreateInfo" kindref="compound">MentalInstanceCreateInfo</ref>;</highlight></codeline>
+<codeline lineno="190"><highlight class="normal"></highlight></codeline>
+<codeline lineno="191"><highlight class="normal"></highlight><highlight class="comment">//<sp/>TODO:<sp/>implement<sp/>it.</highlight><highlight class="normal"></highlight></codeline>
+<codeline lineno="192" refid="structMentalInstance" refkind="compound"><highlight class="normal"></highlight><highlight class="keyword">typedef</highlight><highlight class="normal"><sp/></highlight><highlight class="keyword">struct<sp/></highlight><highlight class="normal"><ref refid="structMentalInstance" kindref="compound">MentalInstance</ref><sp/>{</highlight></codeline>
+<codeline lineno="193" refid="structMentalInstance_1a01215c57765e3a793614f119fa0fde48" refkind="member"><highlight class="normal"><sp/><sp/><sp/><sp/><ref refid="structMentalApplicationInfo" kindref="compound">MentalApplicationInfo</ref><sp/><ref refid="structMentalInstance_1a01215c57765e3a793614f119fa0fde48" kindref="member">appInfo</ref>;</highlight></codeline>
+<codeline lineno="194" refid="structMentalInstance_1aad5673f80ee12d52db6796962b5cb41a" refkind="member"><highlight class="normal"><sp/><sp/><sp/><sp/><ref refid="structMentalInstanceCreateInfo" kindref="compound">MentalInstanceCreateInfo</ref><sp/><ref refid="structMentalInstance_1aad5673f80ee12d52db6796962b5cb41a" kindref="member">instanceInfo</ref>;</highlight></codeline>
+<codeline lineno="195" refid="mental__xv__core_8h_1a7041fd4d22486ae44232796d8f9789b6" refkind="member"><highlight class="normal">}<sp/><ref refid="structMentalInstance" kindref="compound">MentalInstance</ref>;</highlight></codeline>
+<codeline lineno="196"><highlight class="normal"></highlight></codeline>
+<codeline lineno="197"><highlight class="normal"></highlight><highlight class="comment">//<sp/>TODO:<sp/>implement<sp/>it.</highlight><highlight class="normal"></highlight></codeline>
+<codeline lineno="198" refid="mental__xv__core_8h_1acc985910c263543ce653473dd919a6ab" refkind="member"><highlight class="normal"><ref refid="structMentalInstance" kindref="compound">MentalInstance</ref>*<sp/><ref refid="mental__xv__core_8h_1acc985910c263543ce653473dd919a6ab" kindref="member">mentalCreateInstance</ref>(</highlight><highlight class="keyword">const</highlight><highlight class="normal"><sp/><ref refid="structMentalInstanceCreateInfo" kindref="compound">MentalInstanceCreateInfo</ref>*<sp/>instance_info);</highlight></codeline>
+<codeline lineno="199"><highlight class="normal"></highlight></codeline>
+<codeline lineno="200"><highlight class="normal"></highlight><highlight class="comment">/*</highlight></codeline>
+<codeline lineno="201"><highlight class="comment">typedef<sp/>struct<sp/>_mental_platform_id<sp/>*<sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/>mental_platform_id;</highlight></codeline>
+<codeline lineno="202"><highlight class="comment">typedef<sp/>struct<sp/>_mental_device_id<sp/>*<sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/>mental_device_id;</highlight></codeline>
+<codeline lineno="203"><highlight class="comment">typedef<sp/>struct<sp/>_mental_context<sp/>*<sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/>mental_context;</highlight></codeline>
+<codeline lineno="204"><highlight class="comment">typedef<sp/>mental_bitfield<sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/>mental_device_type;</highlight></codeline>
+<codeline lineno="205"><highlight class="comment"></highlight></codeline>
+<codeline lineno="206"><highlight class="comment">*/</highlight></codeline>
+<codeline lineno="228"><highlight class="normal"></highlight><highlight class="comment">/*</highlight></codeline>
+<codeline lineno="229"><highlight class="comment">extern<sp/>MENTAL_API_ENTRY<sp/>uint32_t<sp/>MENTAL_API_CALL</highlight></codeline>
+<codeline lineno="230"><highlight class="comment">mentalGetPlatfromIDs(</highlight></codeline>
+<codeline lineno="231"><highlight class="comment"><sp/><sp/><sp/><sp/>uint32_t<sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/>num_entries,</highlight></codeline>
+<codeline lineno="232"><highlight class="comment"><sp/><sp/><sp/><sp/>mental_platform_id*<sp/><sp/><sp/><sp/><sp/>platforms,</highlight></codeline>
+<codeline lineno="233"><highlight class="comment"><sp/><sp/><sp/><sp/>uint32_t<sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/>num_platforms</highlight></codeline>
+<codeline lineno="234"><highlight class="comment">);<sp/>//<sp/>MT_API_SUFFIX__VERSION_1_0;</highlight></codeline>
+<codeline lineno="235"><highlight class="comment"></highlight></codeline>
+<codeline lineno="236"><highlight class="comment">extern<sp/>MENTAL_API_ENTRY<sp/>uint32_t<sp/>MENTAL_API_CALL</highlight></codeline>
+<codeline lineno="237"><highlight class="comment">mentalGetDeviceIDs(</highlight></codeline>
+<codeline lineno="238"><highlight class="comment"><sp/><sp/><sp/><sp/>mental_platform_id<sp/><sp/><sp/><sp/><sp/><sp/>platform,</highlight></codeline>
+<codeline lineno="239"><highlight class="comment"><sp/><sp/><sp/><sp/>mental_device_type<sp/><sp/><sp/><sp/><sp/><sp/>device_type,</highlight></codeline>
+<codeline lineno="240"><highlight class="comment"><sp/><sp/><sp/><sp/>uint32_t<sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/>num_entries,</highlight></codeline>
+<codeline lineno="241"><highlight class="comment"><sp/><sp/><sp/><sp/>mental_device_id<sp/>*<sp/><sp/><sp/><sp/><sp/><sp/>device_id</highlight></codeline>
+<codeline lineno="242"><highlight class="comment">)</highlight></codeline>
+<codeline lineno="243"><highlight class="comment">*/</highlight><highlight class="normal"></highlight></codeline>
+<codeline lineno="244"><highlight class="normal"></highlight></codeline>
+<codeline lineno="245"><highlight class="normal"></highlight></codeline>
+<codeline lineno="246"><highlight class="normal"></highlight></codeline>
+<codeline lineno="247"><highlight class="normal"></highlight><highlight class="preprocessor">#ifdef<sp/>__cplusplus</highlight><highlight class="normal"></highlight></codeline>
+<codeline lineno="248"><highlight class="normal"><sp/><sp/><sp/><sp/>}</highlight></codeline>
+<codeline lineno="249"><highlight class="normal"></highlight><highlight class="preprocessor">#endif</highlight><highlight class="normal"></highlight></codeline>
+<codeline lineno="250"><highlight class="normal"></highlight></codeline>
+<codeline lineno="251"><highlight class="normal"></highlight><highlight class="preprocessor">#endif<sp/></highlight><highlight class="comment">//<sp/>MENTAL_XV_CORE_H_</highlight><highlight class="normal"></highlight></codeline>
     </programlisting>
     <location file="include/mental_xv_core.h"/>
   </compounddef>
