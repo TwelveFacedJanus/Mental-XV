@@ -1,0 +1,443 @@
+<?xml version='1.0' encoding='UTF-8' standalone='no'?>
+<doxygen xmlns:xsi="http://www.w3.org/2001/XMLSchema-instance" xsi:noNamespaceSchemaLocation="compound.xsd" version="1.9.8" xml:lang="en-US">
+  <compounddef id="mental__xv__core_8h" kind="file" language="C++">
+    <compoundname>mental_xv_core.h</compoundname>
+    <includes local="no">stdint.h</includes>
+    <incdepgraph>
+      <node id="1">
+        <label>include/mental_xv_core.h</label>
+        <link refid="mental__xv__core_8h"/>
+        <childnode refid="2" relation="include">
+        </childnode>
+      </node>
+      <node id="2">
+        <label>stdint.h</label>
+      </node>
+    </incdepgraph>
+    <innerclass refid="structMentalApplicationInfo" prot="public">MentalApplicationInfo</innerclass>
+    <innerclass refid="structMentalInstanceCreateInfo" prot="public">MentalInstanceCreateInfo</innerclass>
+    <sectiondef kind="define">
+      <memberdef kind="define" id="mental__xv__core_8h_1a21917fcae9e377836c840ef4899957fb" prot="public" static="no">
+        <name>MENTAL_XV_VERSION_1_0</name>
+        <briefdescription>
+        </briefdescription>
+        <detaileddescription>
+        </detaileddescription>
+        <inbodydescription>
+        </inbodydescription>
+        <location file="include/mental_xv_core.h" line="8" column="9" bodyfile="include/mental_xv_core.h" bodystart="8" bodyend="-1"/>
+      </memberdef>
+      <memberdef kind="define" id="mental__xv__core_8h_1ae0c9f90ac68f9340368d4174cdd635d7" prot="public" static="no">
+        <name>MENTAL_XV_VERSION_VARIANT</name>
+        <param><defname>version</defname></param>
+        <initializer>((uint32_t)(version) &gt;&gt; 29U)</initializer>
+        <briefdescription>
+<para>This macro retrieves the version variant of the API version. </para>
+        </briefdescription>
+        <detaileddescription>
+<para>It shifts the 32-bit version integer to the right by 29 bits. This means that it takes the three highest bits of the number (bits 31 through 29), which represent the version variant.</para>
+<para><parameterlist kind="param"><parameteritem>
+<parameternamelist>
+<parametername>version</parametername>
+</parameternamelist>
+<parameterdescription>
+<para>The 32-bit version integer. </para>
+</parameterdescription>
+</parameteritem>
+</parameterlist>
+<simplesect kind="return"><para>The version variant. </para>
+</simplesect>
+</para>
+        </detaileddescription>
+        <inbodydescription>
+        </inbodydescription>
+        <location file="include/mental_xv_core.h" line="21" column="9" bodyfile="include/mental_xv_core.h" bodystart="21" bodyend="-1"/>
+      </memberdef>
+      <memberdef kind="define" id="mental__xv__core_8h_1abdb2bee204fe16ce94de34809b44d333" prot="public" static="no">
+        <name>MENTAL_XV_VERSION_MAJOR</name>
+        <param><defname>version</defname></param>
+        <initializer>(((uint32_t)(version) &gt;&gt; 22U) &amp; 0x7FU)</initializer>
+        <briefdescription>
+<para>This macro extracts the major version of the API. </para>
+        </briefdescription>
+        <detaileddescription>
+<para>It shifts the 32-bit integer version to the right by 22 bits, and then applies a bitwise AND with 0x7FU (which corresponds to 7 bits). This extracts bits 28 through 22, which represent the major version.</para>
+<para><parameterlist kind="param"><parameteritem>
+<parameternamelist>
+<parametername>version</parametername>
+</parameternamelist>
+<parameterdescription>
+<para>The 32-bit version integer. </para>
+</parameterdescription>
+</parameteritem>
+</parameterlist>
+<simplesect kind="return"><para>The major version. </para>
+</simplesect>
+</para>
+        </detaileddescription>
+        <inbodydescription>
+        </inbodydescription>
+        <location file="include/mental_xv_core.h" line="33" column="9" bodyfile="include/mental_xv_core.h" bodystart="33" bodyend="-1"/>
+      </memberdef>
+      <memberdef kind="define" id="mental__xv__core_8h_1a95cfa6f75ba9ec499f0f96478454a225" prot="public" static="no">
+        <name>MENTAL_XV_VERSION_MINOR</name>
+        <param><defname>version</defname></param>
+        <initializer>(((uint32_t)(version) &gt;&gt; 12U) &amp; 0x3FFU)</initializer>
+        <briefdescription>
+<para>This macro extracts the minor version of the API. </para>
+        </briefdescription>
+        <detaileddescription>
+<para>It shifts the 32-bit integer version to the right by 12 bits, and then applies a bitwise AND with 0x3FFU (which corresponds to 10 bits). This extracts bits 21 through 12, which represent the minor version.</para>
+<para><parameterlist kind="param"><parameteritem>
+<parameternamelist>
+<parametername>version</parametername>
+</parameternamelist>
+<parameterdescription>
+<para>The 32-bit version integer. </para>
+</parameterdescription>
+</parameteritem>
+</parameterlist>
+<simplesect kind="return"><para>The minor version. </para>
+</simplesect>
+</para>
+        </detaileddescription>
+        <inbodydescription>
+        </inbodydescription>
+        <location file="include/mental_xv_core.h" line="45" column="9" bodyfile="include/mental_xv_core.h" bodystart="45" bodyend="-1"/>
+      </memberdef>
+      <memberdef kind="define" id="mental__xv__core_8h_1a72f4c99020cca6079dea03f6715f3c92" prot="public" static="no">
+        <name>MENTAL_XV_VERSION_PATCH</name>
+        <param><defname>version</defname></param>
+        <initializer>((uint32_t)(version) &amp; 0xFFFU)</initializer>
+        <briefdescription>
+<para>This macro extracts the patch version of the API. </para>
+        </briefdescription>
+        <detaileddescription>
+<para>It applies a bitwise AND with 0xFFFU (which corresponds to 12 bits) to the 32-bit integer version. This extracts bits 11 through 0, which represent the patch version.</para>
+<para><parameterlist kind="param"><parameteritem>
+<parameternamelist>
+<parametername>version</parametername>
+</parameternamelist>
+<parameterdescription>
+<para>The 32-bit version integer. </para>
+</parameterdescription>
+</parameteritem>
+</parameterlist>
+<simplesect kind="return"><para>The patch version. </para>
+</simplesect>
+</para>
+        </detaileddescription>
+        <inbodydescription>
+        </inbodydescription>
+        <location file="include/mental_xv_core.h" line="57" column="9" bodyfile="include/mental_xv_core.h" bodystart="57" bodyend="-1"/>
+      </memberdef>
+    </sectiondef>
+    <sectiondef kind="enum">
+      <memberdef kind="enum" id="mental__xv__core_8h_1af7302d331733011c84091974c3ba1e99" prot="public" static="no" strong="no">
+        <type></type>
+        <name>MentalResult</name>
+        <enumvalue id="mental__xv__core_8h_1af7302d331733011c84091974c3ba1e99a078bb99cd4b22a8242ae80d329a15b48" prot="public">
+          <name>MT_SUCCESS</name>
+          <initializer>= 0</initializer>
+          <briefdescription>
+          </briefdescription>
+          <detaileddescription>
+<para>Operation completed successfully. </para>
+          </detaileddescription>
+        </enumvalue>
+        <enumvalue id="mental__xv__core_8h_1af7302d331733011c84091974c3ba1e99a257f20243d6089a1f80b98212076ee6f" prot="public">
+          <name>MT_NOT_READY</name>
+          <initializer>= 1</initializer>
+          <briefdescription>
+          </briefdescription>
+          <detaileddescription>
+<para>Operation is not ready or not yet complete. </para>
+          </detaileddescription>
+        </enumvalue>
+        <enumvalue id="mental__xv__core_8h_1af7302d331733011c84091974c3ba1e99a78ff5b702dc962d56b91b15acb9c9c95" prot="public">
+          <name>MT_EVENT_SET</name>
+          <initializer>= 3</initializer>
+          <briefdescription>
+          </briefdescription>
+          <detaileddescription>
+<para>Event has been set. </para>
+          </detaileddescription>
+        </enumvalue>
+        <enumvalue id="mental__xv__core_8h_1af7302d331733011c84091974c3ba1e99a3bdf3a9790312087808d00e29188136d" prot="public">
+          <name>MT_EVENT_RESET</name>
+          <initializer>= 4</initializer>
+          <briefdescription>
+          </briefdescription>
+          <detaileddescription>
+<para>Event has been reset. </para>
+          </detaileddescription>
+        </enumvalue>
+        <enumvalue id="mental__xv__core_8h_1af7302d331733011c84091974c3ba1e99a89e7f0e8457ef03254f379fa0313d894" prot="public">
+          <name>MT_INCOMPLETE</name>
+          <initializer>= 5</initializer>
+          <briefdescription>
+          </briefdescription>
+          <detaileddescription>
+<para>Operation is incomplete or partially completed. </para>
+          </detaileddescription>
+        </enumvalue>
+        <enumvalue id="mental__xv__core_8h_1af7302d331733011c84091974c3ba1e99a53ef8696bc290003828824a413777589" prot="public">
+          <name>MT_ERROR</name>
+          <initializer>= 6</initializer>
+          <briefdescription>
+          </briefdescription>
+          <detaileddescription>
+<para>An error occurred during the operation. </para>
+          </detaileddescription>
+        </enumvalue>
+        <briefdescription>
+<para>Enumeration representing the possible results of an operation. </para>
+        </briefdescription>
+        <detaileddescription>
+<para>This enum defines a set of named integer constants that represent the various outcomes of an operation or function. These constants make the code more readable and maintainable by replacing raw integer values with meaningful names.</para>
+<para>The possible values are:<itemizedlist>
+<listitem><para>MT_SUCCESS: The operation completed successfully.</para>
+</listitem><listitem><para>MT_NOT_READY: The operation is not ready to be performed or is not yet complete.</para>
+</listitem><listitem><para>MT_EVENT_SET: An event has been set (e.g., a flag or signal).</para>
+</listitem><listitem><para>MT_EVENT_RESET: An event has been reset (e.g., a flag or signal).</para>
+</listitem><listitem><para>MT_INCOMPLETE: The operation is incomplete or only partially completed.</para>
+</listitem><listitem><para>MT_ERROR: An error occurred during the operation. </para>
+</listitem></itemizedlist>
+</para>
+        </detaileddescription>
+        <inbodydescription>
+        </inbodydescription>
+        <location file="include/mental_xv_core.h" line="110" column="1" bodyfile="include/mental_xv_core.h" bodystart="111" bodyend="118"/>
+      </memberdef>
+      <memberdef kind="enum" id="mental__xv__core_8h_1a4040728f3adc443389084c52cc3dacf8" prot="public" static="no" strong="no">
+        <type></type>
+        <name>MentalStructureType</name>
+        <enumvalue id="mental__xv__core_8h_1a4040728f3adc443389084c52cc3dacf8a8a101966e58321e3f45a94199d024d2b" prot="public">
+          <name>MT_STRUCTURE_TYPE_APPLICATION_INFO</name>
+          <initializer>= 0</initializer>
+          <briefdescription>
+          </briefdescription>
+          <detaileddescription>
+<para>Structure for application info. </para>
+          </detaileddescription>
+        </enumvalue>
+        <enumvalue id="mental__xv__core_8h_1a4040728f3adc443389084c52cc3dacf8a10dc2ca6e0779e1e2bae1ae2ac1d2bbe" prot="public">
+          <name>MT_STRUCTURE_TYPE_ENGINE_INFO</name>
+          <initializer>= 1</initializer>
+          <briefdescription>
+          </briefdescription>
+          <detaileddescription>
+<para>Structure for engine info. </para>
+          </detaileddescription>
+        </enumvalue>
+        <briefdescription>
+<para>Enumeration representing the possible structure types. </para>
+        </briefdescription>
+        <detaileddescription>
+<para>This enum defines a set of named integer constants that represent the various structure types used in the application. These constants make the code more readable and maintainable by replacing raw integer values with meaningful names.</para>
+<para>The possible values are:<itemizedlist>
+<listitem><para>MT_STRUCTURE_TYPE_APPLICATION_INFO: The structure for application info.</para>
+</listitem><listitem><para>MT_STRUCTURE_TYPE_ENGINE_INFO: The structure for engine info. </para>
+</listitem></itemizedlist>
+</para>
+        </detaileddescription>
+        <inbodydescription>
+        </inbodydescription>
+        <location file="include/mental_xv_core.h" line="132" column="1" bodyfile="include/mental_xv_core.h" bodystart="132" bodyend="135"/>
+      </memberdef>
+    </sectiondef>
+    <sectiondef kind="typedef">
+      <memberdef kind="typedef" id="mental__xv__core_8h_1a85c06e36c77c7cb291a034a60400d96e" prot="public" static="no">
+        <type>uint32_t</type>
+        <definition>typedef uint32_t MentalFlags</definition>
+        <argsstring></argsstring>
+        <name>MentalFlags</name>
+        <briefdescription>
+<para>Type definition for a 32-bit unsigned integer used to represent flags. </para>
+        </briefdescription>
+        <detaileddescription>
+<para>This typedef creates an alias named <computeroutput>MentalFlags</computeroutput> for the <computeroutput>uint32_t</computeroutput> type, which is a 32-bit unsigned integer. This alias is intended to be used for storing and manipulating bit flags within the application. Using a typedef improves code readability and maintainability by providing a semantic name for the type.</para>
+<para>The <computeroutput>MentalFlags</computeroutput> type can be used to store multiple boolean flags within a single 32-bit integer. Each bit in the integer can represent a different flag, allowing for efficient storage and manipulation of multiple flags.</para>
+<para>Example usage: <programlisting><codeline><highlight class="normal">MentalFlags<sp/>flags<sp/>=<sp/>0;</highlight></codeline>
+<codeline></codeline>
+<codeline><highlight class="normal">void<sp/>setFlag(MentalFlags<sp/>*flags,<sp/>uint32_t<sp/>flag)<sp/>{</highlight></codeline>
+<codeline><highlight class="normal"><sp/><sp/><sp/><sp/>*flags<sp/>|=<sp/>flag;</highlight></codeline>
+<codeline><highlight class="normal">}</highlight></codeline>
+<codeline></codeline>
+<codeline><highlight class="normal">void<sp/>clearFlag(MentalFlags<sp/>*flags,<sp/>uint32_t<sp/>flag)<sp/>{</highlight></codeline>
+<codeline><highlight class="normal"><sp/><sp/><sp/><sp/>*flags<sp/>&amp;=<sp/>~flag;</highlight></codeline>
+<codeline><highlight class="normal">}</highlight></codeline>
+<codeline></codeline>
+<codeline><highlight class="normal">int<sp/>main()<sp/>{</highlight></codeline>
+<codeline><highlight class="normal"><sp/><sp/><sp/><sp/>setFlag(&amp;flags,<sp/>0x00000001);<sp/>//<sp/>Set<sp/>the<sp/>first<sp/>bit</highlight></codeline>
+<codeline><highlight class="normal"><sp/><sp/><sp/><sp/>clearFlag(&amp;flags,<sp/>0x00000001);<sp/>//<sp/>Clear<sp/>the<sp/>first<sp/>bit</highlight></codeline>
+<codeline><highlight class="normal"><sp/><sp/><sp/><sp/>return<sp/>0;</highlight></codeline>
+<codeline><highlight class="normal">}</highlight></codeline>
+</programlisting> </para>
+        </detaileddescription>
+        <inbodydescription>
+        </inbodydescription>
+        <location file="include/mental_xv_core.h" line="92" column="18" bodyfile="include/mental_xv_core.h" bodystart="92" bodyend="-1"/>
+      </memberdef>
+      <memberdef kind="typedef" id="mental__xv__core_8h_1a1335103b1e885f677af00aa47df4f1af" prot="public" static="no">
+        <type>enum <ref refid="mental__xv__core_8h_1af7302d331733011c84091974c3ba1e99" kindref="member">MentalResult</ref></type>
+        <definition>typedef enum MentalResult MentalResult</definition>
+        <argsstring></argsstring>
+        <name>MentalResult</name>
+        <briefdescription>
+<para>Enumeration representing the possible results of an operation. </para>
+        </briefdescription>
+        <detaileddescription>
+<para>This enum defines a set of named integer constants that represent the various outcomes of an operation or function. These constants make the code more readable and maintainable by replacing raw integer values with meaningful names.</para>
+<para>The possible values are:<itemizedlist>
+<listitem><para>MT_SUCCESS: The operation completed successfully.</para>
+</listitem><listitem><para>MT_NOT_READY: The operation is not ready to be performed or is not yet complete.</para>
+</listitem><listitem><para>MT_EVENT_SET: An event has been set (e.g., a flag or signal).</para>
+</listitem><listitem><para>MT_EVENT_RESET: An event has been reset (e.g., a flag or signal).</para>
+</listitem><listitem><para>MT_INCOMPLETE: The operation is incomplete or only partially completed.</para>
+</listitem><listitem><para>MT_ERROR: An error occurred during the operation. </para>
+</listitem></itemizedlist>
+</para>
+        </detaileddescription>
+        <inbodydescription>
+        </inbodydescription>
+        <location file="include/mental_xv_core.h" line="118" column="14"/>
+      </memberdef>
+      <memberdef kind="typedef" id="mental__xv__core_8h_1a829bce00e03e07c0d1b874776b0e5611" prot="public" static="no">
+        <type>enum <ref refid="mental__xv__core_8h_1a4040728f3adc443389084c52cc3dacf8" kindref="member">MentalStructureType</ref></type>
+        <definition>typedef enum MentalStructureType MentalStructureType</definition>
+        <argsstring></argsstring>
+        <name>MentalStructureType</name>
+        <briefdescription>
+<para>Enumeration representing the possible structure types. </para>
+        </briefdescription>
+        <detaileddescription>
+<para>This enum defines a set of named integer constants that represent the various structure types used in the application. These constants make the code more readable and maintainable by replacing raw integer values with meaningful names.</para>
+<para>The possible values are:<itemizedlist>
+<listitem><para>MT_STRUCTURE_TYPE_APPLICATION_INFO: The structure for application info.</para>
+</listitem><listitem><para>MT_STRUCTURE_TYPE_ENGINE_INFO: The structure for engine info. </para>
+</listitem></itemizedlist>
+</para>
+        </detaileddescription>
+        <inbodydescription>
+        </inbodydescription>
+        <location file="include/mental_xv_core.h" line="135" column="21"/>
+      </memberdef>
+      <memberdef kind="typedef" id="mental__xv__core_8h_1a8001f712b14b0ececd970c22c972969a" prot="public" static="no">
+        <type><ref refid="mental__xv__core_8h_1a85c06e36c77c7cb291a034a60400d96e" kindref="member">MentalFlags</ref></type>
+        <definition>typedef MentalFlags MentalInstanceCreateFlags</definition>
+        <argsstring></argsstring>
+        <name>MentalInstanceCreateFlags</name>
+        <briefdescription>
+<para>Type definition for flags used during instance creation. </para>
+        </briefdescription>
+        <detaileddescription>
+<para>This typedef creates an alias named <computeroutput>MentalInstanceCreateFlags</computeroutput> for the <computeroutput>MentalFlags</computeroutput> type, which is used to store and manipulate bit flags during the creation of an instance. </para>
+        </detaileddescription>
+        <inbodydescription>
+        </inbodydescription>
+        <location file="include/mental_xv_core.h" line="143" column="21" bodyfile="include/mental_xv_core.h" bodystart="143" bodyend="-1"/>
+      </memberdef>
+      <memberdef kind="typedef" id="mental__xv__core_8h_1a613d35a7f8f04ca7ef8f7a683c6c9374" prot="public" static="no">
+        <type>struct <ref refid="structMentalApplicationInfo" kindref="compound">MentalApplicationInfo</ref></type>
+        <definition>typedef struct MentalApplicationInfo MentalApplicationInfo</definition>
+        <argsstring></argsstring>
+        <name>MentalApplicationInfo</name>
+        <briefdescription>
+<para>Structure containing application information. </para>
+        </briefdescription>
+        <detaileddescription>
+<para>This structure holds various pieces of information about the application, such as its name, version, engine name, and engine version. </para>
+        </detaileddescription>
+        <inbodydescription>
+        </inbodydescription>
+        <location file="include/mental_xv_core.h" line="159" column="23"/>
+      </memberdef>
+      <memberdef kind="typedef" id="mental__xv__core_8h_1ae33b6aa8a1c3d466897d03c247cee793" prot="public" static="no">
+        <type>struct <ref refid="structMentalInstanceCreateInfo" kindref="compound">MentalInstanceCreateInfo</ref></type>
+        <definition>typedef struct MentalInstanceCreateInfo MentalInstanceCreateInfo</definition>
+        <argsstring></argsstring>
+        <name>MentalInstanceCreateInfo</name>
+        <briefdescription>
+<para>Structure containing information for creating an instance. </para>
+        </briefdescription>
+        <detaileddescription>
+<para>This structure holds various pieces of information required to create an instance, such as application info, enabled layers, and enabled extensions. </para>
+        </detaileddescription>
+        <inbodydescription>
+        </inbodydescription>
+        <location file="include/mental_xv_core.h" line="176" column="26"/>
+      </memberdef>
+    </sectiondef>
+    <briefdescription>
+    </briefdescription>
+    <detaileddescription>
+    </detaileddescription>
+    <programlisting>
+<codeline lineno="1"><highlight class="preprocessor">#ifndef<sp/>MENTAL_XV_CORE_H_</highlight><highlight class="normal"></highlight></codeline>
+<codeline lineno="2"><highlight class="normal"></highlight><highlight class="preprocessor">#define<sp/>MENTAL_XV_CORE_H_<sp/>1</highlight><highlight class="normal"></highlight></codeline>
+<codeline lineno="3"><highlight class="normal"></highlight></codeline>
+<codeline lineno="4"><highlight class="normal"></highlight><highlight class="preprocessor">#ifdef<sp/>__cplusplus</highlight><highlight class="normal"></highlight></codeline>
+<codeline lineno="5"><highlight class="normal"><sp/><sp/><sp/><sp/></highlight><highlight class="keyword">extern</highlight><highlight class="normal"><sp/></highlight><highlight class="stringliteral">&quot;C&quot;</highlight><highlight class="normal"><sp/>{</highlight></codeline>
+<codeline lineno="6"><highlight class="normal"></highlight><highlight class="preprocessor">#endif</highlight><highlight class="normal"></highlight></codeline>
+<codeline lineno="7"><highlight class="normal"></highlight></codeline>
+<codeline lineno="8" refid="mental__xv__core_8h_1a21917fcae9e377836c840ef4899957fb" refkind="member"><highlight class="normal"></highlight><highlight class="preprocessor">#define<sp/>MENTAL_XV_VERSION_1_0</highlight><highlight class="normal"></highlight></codeline>
+<codeline lineno="9"><highlight class="normal"></highlight><highlight class="preprocessor">#include<sp/>&lt;stdint.h&gt;</highlight><highlight class="normal"></highlight></codeline>
+<codeline lineno="10"><highlight class="normal"></highlight></codeline>
+<codeline lineno="21" refid="mental__xv__core_8h_1ae0c9f90ac68f9340368d4174cdd635d7" refkind="member"><highlight class="normal"></highlight><highlight class="preprocessor">#define<sp/>MENTAL_XV_VERSION_VARIANT(version)<sp/>((uint32_t)(version)<sp/>&gt;&gt;<sp/>29U)</highlight><highlight class="normal"></highlight></codeline>
+<codeline lineno="22"><highlight class="normal"></highlight></codeline>
+<codeline lineno="33" refid="mental__xv__core_8h_1abdb2bee204fe16ce94de34809b44d333" refkind="member"><highlight class="normal"></highlight><highlight class="preprocessor">#define<sp/>MENTAL_XV_VERSION_MAJOR(version)<sp/>(((uint32_t)(version)<sp/>&gt;&gt;<sp/>22U)<sp/>&amp;<sp/>0x7FU)</highlight><highlight class="normal"></highlight></codeline>
+<codeline lineno="34"><highlight class="normal"></highlight></codeline>
+<codeline lineno="45" refid="mental__xv__core_8h_1a95cfa6f75ba9ec499f0f96478454a225" refkind="member"><highlight class="normal"></highlight><highlight class="preprocessor">#define<sp/>MENTAL_XV_VERSION_MINOR(version)<sp/>(((uint32_t)(version)<sp/>&gt;&gt;<sp/>12U)<sp/>&amp;<sp/>0x3FFU)</highlight><highlight class="normal"></highlight></codeline>
+<codeline lineno="46"><highlight class="normal"></highlight></codeline>
+<codeline lineno="57" refid="mental__xv__core_8h_1a72f4c99020cca6079dea03f6715f3c92" refkind="member"><highlight class="normal"></highlight><highlight class="preprocessor">#define<sp/>MENTAL_XV_VERSION_PATCH(version)<sp/>((uint32_t)(version)<sp/>&amp;<sp/>0xFFFU)</highlight><highlight class="normal"></highlight></codeline>
+<codeline lineno="58"><highlight class="normal"></highlight></codeline>
+<codeline lineno="92" refid="mental__xv__core_8h_1a85c06e36c77c7cb291a034a60400d96e" refkind="member"><highlight class="normal"></highlight><highlight class="keyword">typedef</highlight><highlight class="normal"><sp/>uint32_t<sp/><ref refid="mental__xv__core_8h_1a85c06e36c77c7cb291a034a60400d96e" kindref="member">MentalFlags</ref>;</highlight></codeline>
+<codeline lineno="93"><highlight class="normal"></highlight></codeline>
+<codeline lineno="110" refid="mental__xv__core_8h_1af7302d331733011c84091974c3ba1e99" refkind="member"><highlight class="normal"></highlight><highlight class="keyword">typedef</highlight><highlight class="normal"><sp/></highlight><highlight class="keyword">enum</highlight><highlight class="normal"><sp/><ref refid="mental__xv__core_8h_1af7302d331733011c84091974c3ba1e99" kindref="member">MentalResult</ref></highlight></codeline>
+<codeline lineno="111"><highlight class="normal">{</highlight></codeline>
+<codeline lineno="112" refid="mental__xv__core_8h_1af7302d331733011c84091974c3ba1e99a078bb99cd4b22a8242ae80d329a15b48" refkind="member"><highlight class="normal"><sp/><sp/><sp/><sp/><ref refid="mental__xv__core_8h_1af7302d331733011c84091974c3ba1e99a078bb99cd4b22a8242ae80d329a15b48" kindref="member">MT_SUCCESS</ref><sp/><sp/><sp/><sp/><sp/>=<sp/>0,<sp/><sp/><sp/><sp/><sp/></highlight></codeline>
+<codeline lineno="113" refid="mental__xv__core_8h_1af7302d331733011c84091974c3ba1e99a257f20243d6089a1f80b98212076ee6f" refkind="member"><highlight class="normal"><sp/><sp/><sp/><sp/><ref refid="mental__xv__core_8h_1af7302d331733011c84091974c3ba1e99a257f20243d6089a1f80b98212076ee6f" kindref="member">MT_NOT_READY</ref><sp/><sp/><sp/>=<sp/>1,<sp/><sp/><sp/><sp/><sp/></highlight></codeline>
+<codeline lineno="114" refid="mental__xv__core_8h_1af7302d331733011c84091974c3ba1e99a78ff5b702dc962d56b91b15acb9c9c95" refkind="member"><highlight class="normal"><sp/><sp/><sp/><sp/><ref refid="mental__xv__core_8h_1af7302d331733011c84091974c3ba1e99a78ff5b702dc962d56b91b15acb9c9c95" kindref="member">MT_EVENT_SET</ref><sp/><sp/><sp/>=<sp/>3,<sp/><sp/><sp/><sp/><sp/></highlight></codeline>
+<codeline lineno="115" refid="mental__xv__core_8h_1af7302d331733011c84091974c3ba1e99a3bdf3a9790312087808d00e29188136d" refkind="member"><highlight class="normal"><sp/><sp/><sp/><sp/><ref refid="mental__xv__core_8h_1af7302d331733011c84091974c3ba1e99a3bdf3a9790312087808d00e29188136d" kindref="member">MT_EVENT_RESET</ref><sp/>=<sp/>4,<sp/><sp/><sp/><sp/><sp/></highlight></codeline>
+<codeline lineno="116" refid="mental__xv__core_8h_1af7302d331733011c84091974c3ba1e99a89e7f0e8457ef03254f379fa0313d894" refkind="member"><highlight class="normal"><sp/><sp/><sp/><sp/><ref refid="mental__xv__core_8h_1af7302d331733011c84091974c3ba1e99a89e7f0e8457ef03254f379fa0313d894" kindref="member">MT_INCOMPLETE</ref><sp/><sp/>=<sp/>5,<sp/><sp/><sp/><sp/><sp/></highlight></codeline>
+<codeline lineno="117"><highlight class="normal"><sp/><sp/><sp/><sp/><ref refid="mental__xv__core_8h_1af7302d331733011c84091974c3ba1e99a53ef8696bc290003828824a413777589" kindref="member">MT_ERROR</ref><sp/><sp/><sp/><sp/><sp/><sp/><sp/>=<sp/>6<sp/><sp/><sp/><sp/><sp/><sp/></highlight></codeline>
+<codeline lineno="118" refid="mental__xv__core_8h_1a1335103b1e885f677af00aa47df4f1af" refkind="member"><highlight class="normal">}<sp/><ref refid="mental__xv__core_8h_1af7302d331733011c84091974c3ba1e99" kindref="member">MentalResult</ref>;</highlight></codeline>
+<codeline lineno="119"><highlight class="normal"></highlight></codeline>
+<codeline lineno="132" refid="mental__xv__core_8h_1a4040728f3adc443389084c52cc3dacf8" refkind="member"><highlight class="normal"></highlight><highlight class="keyword">typedef</highlight><highlight class="normal"><sp/></highlight><highlight class="keyword">enum</highlight><highlight class="normal"><sp/><ref refid="mental__xv__core_8h_1a4040728f3adc443389084c52cc3dacf8" kindref="member">MentalStructureType</ref><sp/>{</highlight></codeline>
+<codeline lineno="133" refid="mental__xv__core_8h_1a4040728f3adc443389084c52cc3dacf8a8a101966e58321e3f45a94199d024d2b" refkind="member"><highlight class="normal"><sp/><sp/><sp/><sp/><ref refid="mental__xv__core_8h_1a4040728f3adc443389084c52cc3dacf8a8a101966e58321e3f45a94199d024d2b" kindref="member">MT_STRUCTURE_TYPE_APPLICATION_INFO</ref><sp/><sp/>=<sp/>0,<sp/></highlight></codeline>
+<codeline lineno="134" refid="mental__xv__core_8h_1a4040728f3adc443389084c52cc3dacf8a10dc2ca6e0779e1e2bae1ae2ac1d2bbe" refkind="member"><highlight class="normal"><sp/><sp/><sp/><sp/><ref refid="mental__xv__core_8h_1a4040728f3adc443389084c52cc3dacf8a10dc2ca6e0779e1e2bae1ae2ac1d2bbe" kindref="member">MT_STRUCTURE_TYPE_ENGINE_INFO</ref><sp/><sp/><sp/><sp/><sp/><sp/><sp/>=<sp/>1,<sp/></highlight></codeline>
+<codeline lineno="135" refid="mental__xv__core_8h_1a829bce00e03e07c0d1b874776b0e5611" refkind="member"><highlight class="normal">}<sp/><ref refid="mental__xv__core_8h_1a4040728f3adc443389084c52cc3dacf8" kindref="member">MentalStructureType</ref>;</highlight></codeline>
+<codeline lineno="136"><highlight class="normal"></highlight></codeline>
+<codeline lineno="143" refid="mental__xv__core_8h_1a8001f712b14b0ececd970c22c972969a" refkind="member"><highlight class="normal"></highlight><highlight class="keyword">typedef</highlight><highlight class="normal"><sp/><ref refid="mental__xv__core_8h_1a85c06e36c77c7cb291a034a60400d96e" kindref="member">MentalFlags</ref><sp/><ref refid="mental__xv__core_8h_1a8001f712b14b0ececd970c22c972969a" kindref="member">MentalInstanceCreateFlags</ref>;</highlight></codeline>
+<codeline lineno="144"><highlight class="normal"></highlight></codeline>
+<codeline lineno="151" refid="structMentalApplicationInfo" refkind="compound"><highlight class="normal"></highlight><highlight class="keyword">typedef</highlight><highlight class="normal"><sp/></highlight><highlight class="keyword">struct<sp/></highlight><highlight class="normal"><ref refid="structMentalApplicationInfo" kindref="compound">MentalApplicationInfo</ref><sp/>{</highlight></codeline>
+<codeline lineno="152" refid="structMentalApplicationInfo_1a78354ca5ff3d4b2f0077822c30973d84" refkind="member"><highlight class="normal"><sp/><sp/><sp/><sp/><ref refid="mental__xv__core_8h_1a4040728f3adc443389084c52cc3dacf8" kindref="member">MentalStructureType</ref><sp/><sp/><sp/><sp/><ref refid="structMentalApplicationInfo_1a78354ca5ff3d4b2f0077822c30973d84" kindref="member">sType</ref>;<sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/></highlight></codeline>
+<codeline lineno="153" refid="structMentalApplicationInfo_1a42f026a9c165b1f7841f22145707c723" refkind="member"><highlight class="normal"><sp/><sp/><sp/><sp/></highlight><highlight class="keyword">const</highlight><highlight class="normal"><sp/></highlight><highlight class="keywordtype">void</highlight><highlight class="normal">*<sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><ref refid="structMentalApplicationInfo_1a42f026a9c165b1f7841f22145707c723" kindref="member">pNext</ref>;<sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/></highlight></codeline>
+<codeline lineno="154" refid="structMentalApplicationInfo_1ad62d689d5ee1bbc561454a4e6fe762ad" refkind="member"><highlight class="normal"><sp/><sp/><sp/><sp/></highlight><highlight class="keyword">const</highlight><highlight class="normal"><sp/></highlight><highlight class="keywordtype">char</highlight><highlight class="normal">*<sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><ref refid="structMentalApplicationInfo_1ad62d689d5ee1bbc561454a4e6fe762ad" kindref="member">pApplicationName</ref>;<sp/><sp/><sp/></highlight></codeline>
+<codeline lineno="155" refid="structMentalApplicationInfo_1a3172706bb52464086f3548c97271cbc6" refkind="member"><highlight class="normal"><sp/><sp/><sp/><sp/>uint32_t<sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><ref refid="structMentalApplicationInfo_1a3172706bb52464086f3548c97271cbc6" kindref="member">applicationVersion</ref>;<sp/></highlight></codeline>
+<codeline lineno="156" refid="structMentalApplicationInfo_1a32fe1ca61f17300b4bd8a6a6d0b95b66" refkind="member"><highlight class="normal"><sp/><sp/><sp/><sp/></highlight><highlight class="keyword">const</highlight><highlight class="normal"><sp/></highlight><highlight class="keywordtype">char</highlight><highlight class="normal">*<sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><ref refid="structMentalApplicationInfo_1a32fe1ca61f17300b4bd8a6a6d0b95b66" kindref="member">pEngineName</ref>;<sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/></highlight></codeline>
+<codeline lineno="157" refid="structMentalApplicationInfo_1a7ec42998c0d337df529ac9010d53a320" refkind="member"><highlight class="normal"><sp/><sp/><sp/><sp/>uint32_t<sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><ref refid="structMentalApplicationInfo_1a7ec42998c0d337df529ac9010d53a320" kindref="member">engineVersion</ref>;<sp/><sp/><sp/><sp/><sp/><sp/></highlight></codeline>
+<codeline lineno="158" refid="structMentalApplicationInfo_1a31c14901186b58ad1801a618bc8e8121" refkind="member"><highlight class="normal"><sp/><sp/><sp/><sp/>uint32_t<sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><ref refid="structMentalApplicationInfo_1a31c14901186b58ad1801a618bc8e8121" kindref="member">apiVersion</ref>;<sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/></highlight></codeline>
+<codeline lineno="159" refid="mental__xv__core_8h_1a613d35a7f8f04ca7ef8f7a683c6c9374" refkind="member"><highlight class="normal">}<sp/><ref refid="structMentalApplicationInfo" kindref="compound">MentalApplicationInfo</ref>;</highlight></codeline>
+<codeline lineno="160"><highlight class="normal"></highlight></codeline>
+<codeline lineno="167" refid="structMentalInstanceCreateInfo" refkind="compound"><highlight class="normal"></highlight><highlight class="keyword">typedef</highlight><highlight class="normal"><sp/></highlight><highlight class="keyword">struct<sp/></highlight><highlight class="normal"><ref refid="structMentalInstanceCreateInfo" kindref="compound">MentalInstanceCreateInfo</ref><sp/>{</highlight></codeline>
+<codeline lineno="168" refid="structMentalInstanceCreateInfo_1a98666ccff1ea1f483cbe13161023c8aa" refkind="member"><highlight class="normal"><sp/><sp/><sp/><sp/><ref refid="mental__xv__core_8h_1a4040728f3adc443389084c52cc3dacf8" kindref="member">MentalStructureType</ref><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><ref refid="structMentalInstanceCreateInfo_1a98666ccff1ea1f483cbe13161023c8aa" kindref="member">sType</ref>;<sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/></highlight></codeline>
+<codeline lineno="169" refid="structMentalInstanceCreateInfo_1adf1491d6421cfcb15ad3e5996f592848" refkind="member"><highlight class="normal"><sp/><sp/><sp/><sp/></highlight><highlight class="keyword">const</highlight><highlight class="normal"><sp/></highlight><highlight class="keywordtype">void</highlight><highlight class="normal">*<sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><ref refid="structMentalInstanceCreateInfo_1adf1491d6421cfcb15ad3e5996f592848" kindref="member">pNext</ref>;<sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/></highlight></codeline>
+<codeline lineno="170" refid="structMentalInstanceCreateInfo_1aaa26a260d2575c6a4581cddc5a8aaa62" refkind="member"><highlight class="normal"><sp/><sp/><sp/><sp/><ref refid="mental__xv__core_8h_1a8001f712b14b0ececd970c22c972969a" kindref="member">MentalInstanceCreateFlags</ref><sp/><sp/><sp/><sp/><sp/><sp/><sp/><ref refid="structMentalInstanceCreateInfo_1aaa26a260d2575c6a4581cddc5a8aaa62" kindref="member">flags</ref>;<sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/></highlight></codeline>
+<codeline lineno="171" refid="structMentalInstanceCreateInfo_1a727f4c194e46fb87f1f093442a0a6674" refkind="member"><highlight class="normal"><sp/><sp/><sp/><sp/></highlight><highlight class="keyword">const</highlight><highlight class="normal"><sp/><ref refid="structMentalApplicationInfo" kindref="compound">MentalApplicationInfo</ref>*<sp/><sp/><sp/><sp/><ref refid="structMentalInstanceCreateInfo_1a727f4c194e46fb87f1f093442a0a6674" kindref="member">pApplicationInfo</ref>;<sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/></highlight></codeline>
+<codeline lineno="172" refid="structMentalInstanceCreateInfo_1a89911e7d11c0208b449d1c4b7a127da5" refkind="member"><highlight class="normal"><sp/><sp/><sp/><sp/>uint32_t<sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><ref refid="structMentalInstanceCreateInfo_1a89911e7d11c0208b449d1c4b7a127da5" kindref="member">enabledLayerCount</ref>;<sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/></highlight></codeline>
+<codeline lineno="173" refid="structMentalInstanceCreateInfo_1aa39f2523416b30281105df7ebb1a9a22" refkind="member"><highlight class="normal"><sp/><sp/><sp/><sp/></highlight><highlight class="keyword">const</highlight><highlight class="normal"><sp/></highlight><highlight class="keywordtype">char</highlight><highlight class="normal">*<sp/></highlight><highlight class="keyword">const</highlight><highlight class="normal">*<sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><ref refid="structMentalInstanceCreateInfo_1aa39f2523416b30281105df7ebb1a9a22" kindref="member">ppEnabledLayerNames</ref>;<sp/><sp/><sp/><sp/><sp/><sp/><sp/></highlight></codeline>
+<codeline lineno="174" refid="structMentalInstanceCreateInfo_1af29f97fa6365e2f365699ccf5fa6cc86" refkind="member"><highlight class="normal"><sp/><sp/><sp/><sp/>uint32_t<sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><ref refid="structMentalInstanceCreateInfo_1af29f97fa6365e2f365699ccf5fa6cc86" kindref="member">enabledExtensionCount</ref>;<sp/><sp/><sp/><sp/><sp/></highlight></codeline>
+<codeline lineno="175" refid="structMentalInstanceCreateInfo_1a859a0d0dd65217b9e66a28958be09d52" refkind="member"><highlight class="normal"><sp/><sp/><sp/><sp/></highlight><highlight class="keyword">const</highlight><highlight class="normal"><sp/></highlight><highlight class="keywordtype">char</highlight><highlight class="normal">*<sp/></highlight><highlight class="keyword">const</highlight><highlight class="normal">*<sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><ref refid="structMentalInstanceCreateInfo_1a859a0d0dd65217b9e66a28958be09d52" kindref="member">ppEnabledExtensionNames</ref>;<sp/><sp/><sp/></highlight></codeline>
+<codeline lineno="176" refid="mental__xv__core_8h_1ae33b6aa8a1c3d466897d03c247cee793" refkind="member"><highlight class="normal">}<sp/><ref refid="structMentalInstanceCreateInfo" kindref="compound">MentalInstanceCreateInfo</ref>;</highlight></codeline>
+<codeline lineno="177"><highlight class="normal"></highlight></codeline>
+<codeline lineno="178"><highlight class="normal"></highlight><highlight class="preprocessor">#ifdef<sp/>__cplusplus</highlight><highlight class="normal"></highlight></codeline>
+<codeline lineno="179"><highlight class="normal"><sp/><sp/><sp/><sp/>}</highlight></codeline>
+<codeline lineno="180"><highlight class="normal"></highlight><highlight class="preprocessor">#endif</highlight><highlight class="normal"></highlight></codeline>
+<codeline lineno="181"><highlight class="normal"></highlight></codeline>
+<codeline lineno="182"><highlight class="normal"></highlight><highlight class="preprocessor">#endif<sp/></highlight><highlight class="comment">//<sp/>MENTAL_XV_CORE_H_</highlight><highlight class="normal"></highlight></codeline>
+    </programlisting>
+    <location file="include/mental_xv_core.h"/>
+  </compounddef>
+</doxygen>

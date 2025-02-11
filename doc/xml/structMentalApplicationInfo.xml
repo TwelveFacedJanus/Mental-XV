@@ -1,0 +1,130 @@
+<?xml version='1.0' encoding='UTF-8' standalone='no'?>
+<doxygen xmlns:xsi="http://www.w3.org/2001/XMLSchema-instance" xsi:noNamespaceSchemaLocation="compound.xsd" version="1.9.8" xml:lang="en-US">
+  <compounddef id="structMentalApplicationInfo" kind="struct" language="C++" prot="public">
+    <compoundname>MentalApplicationInfo</compoundname>
+    <includes refid="mental__xv__core_8h" local="no">mental_xv_core.h</includes>
+    <sectiondef kind="public-attrib">
+      <memberdef kind="variable" id="structMentalApplicationInfo_1a78354ca5ff3d4b2f0077822c30973d84" prot="public" static="no" mutable="no">
+        <type><ref refid="mental__xv__core_8h_1a4040728f3adc443389084c52cc3dacf8" kindref="member">MentalStructureType</ref></type>
+        <definition>MentalStructureType MentalApplicationInfo::sType</definition>
+        <argsstring></argsstring>
+        <name>sType</name>
+        <qualifiedname>MentalApplicationInfo::sType</qualifiedname>
+        <briefdescription>
+        </briefdescription>
+        <detaileddescription>
+<para>Type of the structure. </para>
+        </detaileddescription>
+        <inbodydescription>
+        </inbodydescription>
+        <location file="include/mental_xv_core.h" line="152" column="28" bodyfile="include/mental_xv_core.h" bodystart="152" bodyend="-1"/>
+      </memberdef>
+      <memberdef kind="variable" id="structMentalApplicationInfo_1a42f026a9c165b1f7841f22145707c723" prot="public" static="no" mutable="no">
+        <type>const void *</type>
+        <definition>const void* MentalApplicationInfo::pNext</definition>
+        <argsstring></argsstring>
+        <name>pNext</name>
+        <qualifiedname>MentalApplicationInfo::pNext</qualifiedname>
+        <briefdescription>
+        </briefdescription>
+        <detaileddescription>
+<para>Pointer to the next structure in a chain. </para>
+        </detaileddescription>
+        <inbodydescription>
+        </inbodydescription>
+        <location file="include/mental_xv_core.h" line="153" column="27" bodyfile="include/mental_xv_core.h" bodystart="153" bodyend="-1"/>
+      </memberdef>
+      <memberdef kind="variable" id="structMentalApplicationInfo_1ad62d689d5ee1bbc561454a4e6fe762ad" prot="public" static="no" mutable="no">
+        <type>const char *</type>
+        <definition>const char* MentalApplicationInfo::pApplicationName</definition>
+        <argsstring></argsstring>
+        <name>pApplicationName</name>
+        <qualifiedname>MentalApplicationInfo::pApplicationName</qualifiedname>
+        <briefdescription>
+        </briefdescription>
+        <detaileddescription>
+<para>Name of the application. </para>
+        </detaileddescription>
+        <inbodydescription>
+        </inbodydescription>
+        <location file="include/mental_xv_core.h" line="154" column="27" bodyfile="include/mental_xv_core.h" bodystart="154" bodyend="-1"/>
+      </memberdef>
+      <memberdef kind="variable" id="structMentalApplicationInfo_1a3172706bb52464086f3548c97271cbc6" prot="public" static="no" mutable="no">
+        <type>uint32_t</type>
+        <definition>uint32_t MentalApplicationInfo::applicationVersion</definition>
+        <argsstring></argsstring>
+        <name>applicationVersion</name>
+        <qualifiedname>MentalApplicationInfo::applicationVersion</qualifiedname>
+        <briefdescription>
+        </briefdescription>
+        <detaileddescription>
+<para>Version of the application. </para>
+        </detaileddescription>
+        <inbodydescription>
+        </inbodydescription>
+        <location file="include/mental_xv_core.h" line="155" column="28" bodyfile="include/mental_xv_core.h" bodystart="155" bodyend="-1"/>
+      </memberdef>
+      <memberdef kind="variable" id="structMentalApplicationInfo_1a32fe1ca61f17300b4bd8a6a6d0b95b66" prot="public" static="no" mutable="no">
+        <type>const char *</type>
+        <definition>const char* MentalApplicationInfo::pEngineName</definition>
+        <argsstring></argsstring>
+        <name>pEngineName</name>
+        <qualifiedname>MentalApplicationInfo::pEngineName</qualifiedname>
+        <briefdescription>
+        </briefdescription>
+        <detaileddescription>
+<para>Name of the engine. </para>
+        </detaileddescription>
+        <inbodydescription>
+        </inbodydescription>
+        <location file="include/mental_xv_core.h" line="156" column="27" bodyfile="include/mental_xv_core.h" bodystart="156" bodyend="-1"/>
+      </memberdef>
+      <memberdef kind="variable" id="structMentalApplicationInfo_1a7ec42998c0d337df529ac9010d53a320" prot="public" static="no" mutable="no">
+        <type>uint32_t</type>
+        <definition>uint32_t MentalApplicationInfo::engineVersion</definition>
+        <argsstring></argsstring>
+        <name>engineVersion</name>
+        <qualifiedname>MentalApplicationInfo::engineVersion</qualifiedname>
+        <briefdescription>
+        </briefdescription>
+        <detaileddescription>
+<para>Version of the engine. </para>
+        </detaileddescription>
+        <inbodydescription>
+        </inbodydescription>
+        <location file="include/mental_xv_core.h" line="157" column="28" bodyfile="include/mental_xv_core.h" bodystart="157" bodyend="-1"/>
+      </memberdef>
+      <memberdef kind="variable" id="structMentalApplicationInfo_1a31c14901186b58ad1801a618bc8e8121" prot="public" static="no" mutable="no">
+        <type>uint32_t</type>
+        <definition>uint32_t MentalApplicationInfo::apiVersion</definition>
+        <argsstring></argsstring>
+        <name>apiVersion</name>
+        <qualifiedname>MentalApplicationInfo::apiVersion</qualifiedname>
+        <briefdescription>
+        </briefdescription>
+        <detaileddescription>
+<para>Version of the API. </para>
+        </detaileddescription>
+        <inbodydescription>
+        </inbodydescription>
+        <location file="include/mental_xv_core.h" line="158" column="28" bodyfile="include/mental_xv_core.h" bodystart="158" bodyend="-1"/>
+      </memberdef>
+    </sectiondef>
+    <briefdescription>
+<para>Structure containing application information. </para>
+    </briefdescription>
+    <detaileddescription>
+<para>This structure holds various pieces of information about the application, such as its name, version, engine name, and engine version. </para>
+    </detaileddescription>
+    <location file="include/mental_xv_core.h" line="151" column="1" bodyfile="include/mental_xv_core.h" bodystart="151" bodyend="159"/>
+    <listofallmembers>
+      <member refid="structMentalApplicationInfo_1a31c14901186b58ad1801a618bc8e8121" prot="public" virt="non-virtual"><scope>MentalApplicationInfo</scope><name>apiVersion</name></member>
+      <member refid="structMentalApplicationInfo_1a3172706bb52464086f3548c97271cbc6" prot="public" virt="non-virtual"><scope>MentalApplicationInfo</scope><name>applicationVersion</name></member>
+      <member refid="structMentalApplicationInfo_1a7ec42998c0d337df529ac9010d53a320" prot="public" virt="non-virtual"><scope>MentalApplicationInfo</scope><name>engineVersion</name></member>
+      <member refid="structMentalApplicationInfo_1ad62d689d5ee1bbc561454a4e6fe762ad" prot="public" virt="non-virtual"><scope>MentalApplicationInfo</scope><name>pApplicationName</name></member>
+      <member refid="structMentalApplicationInfo_1a32fe1ca61f17300b4bd8a6a6d0b95b66" prot="public" virt="non-virtual"><scope>MentalApplicationInfo</scope><name>pEngineName</name></member>
+      <member refid="structMentalApplicationInfo_1a42f026a9c165b1f7841f22145707c723" prot="public" virt="non-virtual"><scope>MentalApplicationInfo</scope><name>pNext</name></member>
+      <member refid="structMentalApplicationInfo_1a78354ca5ff3d4b2f0077822c30973d84" prot="public" virt="non-virtual"><scope>MentalApplicationInfo</scope><name>sType</name></member>
+    </listofallmembers>
+  </compounddef>
+</doxygen>

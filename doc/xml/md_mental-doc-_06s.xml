@@ -1,0 +1,181 @@
+<?xml version='1.0' encoding='UTF-8' standalone='no'?>
+<doxygen xmlns:xsi="http://www.w3.org/2001/XMLSchema-instance" xsi:noNamespaceSchemaLocation="compound.xsd" version="1.9.8" xml:lang="en-US">
+  <compounddef id="md_mental-doc-_06s" kind="page">
+    <compoundname>md_mental-doc-_06s</compoundname>
+    <title>Summary</title>
+    <briefdescription>
+    </briefdescription>
+    <detaileddescription>
+<para><anchor id="md_mental-doc-_06s_1autotoc_md0"/> <table rows="3" cols="2"><row>
+<entry thead="yes"><para>Members   </para>
+</entry><entry thead="yes"><para>Descriptions    </para>
+</entry></row>
+<row>
+<entry thead="no"><para><computeroutput>struct</computeroutput><ref refid="md_mental-doc-_06s_1structMentalApplicationInfo" kindref="member">`MentalApplicationInfo`</ref>   </para>
+</entry><entry thead="no"><para>Structure containing application information.    </para>
+</entry></row>
+<row>
+<entry thead="no"><para><computeroutput>struct</computeroutput><ref refid="md_mental-doc-_06s_1structMentalInstanceCreateInfo" kindref="member">`MentalInstanceCreateInfo`</ref>   </para>
+</entry><entry thead="no"><para>Structure containing information for creating an instance.   </para>
+</entry></row>
+</table>
+</para>
+<sect1 id="md_mental-doc-_06s_1structMentalApplicationInfo">
+<title>struct &lt;tt&gt;MentalApplicationInfo&lt;/tt&gt;</title>
+<para>Structure containing application information.</para>
+<para>This structure holds various pieces of information about the application, such as its name, version, engine name, and engine version.</para>
+<sect2 id="md_mental-doc-_06s_1autotoc_md1">
+<title>Summary</title>
+<para><table rows="8" cols="2"><row>
+<entry thead="yes"><para>Members   </para>
+</entry><entry thead="yes"><para>Descriptions    </para>
+</entry></row>
+<row>
+<entry thead="no"><para><computeroutput>public</computeroutput>`MentalStructureType`<ref refid="md_mental-doc-_06s_1structMentalApplicationInfo_1a78354ca5ff3d4b2f0077822c30973d84" kindref="member">`sType`</ref>   </para>
+</entry><entry thead="no"><para>Type of the structure.    </para>
+</entry></row>
+<row>
+<entry thead="no"><para><computeroutput>public const void *</computeroutput><ref refid="md_mental-doc-_06s_1structMentalApplicationInfo_1a42f026a9c165b1f7841f22145707c723" kindref="member">`pNext`</ref>   </para>
+</entry><entry thead="no"><para>Pointer to the next structure in a chain.    </para>
+</entry></row>
+<row>
+<entry thead="no"><para><computeroutput>public const char *</computeroutput><ref refid="md_mental-doc-_06s_1structMentalApplicationInfo_1ad62d689d5ee1bbc561454a4e6fe762ad" kindref="member">`pApplicationName`</ref>   </para>
+</entry><entry thead="no"><para>Name of the application.    </para>
+</entry></row>
+<row>
+<entry thead="no"><para><computeroutput>public uint32_t</computeroutput><ref refid="md_mental-doc-_06s_1structMentalApplicationInfo_1a3172706bb52464086f3548c97271cbc6" kindref="member">`applicationVersion`</ref>   </para>
+</entry><entry thead="no"><para>Version of the application.    </para>
+</entry></row>
+<row>
+<entry thead="no"><para><computeroutput>public const char *</computeroutput><ref refid="md_mental-doc-_06s_1structMentalApplicationInfo_1a32fe1ca61f17300b4bd8a6a6d0b95b66" kindref="member">`pEngineName`</ref>   </para>
+</entry><entry thead="no"><para>Name of the engine.    </para>
+</entry></row>
+<row>
+<entry thead="no"><para><computeroutput>public uint32_t</computeroutput><ref refid="md_mental-doc-_06s_1structMentalApplicationInfo_1a7ec42998c0d337df529ac9010d53a320" kindref="member">`engineVersion`</ref>   </para>
+</entry><entry thead="no"><para>Version of the engine.    </para>
+</entry></row>
+<row>
+<entry thead="no"><para><computeroutput>public uint32_t</computeroutput><ref refid="md_mental-doc-_06s_1structMentalApplicationInfo_1a31c14901186b58ad1801a618bc8e8121" kindref="member">`apiVersion`</ref>   </para>
+</entry><entry thead="no"><para>Version of the API.   </para>
+</entry></row>
+</table>
+</para>
+</sect2>
+<sect2 id="md_mental-doc-_06s_1autotoc_md2">
+<title>Members</title>
+<sect4 id="md_mental-doc-_06s_1structMentalApplicationInfo_1a78354ca5ff3d4b2f0077822c30973d84">
+<title>&lt;tt&gt;public&lt;/tt&gt;@ref &quot;mental__xv__core_8h_1a4040728f3adc443389084c52cc3dacf8&quot; &quot;`MentalStructureType`&quot;@ref &quot;structMentalApplicationInfo_1a78354ca5ff3d4b2f0077822c30973d84&quot; &quot;`sType`&quot;</title>
+<para>Type of the structure.</para>
+</sect4>
+<sect4 id="md_mental-doc-_06s_1structMentalApplicationInfo_1a42f026a9c165b1f7841f22145707c723">
+<title>&lt;tt&gt;public const void *&lt;/tt&gt;@ref &quot;structMentalApplicationInfo_1a42f026a9c165b1f7841f22145707c723&quot; &quot;`pNext`&quot;</title>
+<para>Pointer to the next structure in a chain.</para>
+</sect4>
+<sect4 id="md_mental-doc-_06s_1structMentalApplicationInfo_1ad62d689d5ee1bbc561454a4e6fe762ad">
+<title>&lt;tt&gt;public const char *&lt;/tt&gt;@ref &quot;structMentalApplicationInfo_1ad62d689d5ee1bbc561454a4e6fe762ad&quot; &quot;`pApplicationName`&quot;</title>
+<para>Name of the application.</para>
+</sect4>
+<sect4 id="md_mental-doc-_06s_1structMentalApplicationInfo_1a3172706bb52464086f3548c97271cbc6">
+<title>&lt;tt&gt;public uint32_t&lt;/tt&gt;@ref &quot;structMentalApplicationInfo_1a3172706bb52464086f3548c97271cbc6&quot; &quot;`applicationVersion`&quot;</title>
+<para>Version of the application.</para>
+</sect4>
+<sect4 id="md_mental-doc-_06s_1structMentalApplicationInfo_1a32fe1ca61f17300b4bd8a6a6d0b95b66">
+<title>&lt;tt&gt;public const char *&lt;/tt&gt;@ref &quot;structMentalApplicationInfo_1a32fe1ca61f17300b4bd8a6a6d0b95b66&quot; &quot;`pEngineName`&quot;</title>
+<para>Name of the engine.</para>
+</sect4>
+<sect4 id="md_mental-doc-_06s_1structMentalApplicationInfo_1a7ec42998c0d337df529ac9010d53a320">
+<title>&lt;tt&gt;public uint32_t&lt;/tt&gt;@ref &quot;structMentalApplicationInfo_1a7ec42998c0d337df529ac9010d53a320&quot; &quot;`engineVersion`&quot;</title>
+<para>Version of the engine.</para>
+</sect4>
+<sect4 id="md_mental-doc-_06s_1structMentalApplicationInfo_1a31c14901186b58ad1801a618bc8e8121">
+<title>&lt;tt&gt;public uint32_t&lt;/tt&gt;@ref &quot;structMentalApplicationInfo_1a31c14901186b58ad1801a618bc8e8121&quot; &quot;`apiVersion`&quot;</title>
+<para>Version of the API.</para>
+</sect4>
+</sect2>
+</sect1>
+<sect1 id="md_mental-doc-_06s_1structMentalInstanceCreateInfo">
+<title>struct &lt;tt&gt;MentalInstanceCreateInfo&lt;/tt&gt;</title>
+<para>Structure containing information for creating an instance.</para>
+<para>This structure holds various pieces of information required to create an instance, such as application info, enabled layers, and enabled extensions.</para>
+<sect2 id="md_mental-doc-_06s_1autotoc_md3">
+<title>Summary</title>
+<para><table rows="9" cols="2"><row>
+<entry thead="yes"><para>Members   </para>
+</entry><entry thead="yes"><para>Descriptions    </para>
+</entry></row>
+<row>
+<entry thead="no"><para><computeroutput>public</computeroutput>`MentalStructureType`<ref refid="md_mental-doc-_06s_1structMentalInstanceCreateInfo_1a98666ccff1ea1f483cbe13161023c8aa" kindref="member">`sType`</ref>   </para>
+</entry><entry thead="no"><para>Type of the structure.    </para>
+</entry></row>
+<row>
+<entry thead="no"><para><computeroutput>public const void *</computeroutput><ref refid="md_mental-doc-_06s_1structMentalInstanceCreateInfo_1adf1491d6421cfcb15ad3e5996f592848" kindref="member">`pNext`</ref>   </para>
+</entry><entry thead="no"><para>Pointer to the next structure in a chain.    </para>
+</entry></row>
+<row>
+<entry thead="no"><para><computeroutput>public</computeroutput>`MentalInstanceCreateFlags`<ref refid="md_mental-doc-_06s_1structMentalInstanceCreateInfo_1aaa26a260d2575c6a4581cddc5a8aaa62" kindref="member">`flags`</ref>   </para>
+</entry><entry thead="no"><para>Flags for instance creation.    </para>
+</entry></row>
+<row>
+<entry thead="no"><para><computeroutput>public const</computeroutput><ref refid="md_mental-doc-_06s_1structMentalApplicationInfo" kindref="member">`MentalApplicationInfo`</ref><computeroutput>*</computeroutput><ref refid="md_mental-doc-_06s_1structMentalInstanceCreateInfo_1a727f4c194e46fb87f1f093442a0a6674" kindref="member">`pApplicationInfo`</ref>   </para>
+</entry><entry thead="no"><para>Pointer to application info.    </para>
+</entry></row>
+<row>
+<entry thead="no"><para><computeroutput>public uint32_t</computeroutput><ref refid="md_mental-doc-_06s_1structMentalInstanceCreateInfo_1a89911e7d11c0208b449d1c4b7a127da5" kindref="member">`enabledLayerCount`</ref>   </para>
+</entry><entry thead="no"><para>Number of enabled layers.    </para>
+</entry></row>
+<row>
+<entry thead="no"><para><computeroutput>public const char *const *</computeroutput><ref refid="md_mental-doc-_06s_1structMentalInstanceCreateInfo_1aa39f2523416b30281105df7ebb1a9a22" kindref="member">`ppEnabledLayerNames`</ref>   </para>
+</entry><entry thead="no"><para>Array of enabled layer names.    </para>
+</entry></row>
+<row>
+<entry thead="no"><para><computeroutput>public uint32_t</computeroutput><ref refid="md_mental-doc-_06s_1structMentalInstanceCreateInfo_1af29f97fa6365e2f365699ccf5fa6cc86" kindref="member">`enabledExtensionCount`</ref>   </para>
+</entry><entry thead="no"><para>Number of enabled extensions.    </para>
+</entry></row>
+<row>
+<entry thead="no"><para><computeroutput>public const char *const *</computeroutput><ref refid="md_mental-doc-_06s_1structMentalInstanceCreateInfo_1a859a0d0dd65217b9e66a28958be09d52" kindref="member">`ppEnabledExtensionNames`</ref>   </para>
+</entry><entry thead="no"><para>Array of enabled extension names.   </para>
+</entry></row>
+</table>
+</para>
+</sect2>
+<sect2 id="md_mental-doc-_06s_1autotoc_md4">
+<title>Members</title>
+<sect4 id="md_mental-doc-_06s_1structMentalInstanceCreateInfo_1a98666ccff1ea1f483cbe13161023c8aa">
+<title>&lt;tt&gt;public&lt;/tt&gt;@ref &quot;mental__xv__core_8h_1a4040728f3adc443389084c52cc3dacf8&quot; &quot;`MentalStructureType`&quot;@ref &quot;structMentalInstanceCreateInfo_1a98666ccff1ea1f483cbe13161023c8aa&quot; &quot;`sType`&quot;</title>
+<para>Type of the structure.</para>
+</sect4>
+<sect4 id="md_mental-doc-_06s_1structMentalInstanceCreateInfo_1adf1491d6421cfcb15ad3e5996f592848">
+<title>&lt;tt&gt;public const void *&lt;/tt&gt;@ref &quot;structMentalInstanceCreateInfo_1adf1491d6421cfcb15ad3e5996f592848&quot; &quot;`pNext`&quot;</title>
+<para>Pointer to the next structure in a chain.</para>
+</sect4>
+<sect4 id="md_mental-doc-_06s_1structMentalInstanceCreateInfo_1aaa26a260d2575c6a4581cddc5a8aaa62">
+<title>&lt;tt&gt;public&lt;/tt&gt;@ref &quot;mental__xv__core_8h_1a8001f712b14b0ececd970c22c972969a&quot; &quot;`MentalInstanceCreateFlags`&quot;@ref &quot;structMentalInstanceCreateInfo_1aaa26a260d2575c6a4581cddc5a8aaa62&quot; &quot;`flags`&quot;</title>
+<para>Flags for instance creation.</para>
+</sect4>
+<sect4 id="md_mental-doc-_06s_1structMentalInstanceCreateInfo_1a727f4c194e46fb87f1f093442a0a6674">
+<title>&lt;tt&gt;public const&lt;/tt&gt;@ref &quot;structMentalApplicationInfo&quot; &quot;`MentalApplicationInfo`&quot;&lt;tt&gt;*&lt;/tt&gt;@ref &quot;structMentalInstanceCreateInfo_1a727f4c194e46fb87f1f093442a0a6674&quot; &quot;`pApplicationInfo`&quot;</title>
+<para>Pointer to application info.</para>
+</sect4>
+<sect4 id="md_mental-doc-_06s_1structMentalInstanceCreateInfo_1a89911e7d11c0208b449d1c4b7a127da5">
+<title>&lt;tt&gt;public uint32_t&lt;/tt&gt;@ref &quot;structMentalInstanceCreateInfo_1a89911e7d11c0208b449d1c4b7a127da5&quot; &quot;`enabledLayerCount`&quot;</title>
+<para>Number of enabled layers.</para>
+</sect4>
+<sect4 id="md_mental-doc-_06s_1structMentalInstanceCreateInfo_1aa39f2523416b30281105df7ebb1a9a22">
+<title>&lt;tt&gt;public const char *const  *&lt;/tt&gt;@ref &quot;structMentalInstanceCreateInfo_1aa39f2523416b30281105df7ebb1a9a22&quot; &quot;`ppEnabledLayerNames`&quot;</title>
+<para>Array of enabled layer names.</para>
+</sect4>
+<sect4 id="md_mental-doc-_06s_1structMentalInstanceCreateInfo_1af29f97fa6365e2f365699ccf5fa6cc86">
+<title>&lt;tt&gt;public uint32_t&lt;/tt&gt;@ref &quot;structMentalInstanceCreateInfo_1af29f97fa6365e2f365699ccf5fa6cc86&quot; &quot;`enabledExtensionCount`&quot;</title>
+<para>Number of enabled extensions.</para>
+</sect4>
+<sect4 id="md_mental-doc-_06s_1structMentalInstanceCreateInfo_1a859a0d0dd65217b9e66a28958be09d52">
+<title>&lt;tt&gt;public const char *const  *&lt;/tt&gt;@ref &quot;structMentalInstanceCreateInfo_1a859a0d0dd65217b9e66a28958be09d52&quot; &quot;`ppEnabledExtensionNames`&quot;</title>
+<para>Array of enabled extension names.</para>
+<para>Generated by <ulink url="https://sourcey.com/moxygen">Moxygen</ulink> </para>
+</sect4>
+</sect2>
+</sect1>
+    </detaileddescription>
+    <location file="mental-doc-%s.md"/>
+  </compounddef>
+</doxygen>

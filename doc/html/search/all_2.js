@@ -1,4 +1,6 @@
 var searchData=
 [
-  ['flags_0',['flags',['../structMentalInstanceCreateInfo.html#aaa26a260d2575c6a4581cddc5a8aaa62',1,'MentalInstanceCreateInfo']]]
+  ['enabledextensioncount_0',['enabledextensioncount',['../md_mental-doc-_06s.html#structMentalInstanceCreateInfo_1af29f97fa6365e2f365699ccf5fa6cc86',1,'&lt;tt&gt;public uint32_t&lt;/tt&gt;@ref &quot;structMentalInstanceCreateInfo_1af29f97fa6365e2f365699ccf5fa6cc86&quot; &quot;`enabledExtensionCount`&quot;'],['../structMentalInstanceCreateInfo.html#af29f97fa6365e2f365699ccf5fa6cc86',1,'MentalInstanceCreateInfo::enabledExtensionCount']]],
+  ['enabledlayercount_1',['enabledlayercount',['../md_mental-doc-_06s.html#structMentalInstanceCreateInfo_1a89911e7d11c0208b449d1c4b7a127da5',1,'&lt;tt&gt;public uint32_t&lt;/tt&gt;@ref &quot;structMentalInstanceCreateInfo_1a89911e7d11c0208b449d1c4b7a127da5&quot; &quot;`enabledLayerCount`&quot;'],['../structMentalInstanceCreateInfo.html#a89911e7d11c0208b449d1c4b7a127da5',1,'MentalInstanceCreateInfo::enabledLayerCount']]],
+  ['engineversion_2',['engineversion',['../md_mental-doc-_06s.html#structMentalApplicationInfo_1a7ec42998c0d337df529ac9010d53a320',1,'&lt;tt&gt;public uint32_t&lt;/tt&gt;@ref &quot;structMentalApplicationInfo_1a7ec42998c0d337df529ac9010d53a320&quot; &quot;`engineVersion`&quot;'],['../structMentalApplicationInfo.html#a7ec42998c0d337df529ac9010d53a320',1,'MentalApplicationInfo::engineVersion']]]
 ];

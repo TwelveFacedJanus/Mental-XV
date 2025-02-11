@@ -1,0 +1,159 @@
+<?xml version='1.0' encoding='UTF-8' standalone='no'?>
+<doxygen xmlns:xsi="http://www.w3.org/2001/XMLSchema-instance" xsi:noNamespaceSchemaLocation="compound.xsd" version="1.9.8" xml:lang="en-US">
+  <compounddef id="structMentalInstanceCreateInfo" kind="struct" language="C++" prot="public">
+    <compoundname>MentalInstanceCreateInfo</compoundname>
+    <includes refid="mental__xv__core_8h" local="no">mental_xv_core.h</includes>
+    <sectiondef kind="public-attrib">
+      <memberdef kind="variable" id="structMentalInstanceCreateInfo_1a98666ccff1ea1f483cbe13161023c8aa" prot="public" static="no" mutable="no">
+        <type><ref refid="mental__xv__core_8h_1a4040728f3adc443389084c52cc3dacf8" kindref="member">MentalStructureType</ref></type>
+        <definition>MentalStructureType MentalInstanceCreateInfo::sType</definition>
+        <argsstring></argsstring>
+        <name>sType</name>
+        <qualifiedname>MentalInstanceCreateInfo::sType</qualifiedname>
+        <briefdescription>
+        </briefdescription>
+        <detaileddescription>
+<para>Type of the structure. </para>
+        </detaileddescription>
+        <inbodydescription>
+        </inbodydescription>
+        <location file="include/mental_xv_core.h" line="168" column="37" bodyfile="include/mental_xv_core.h" bodystart="168" bodyend="-1"/>
+      </memberdef>
+      <memberdef kind="variable" id="structMentalInstanceCreateInfo_1adf1491d6421cfcb15ad3e5996f592848" prot="public" static="no" mutable="no">
+        <type>const void *</type>
+        <definition>const void* MentalInstanceCreateInfo::pNext</definition>
+        <argsstring></argsstring>
+        <name>pNext</name>
+        <qualifiedname>MentalInstanceCreateInfo::pNext</qualifiedname>
+        <briefdescription>
+        </briefdescription>
+        <detaileddescription>
+<para>Pointer to the next structure in a chain. </para>
+        </detaileddescription>
+        <inbodydescription>
+        </inbodydescription>
+        <location file="include/mental_xv_core.h" line="169" column="36" bodyfile="include/mental_xv_core.h" bodystart="169" bodyend="-1"/>
+      </memberdef>
+      <memberdef kind="variable" id="structMentalInstanceCreateInfo_1aaa26a260d2575c6a4581cddc5a8aaa62" prot="public" static="no" mutable="no">
+        <type><ref refid="mental__xv__core_8h_1a8001f712b14b0ececd970c22c972969a" kindref="member">MentalInstanceCreateFlags</ref></type>
+        <definition>MentalInstanceCreateFlags MentalInstanceCreateInfo::flags</definition>
+        <argsstring></argsstring>
+        <name>flags</name>
+        <qualifiedname>MentalInstanceCreateInfo::flags</qualifiedname>
+        <briefdescription>
+        </briefdescription>
+        <detaileddescription>
+<para>Flags for instance creation. </para>
+        </detaileddescription>
+        <inbodydescription>
+        </inbodydescription>
+        <location file="include/mental_xv_core.h" line="170" column="37" bodyfile="include/mental_xv_core.h" bodystart="170" bodyend="-1"/>
+      </memberdef>
+      <memberdef kind="variable" id="structMentalInstanceCreateInfo_1a727f4c194e46fb87f1f093442a0a6674" prot="public" static="no" mutable="no">
+        <type>const <ref refid="structMentalApplicationInfo" kindref="compound">MentalApplicationInfo</ref> *</type>
+        <definition>const MentalApplicationInfo* MentalInstanceCreateInfo::pApplicationInfo</definition>
+        <argsstring></argsstring>
+        <name>pApplicationInfo</name>
+        <qualifiedname>MentalInstanceCreateInfo::pApplicationInfo</qualifiedname>
+        <briefdescription>
+        </briefdescription>
+        <detaileddescription>
+<para>Pointer to application info. </para>
+        </detaileddescription>
+        <inbodydescription>
+        </inbodydescription>
+        <location file="include/mental_xv_core.h" line="171" column="36" bodyfile="include/mental_xv_core.h" bodystart="171" bodyend="-1"/>
+      </memberdef>
+      <memberdef kind="variable" id="structMentalInstanceCreateInfo_1a89911e7d11c0208b449d1c4b7a127da5" prot="public" static="no" mutable="no">
+        <type>uint32_t</type>
+        <definition>uint32_t MentalInstanceCreateInfo::enabledLayerCount</definition>
+        <argsstring></argsstring>
+        <name>enabledLayerCount</name>
+        <qualifiedname>MentalInstanceCreateInfo::enabledLayerCount</qualifiedname>
+        <briefdescription>
+        </briefdescription>
+        <detaileddescription>
+<para>Number of enabled layers. </para>
+        </detaileddescription>
+        <inbodydescription>
+        </inbodydescription>
+        <location file="include/mental_xv_core.h" line="172" column="37" bodyfile="include/mental_xv_core.h" bodystart="172" bodyend="-1"/>
+      </memberdef>
+      <memberdef kind="variable" id="structMentalInstanceCreateInfo_1aa39f2523416b30281105df7ebb1a9a22" prot="public" static="no" mutable="no">
+        <type>const char *const  *</type>
+        <definition>const char* const* MentalInstanceCreateInfo::ppEnabledLayerNames</definition>
+        <argsstring></argsstring>
+        <name>ppEnabledLayerNames</name>
+        <qualifiedname>MentalInstanceCreateInfo::ppEnabledLayerNames</qualifiedname>
+        <briefdescription>
+        </briefdescription>
+        <detaileddescription>
+<para>Array of enabled layer names. </para>
+        </detaileddescription>
+        <inbodydescription>
+        </inbodydescription>
+        <location file="include/mental_xv_core.h" line="173" column="35" bodyfile="include/mental_xv_core.h" bodystart="173" bodyend="-1"/>
+      </memberdef>
+      <memberdef kind="variable" id="structMentalInstanceCreateInfo_1af29f97fa6365e2f365699ccf5fa6cc86" prot="public" static="no" mutable="no">
+        <type>uint32_t</type>
+        <definition>uint32_t MentalInstanceCreateInfo::enabledExtensionCount</definition>
+        <argsstring></argsstring>
+        <name>enabledExtensionCount</name>
+        <qualifiedname>MentalInstanceCreateInfo::enabledExtensionCount</qualifiedname>
+        <briefdescription>
+        </briefdescription>
+        <detaileddescription>
+<para>Number of enabled extensions. </para>
+        </detaileddescription>
+        <inbodydescription>
+        </inbodydescription>
+        <location file="include/mental_xv_core.h" line="174" column="37" bodyfile="include/mental_xv_core.h" bodystart="174" bodyend="-1"/>
+      </memberdef>
+      <memberdef kind="variable" id="structMentalInstanceCreateInfo_1a859a0d0dd65217b9e66a28958be09d52" prot="public" static="no" mutable="no">
+        <type>const char *const  *</type>
+        <definition>const char* const* MentalInstanceCreateInfo::ppEnabledExtensionNames</definition>
+        <argsstring></argsstring>
+        <name>ppEnabledExtensionNames</name>
+        <qualifiedname>MentalInstanceCreateInfo::ppEnabledExtensionNames</qualifiedname>
+        <briefdescription>
+        </briefdescription>
+        <detaileddescription>
+<para>Array of enabled extension names. </para>
+        </detaileddescription>
+        <inbodydescription>
+        </inbodydescription>
+        <location file="include/mental_xv_core.h" line="175" column="35" bodyfile="include/mental_xv_core.h" bodystart="175" bodyend="-1"/>
+      </memberdef>
+    </sectiondef>
+    <briefdescription>
+<para>Structure containing information for creating an instance. </para>
+    </briefdescription>
+    <detaileddescription>
+<para>This structure holds various pieces of information required to create an instance, such as application info, enabled layers, and enabled extensions. </para>
+    </detaileddescription>
+    <collaborationgraph>
+      <node id="2">
+        <label>MentalApplicationInfo</label>
+        <link refid="structMentalApplicationInfo"/>
+      </node>
+      <node id="1">
+        <label>MentalInstanceCreateInfo</label>
+        <link refid="structMentalInstanceCreateInfo"/>
+        <childnode refid="2" relation="usage">
+          <edgelabel>pApplicationInfo</edgelabel>
+        </childnode>
+      </node>
+    </collaborationgraph>
+    <location file="include/mental_xv_core.h" line="167" column="1" bodyfile="include/mental_xv_core.h" bodystart="167" bodyend="176"/>
+    <listofallmembers>
+      <member refid="structMentalInstanceCreateInfo_1af29f97fa6365e2f365699ccf5fa6cc86" prot="public" virt="non-virtual"><scope>MentalInstanceCreateInfo</scope><name>enabledExtensionCount</name></member>
+      <member refid="structMentalInstanceCreateInfo_1a89911e7d11c0208b449d1c4b7a127da5" prot="public" virt="non-virtual"><scope>MentalInstanceCreateInfo</scope><name>enabledLayerCount</name></member>
+      <member refid="structMentalInstanceCreateInfo_1aaa26a260d2575c6a4581cddc5a8aaa62" prot="public" virt="non-virtual"><scope>MentalInstanceCreateInfo</scope><name>flags</name></member>
+      <member refid="structMentalInstanceCreateInfo_1a727f4c194e46fb87f1f093442a0a6674" prot="public" virt="non-virtual"><scope>MentalInstanceCreateInfo</scope><name>pApplicationInfo</name></member>
+      <member refid="structMentalInstanceCreateInfo_1adf1491d6421cfcb15ad3e5996f592848" prot="public" virt="non-virtual"><scope>MentalInstanceCreateInfo</scope><name>pNext</name></member>
+      <member refid="structMentalInstanceCreateInfo_1a859a0d0dd65217b9e66a28958be09d52" prot="public" virt="non-virtual"><scope>MentalInstanceCreateInfo</scope><name>ppEnabledExtensionNames</name></member>
+      <member refid="structMentalInstanceCreateInfo_1aa39f2523416b30281105df7ebb1a9a22" prot="public" virt="non-virtual"><scope>MentalInstanceCreateInfo</scope><name>ppEnabledLayerNames</name></member>
+      <member refid="structMentalInstanceCreateInfo_1a98666ccff1ea1f483cbe13161023c8aa" prot="public" virt="non-virtual"><scope>MentalInstanceCreateInfo</scope><name>sType</name></member>
+    </listofallmembers>
+  </compounddef>
+</doxygen>
