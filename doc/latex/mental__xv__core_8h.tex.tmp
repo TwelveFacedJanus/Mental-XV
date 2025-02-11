@@ -1,0 +1,323 @@
+\doxysection{include/mental\+\_\+xv\+\_\+core.h File Reference}
+\hypertarget{mental__xv__core_8h}{}\label{mental__xv__core_8h}\index{include/mental\_xv\_core.h@{include/mental\_xv\_core.h}}
+{\ttfamily \#include $<$stdint.\+h$>$}\newline
+Include dependency graph for mental\+\_\+xv\+\_\+core.\+h\+:
+% FIG 0
+\doxysubsubsection*{Data Structures}
+\begin{DoxyCompactItemize}
+\item 
+struct \mbox{\hyperlink{structMentalApplicationInfo}{Mental\+Application\+Info}}
+\begin{DoxyCompactList}\small\item\em Structure containing application information. \end{DoxyCompactList}\item 
+struct \mbox{\hyperlink{structMentalInstanceCreateInfo}{Mental\+Instance\+Create\+Info}}
+\begin{DoxyCompactList}\small\item\em Structure containing information for creating an instance. \end{DoxyCompactList}\end{DoxyCompactItemize}
+\doxysubsubsection*{Macros}
+\begin{DoxyCompactItemize}
+\item 
+\#define \mbox{\hyperlink{mental__xv__core_8h_a21917fcae9e377836c840ef4899957fb}{MENTAL\+\_\+\+XV\+\_\+\+VERSION\+\_\+1\+\_\+0}}
+\item 
+\#define \mbox{\hyperlink{mental__xv__core_8h_ae0c9f90ac68f9340368d4174cdd635d7}{MENTAL\+\_\+\+XV\+\_\+\+VERSION\+\_\+\+VARIANT}}(version)~((uint32\+\_\+t)(version) $>$$>$ 29U)
+\begin{DoxyCompactList}\small\item\em This macro retrieves the version variant of the API version. \end{DoxyCompactList}\item 
+\#define \mbox{\hyperlink{mental__xv__core_8h_abdb2bee204fe16ce94de34809b44d333}{MENTAL\+\_\+\+XV\+\_\+\+VERSION\+\_\+\+MAJOR}}(version)~(((uint32\+\_\+t)(version) $>$$>$ 22U) \& 0x7\+FU)
+\begin{DoxyCompactList}\small\item\em This macro extracts the major version of the API. \end{DoxyCompactList}\item 
+\#define \mbox{\hyperlink{mental__xv__core_8h_a95cfa6f75ba9ec499f0f96478454a225}{MENTAL\+\_\+\+XV\+\_\+\+VERSION\+\_\+\+MINOR}}(version)~(((uint32\+\_\+t)(version) $>$$>$ 12U) \& 0x3\+FFU)
+\begin{DoxyCompactList}\small\item\em This macro extracts the minor version of the API. \end{DoxyCompactList}\item 
+\#define \mbox{\hyperlink{mental__xv__core_8h_a72f4c99020cca6079dea03f6715f3c92}{MENTAL\+\_\+\+XV\+\_\+\+VERSION\+\_\+\+PATCH}}(version)~((uint32\+\_\+t)(version) \& 0x\+FFFU)
+\begin{DoxyCompactList}\small\item\em This macro extracts the patch version of the API. \end{DoxyCompactList}\end{DoxyCompactItemize}
+\doxysubsubsection*{Typedefs}
+\begin{DoxyCompactItemize}
+\item 
+typedef uint32\+\_\+t \mbox{\hyperlink{mental__xv__core_8h_a85c06e36c77c7cb291a034a60400d96e}{Mental\+Flags}}
+\begin{DoxyCompactList}\small\item\em Type definition for a 32-\/bit unsigned integer used to represent flags. \end{DoxyCompactList}\item 
+typedef enum \mbox{\hyperlink{mental__xv__core_8h_af7302d331733011c84091974c3ba1e99}{Mental\+Result}} \mbox{\hyperlink{mental__xv__core_8h_a1335103b1e885f677af00aa47df4f1af}{Mental\+Result}}
+\begin{DoxyCompactList}\small\item\em Enumeration representing the possible results of an operation. \end{DoxyCompactList}\item 
+typedef enum \mbox{\hyperlink{mental__xv__core_8h_a4040728f3adc443389084c52cc3dacf8}{Mental\+Structure\+Type}} \mbox{\hyperlink{mental__xv__core_8h_a829bce00e03e07c0d1b874776b0e5611}{Mental\+Structure\+Type}}
+\begin{DoxyCompactList}\small\item\em Enumeration representing the possible structure types. \end{DoxyCompactList}\item 
+typedef \mbox{\hyperlink{mental__xv__core_8h_a85c06e36c77c7cb291a034a60400d96e}{Mental\+Flags}} \mbox{\hyperlink{mental__xv__core_8h_a8001f712b14b0ececd970c22c972969a}{Mental\+Instance\+Create\+Flags}}
+\begin{DoxyCompactList}\small\item\em Type definition for flags used during instance creation. \end{DoxyCompactList}\item 
+typedef struct \mbox{\hyperlink{structMentalApplicationInfo}{Mental\+Application\+Info}} \mbox{\hyperlink{mental__xv__core_8h_a613d35a7f8f04ca7ef8f7a683c6c9374}{Mental\+Application\+Info}}
+\begin{DoxyCompactList}\small\item\em Structure containing application information. \end{DoxyCompactList}\item 
+typedef struct \mbox{\hyperlink{structMentalInstanceCreateInfo}{Mental\+Instance\+Create\+Info}} \mbox{\hyperlink{mental__xv__core_8h_ae33b6aa8a1c3d466897d03c247cee793}{Mental\+Instance\+Create\+Info}}
+\begin{DoxyCompactList}\small\item\em Structure containing information for creating an instance. \end{DoxyCompactList}\end{DoxyCompactItemize}
+\doxysubsubsection*{Enumerations}
+\begin{DoxyCompactItemize}
+\item 
+enum \mbox{\hyperlink{mental__xv__core_8h_af7302d331733011c84091974c3ba1e99}{Mental\+Result}} \{ \newline
+\mbox{\hyperlink{mental__xv__core_8h_af7302d331733011c84091974c3ba1e99a078bb99cd4b22a8242ae80d329a15b48}{MT\+\_\+\+SUCCESS}} = 0
+, \mbox{\hyperlink{mental__xv__core_8h_af7302d331733011c84091974c3ba1e99a257f20243d6089a1f80b98212076ee6f}{MT\+\_\+\+NOT\+\_\+\+READY}} = 1
+, \mbox{\hyperlink{mental__xv__core_8h_af7302d331733011c84091974c3ba1e99a78ff5b702dc962d56b91b15acb9c9c95}{MT\+\_\+\+EVENT\+\_\+\+SET}} = 3
+, \mbox{\hyperlink{mental__xv__core_8h_af7302d331733011c84091974c3ba1e99a3bdf3a9790312087808d00e29188136d}{MT\+\_\+\+EVENT\+\_\+\+RESET}} = 4
+, \newline
+\mbox{\hyperlink{mental__xv__core_8h_af7302d331733011c84091974c3ba1e99a89e7f0e8457ef03254f379fa0313d894}{MT\+\_\+\+INCOMPLETE}} = 5
+, \mbox{\hyperlink{mental__xv__core_8h_af7302d331733011c84091974c3ba1e99a53ef8696bc290003828824a413777589}{MT\+\_\+\+ERROR}} = 6
+ \}
+\begin{DoxyCompactList}\small\item\em Enumeration representing the possible results of an operation. \end{DoxyCompactList}\item 
+enum \mbox{\hyperlink{mental__xv__core_8h_a4040728f3adc443389084c52cc3dacf8}{Mental\+Structure\+Type}} \{ \mbox{\hyperlink{mental__xv__core_8h_a4040728f3adc443389084c52cc3dacf8a8a101966e58321e3f45a94199d024d2b}{MT\+\_\+\+STRUCTURE\+\_\+\+TYPE\+\_\+\+APPLICATION\+\_\+\+INFO}} = 0
+, \mbox{\hyperlink{mental__xv__core_8h_a4040728f3adc443389084c52cc3dacf8a10dc2ca6e0779e1e2bae1ae2ac1d2bbe}{MT\+\_\+\+STRUCTURE\+\_\+\+TYPE\+\_\+\+ENGINE\+\_\+\+INFO}} = 1
+ \}
+\begin{DoxyCompactList}\small\item\em Enumeration representing the possible structure types. \end{DoxyCompactList}\end{DoxyCompactItemize}
+
+
+\doxysubsection{Macro Definition Documentation}
+\Hypertarget{mental__xv__core_8h_a21917fcae9e377836c840ef4899957fb}\label{mental__xv__core_8h_a21917fcae9e377836c840ef4899957fb} 
+\index{mental\_xv\_core.h@{mental\_xv\_core.h}!MENTAL\_XV\_VERSION\_1\_0@{MENTAL\_XV\_VERSION\_1\_0}}
+\index{MENTAL\_XV\_VERSION\_1\_0@{MENTAL\_XV\_VERSION\_1\_0}!mental\_xv\_core.h@{mental\_xv\_core.h}}
+\doxysubsubsection{\texorpdfstring{MENTAL\_XV\_VERSION\_1\_0}{MENTAL\_XV\_VERSION\_1\_0}}
+{\footnotesize\ttfamily \#define MENTAL\+\_\+\+XV\+\_\+\+VERSION\+\_\+1\+\_\+0}
+
+\Hypertarget{mental__xv__core_8h_abdb2bee204fe16ce94de34809b44d333}\label{mental__xv__core_8h_abdb2bee204fe16ce94de34809b44d333} 
+\index{mental\_xv\_core.h@{mental\_xv\_core.h}!MENTAL\_XV\_VERSION\_MAJOR@{MENTAL\_XV\_VERSION\_MAJOR}}
+\index{MENTAL\_XV\_VERSION\_MAJOR@{MENTAL\_XV\_VERSION\_MAJOR}!mental\_xv\_core.h@{mental\_xv\_core.h}}
+\doxysubsubsection{\texorpdfstring{MENTAL\_XV\_VERSION\_MAJOR}{MENTAL\_XV\_VERSION\_MAJOR}}
+{\footnotesize\ttfamily \#define MENTAL\+\_\+\+XV\+\_\+\+VERSION\+\_\+\+MAJOR(\begin{DoxyParamCaption}\item[{}]{version }\end{DoxyParamCaption})~(((uint32\+\_\+t)(version) $>$$>$ 22U) \& 0x7\+FU)}
+
+
+
+This macro extracts the major version of the API. 
+
+It shifts the 32-\/bit integer version to the right by 22 bits, and then applies a bitwise AND with 0x7\+FU (which corresponds to 7 bits). This extracts bits 28 through 22, which represent the major version.
+
+
+\begin{DoxyParams}{Parameters}
+{\em version} & The 32-\/bit version integer. \\
+\hline
+\end{DoxyParams}
+\begin{DoxyReturn}{Returns}
+The major version. 
+\end{DoxyReturn}
+\Hypertarget{mental__xv__core_8h_a95cfa6f75ba9ec499f0f96478454a225}\label{mental__xv__core_8h_a95cfa6f75ba9ec499f0f96478454a225} 
+\index{mental\_xv\_core.h@{mental\_xv\_core.h}!MENTAL\_XV\_VERSION\_MINOR@{MENTAL\_XV\_VERSION\_MINOR}}
+\index{MENTAL\_XV\_VERSION\_MINOR@{MENTAL\_XV\_VERSION\_MINOR}!mental\_xv\_core.h@{mental\_xv\_core.h}}
+\doxysubsubsection{\texorpdfstring{MENTAL\_XV\_VERSION\_MINOR}{MENTAL\_XV\_VERSION\_MINOR}}
+{\footnotesize\ttfamily \#define MENTAL\+\_\+\+XV\+\_\+\+VERSION\+\_\+\+MINOR(\begin{DoxyParamCaption}\item[{}]{version }\end{DoxyParamCaption})~(((uint32\+\_\+t)(version) $>$$>$ 12U) \& 0x3\+FFU)}
+
+
+
+This macro extracts the minor version of the API. 
+
+It shifts the 32-\/bit integer version to the right by 12 bits, and then applies a bitwise AND with 0x3\+FFU (which corresponds to 10 bits). This extracts bits 21 through 12, which represent the minor version.
+
+
+\begin{DoxyParams}{Parameters}
+{\em version} & The 32-\/bit version integer. \\
+\hline
+\end{DoxyParams}
+\begin{DoxyReturn}{Returns}
+The minor version. 
+\end{DoxyReturn}
+\Hypertarget{mental__xv__core_8h_a72f4c99020cca6079dea03f6715f3c92}\label{mental__xv__core_8h_a72f4c99020cca6079dea03f6715f3c92} 
+\index{mental\_xv\_core.h@{mental\_xv\_core.h}!MENTAL\_XV\_VERSION\_PATCH@{MENTAL\_XV\_VERSION\_PATCH}}
+\index{MENTAL\_XV\_VERSION\_PATCH@{MENTAL\_XV\_VERSION\_PATCH}!mental\_xv\_core.h@{mental\_xv\_core.h}}
+\doxysubsubsection{\texorpdfstring{MENTAL\_XV\_VERSION\_PATCH}{MENTAL\_XV\_VERSION\_PATCH}}
+{\footnotesize\ttfamily \#define MENTAL\+\_\+\+XV\+\_\+\+VERSION\+\_\+\+PATCH(\begin{DoxyParamCaption}\item[{}]{version }\end{DoxyParamCaption})~((uint32\+\_\+t)(version) \& 0x\+FFFU)}
+
+
+
+This macro extracts the patch version of the API. 
+
+It applies a bitwise AND with 0x\+FFFU (which corresponds to 12 bits) to the 32-\/bit integer version. This extracts bits 11 through 0, which represent the patch version.
+
+
+\begin{DoxyParams}{Parameters}
+{\em version} & The 32-\/bit version integer. \\
+\hline
+\end{DoxyParams}
+\begin{DoxyReturn}{Returns}
+The patch version. 
+\end{DoxyReturn}
+\Hypertarget{mental__xv__core_8h_ae0c9f90ac68f9340368d4174cdd635d7}\label{mental__xv__core_8h_ae0c9f90ac68f9340368d4174cdd635d7} 
+\index{mental\_xv\_core.h@{mental\_xv\_core.h}!MENTAL\_XV\_VERSION\_VARIANT@{MENTAL\_XV\_VERSION\_VARIANT}}
+\index{MENTAL\_XV\_VERSION\_VARIANT@{MENTAL\_XV\_VERSION\_VARIANT}!mental\_xv\_core.h@{mental\_xv\_core.h}}
+\doxysubsubsection{\texorpdfstring{MENTAL\_XV\_VERSION\_VARIANT}{MENTAL\_XV\_VERSION\_VARIANT}}
+{\footnotesize\ttfamily \#define MENTAL\+\_\+\+XV\+\_\+\+VERSION\+\_\+\+VARIANT(\begin{DoxyParamCaption}\item[{}]{version }\end{DoxyParamCaption})~((uint32\+\_\+t)(version) $>$$>$ 29U)}
+
+
+
+This macro retrieves the version variant of the API version. 
+
+It shifts the 32-\/bit version integer to the right by 29 bits. This means that it takes the three highest bits of the number (bits 31 through 29), which represent the version variant.
+
+
+\begin{DoxyParams}{Parameters}
+{\em version} & The 32-\/bit version integer. \\
+\hline
+\end{DoxyParams}
+\begin{DoxyReturn}{Returns}
+The version variant. 
+\end{DoxyReturn}
+
+
+\doxysubsection{Typedef Documentation}
+\Hypertarget{mental__xv__core_8h_a613d35a7f8f04ca7ef8f7a683c6c9374}\label{mental__xv__core_8h_a613d35a7f8f04ca7ef8f7a683c6c9374} 
+\index{mental\_xv\_core.h@{mental\_xv\_core.h}!MentalApplicationInfo@{MentalApplicationInfo}}
+\index{MentalApplicationInfo@{MentalApplicationInfo}!mental\_xv\_core.h@{mental\_xv\_core.h}}
+\doxysubsubsection{\texorpdfstring{MentalApplicationInfo}{MentalApplicationInfo}}
+{\footnotesize\ttfamily typedef struct \mbox{\hyperlink{structMentalApplicationInfo}{Mental\+Application\+Info}} \mbox{\hyperlink{structMentalApplicationInfo}{Mental\+Application\+Info}}}
+
+
+
+Structure containing application information. 
+
+This structure holds various pieces of information about the application, such as its name, version, engine name, and engine version. \Hypertarget{mental__xv__core_8h_a85c06e36c77c7cb291a034a60400d96e}\label{mental__xv__core_8h_a85c06e36c77c7cb291a034a60400d96e} 
+\index{mental\_xv\_core.h@{mental\_xv\_core.h}!MentalFlags@{MentalFlags}}
+\index{MentalFlags@{MentalFlags}!mental\_xv\_core.h@{mental\_xv\_core.h}}
+\doxysubsubsection{\texorpdfstring{MentalFlags}{MentalFlags}}
+{\footnotesize\ttfamily typedef uint32\+\_\+t \mbox{\hyperlink{mental__xv__core_8h_a85c06e36c77c7cb291a034a60400d96e}{Mental\+Flags}}}
+
+
+
+Type definition for a 32-\/bit unsigned integer used to represent flags. 
+
+This typedef creates an alias named {\ttfamily Mental\+Flags} for the {\ttfamily uint32\+\_\+t} type, which is a 32-\/bit unsigned integer. This alias is intended to be used for storing and manipulating bit flags within the application. Using a typedef improves code readability and maintainability by providing a semantic name for the type.
+
+The {\ttfamily Mental\+Flags} type can be used to store multiple boolean flags within a single 32-\/bit integer. Each bit in the integer can represent a different flag, allowing for efficient storage and manipulation of multiple flags.
+
+Example usage\+: 
+\begin{DoxyCode}{0}
+\DoxyCodeLine{\mbox{\hyperlink{mental__xv__core_8h_a85c06e36c77c7cb291a034a60400d96e}{MentalFlags}}\ flags\ =\ 0;}
+\DoxyCodeLine{}
+\DoxyCodeLine{\textcolor{keywordtype}{void}\ setFlag(\mbox{\hyperlink{mental__xv__core_8h_a85c06e36c77c7cb291a034a60400d96e}{MentalFlags}}\ *flags,\ uint32\_t\ flag)\ \{}
+\DoxyCodeLine{\ \ \ \ *flags\ |=\ flag;}
+\DoxyCodeLine{\}}
+\DoxyCodeLine{}
+\DoxyCodeLine{\textcolor{keywordtype}{void}\ clearFlag(\mbox{\hyperlink{mental__xv__core_8h_a85c06e36c77c7cb291a034a60400d96e}{MentalFlags}}\ *flags,\ uint32\_t\ flag)\ \{}
+\DoxyCodeLine{\ \ \ \ *flags\ \&=\ \string~flag;}
+\DoxyCodeLine{\}}
+\DoxyCodeLine{}
+\DoxyCodeLine{\textcolor{keywordtype}{int}\ main()\ \{}
+\DoxyCodeLine{\ \ \ \ setFlag(\&flags,\ 0x00000001);\ \textcolor{comment}{//\ Set\ the\ first\ bit}}
+\DoxyCodeLine{\ \ \ \ clearFlag(\&flags,\ 0x00000001);\ \textcolor{comment}{//\ Clear\ the\ first\ bit}}
+\DoxyCodeLine{\ \ \ \ \textcolor{keywordflow}{return}\ 0;}
+\DoxyCodeLine{\}}
+
+\end{DoxyCode}
+ \Hypertarget{mental__xv__core_8h_a8001f712b14b0ececd970c22c972969a}\label{mental__xv__core_8h_a8001f712b14b0ececd970c22c972969a} 
+\index{mental\_xv\_core.h@{mental\_xv\_core.h}!MentalInstanceCreateFlags@{MentalInstanceCreateFlags}}
+\index{MentalInstanceCreateFlags@{MentalInstanceCreateFlags}!mental\_xv\_core.h@{mental\_xv\_core.h}}
+\doxysubsubsection{\texorpdfstring{MentalInstanceCreateFlags}{MentalInstanceCreateFlags}}
+{\footnotesize\ttfamily typedef \mbox{\hyperlink{mental__xv__core_8h_a85c06e36c77c7cb291a034a60400d96e}{Mental\+Flags}} \mbox{\hyperlink{mental__xv__core_8h_a8001f712b14b0ececd970c22c972969a}{Mental\+Instance\+Create\+Flags}}}
+
+
+
+Type definition for flags used during instance creation. 
+
+This typedef creates an alias named {\ttfamily Mental\+Instance\+Create\+Flags} for the {\ttfamily Mental\+Flags} type, which is used to store and manipulate bit flags during the creation of an instance. \Hypertarget{mental__xv__core_8h_ae33b6aa8a1c3d466897d03c247cee793}\label{mental__xv__core_8h_ae33b6aa8a1c3d466897d03c247cee793} 
+\index{mental\_xv\_core.h@{mental\_xv\_core.h}!MentalInstanceCreateInfo@{MentalInstanceCreateInfo}}
+\index{MentalInstanceCreateInfo@{MentalInstanceCreateInfo}!mental\_xv\_core.h@{mental\_xv\_core.h}}
+\doxysubsubsection{\texorpdfstring{MentalInstanceCreateInfo}{MentalInstanceCreateInfo}}
+{\footnotesize\ttfamily typedef struct \mbox{\hyperlink{structMentalInstanceCreateInfo}{Mental\+Instance\+Create\+Info}} \mbox{\hyperlink{structMentalInstanceCreateInfo}{Mental\+Instance\+Create\+Info}}}
+
+
+
+Structure containing information for creating an instance. 
+
+This structure holds various pieces of information required to create an instance, such as application info, enabled layers, and enabled extensions. \Hypertarget{mental__xv__core_8h_a1335103b1e885f677af00aa47df4f1af}\label{mental__xv__core_8h_a1335103b1e885f677af00aa47df4f1af} 
+\index{mental\_xv\_core.h@{mental\_xv\_core.h}!MentalResult@{MentalResult}}
+\index{MentalResult@{MentalResult}!mental\_xv\_core.h@{mental\_xv\_core.h}}
+\doxysubsubsection{\texorpdfstring{MentalResult}{MentalResult}}
+{\footnotesize\ttfamily typedef enum \mbox{\hyperlink{mental__xv__core_8h_af7302d331733011c84091974c3ba1e99}{Mental\+Result}} \mbox{\hyperlink{mental__xv__core_8h_af7302d331733011c84091974c3ba1e99}{Mental\+Result}}}
+
+
+
+Enumeration representing the possible results of an operation. 
+
+This enum defines a set of named integer constants that represent the various outcomes of an operation or function. These constants make the code more readable and maintainable by replacing raw integer values with meaningful names.
+
+The possible values are\+:
+\begin{DoxyItemize}
+\item MT\+\_\+\+SUCCESS\+: The operation completed successfully.
+\item MT\+\_\+\+NOT\+\_\+\+READY\+: The operation is not ready to be performed or is not yet complete.
+\item MT\+\_\+\+EVENT\+\_\+\+SET\+: An event has been set (e.\+g., a flag or signal).
+\item MT\+\_\+\+EVENT\+\_\+\+RESET\+: An event has been reset (e.\+g., a flag or signal).
+\item MT\+\_\+\+INCOMPLETE\+: The operation is incomplete or only partially completed.
+\item MT\+\_\+\+ERROR\+: An error occurred during the operation. 
+\end{DoxyItemize}\Hypertarget{mental__xv__core_8h_a829bce00e03e07c0d1b874776b0e5611}\label{mental__xv__core_8h_a829bce00e03e07c0d1b874776b0e5611} 
+\index{mental\_xv\_core.h@{mental\_xv\_core.h}!MentalStructureType@{MentalStructureType}}
+\index{MentalStructureType@{MentalStructureType}!mental\_xv\_core.h@{mental\_xv\_core.h}}
+\doxysubsubsection{\texorpdfstring{MentalStructureType}{MentalStructureType}}
+{\footnotesize\ttfamily typedef enum \mbox{\hyperlink{mental__xv__core_8h_a4040728f3adc443389084c52cc3dacf8}{Mental\+Structure\+Type}} \mbox{\hyperlink{mental__xv__core_8h_a4040728f3adc443389084c52cc3dacf8}{Mental\+Structure\+Type}}}
+
+
+
+Enumeration representing the possible structure types. 
+
+This enum defines a set of named integer constants that represent the various structure types used in the application. These constants make the code more readable and maintainable by replacing raw integer values with meaningful names.
+
+The possible values are\+:
+\begin{DoxyItemize}
+\item MT\+\_\+\+STRUCTURE\+\_\+\+TYPE\+\_\+\+APPLICATION\+\_\+\+INFO\+: The structure for application info.
+\item MT\+\_\+\+STRUCTURE\+\_\+\+TYPE\+\_\+\+ENGINE\+\_\+\+INFO\+: The structure for engine info. 
+\end{DoxyItemize}
+
+\doxysubsection{Enumeration Type Documentation}
+\Hypertarget{mental__xv__core_8h_af7302d331733011c84091974c3ba1e99}\label{mental__xv__core_8h_af7302d331733011c84091974c3ba1e99} 
+\index{mental\_xv\_core.h@{mental\_xv\_core.h}!MentalResult@{MentalResult}}
+\index{MentalResult@{MentalResult}!mental\_xv\_core.h@{mental\_xv\_core.h}}
+\doxysubsubsection{\texorpdfstring{MentalResult}{MentalResult}}
+{\footnotesize\ttfamily enum \mbox{\hyperlink{mental__xv__core_8h_af7302d331733011c84091974c3ba1e99}{Mental\+Result}}}
+
+
+
+Enumeration representing the possible results of an operation. 
+
+This enum defines a set of named integer constants that represent the various outcomes of an operation or function. These constants make the code more readable and maintainable by replacing raw integer values with meaningful names.
+
+The possible values are\+:
+\begin{DoxyItemize}
+\item MT\+\_\+\+SUCCESS\+: The operation completed successfully.
+\item MT\+\_\+\+NOT\+\_\+\+READY\+: The operation is not ready to be performed or is not yet complete.
+\item MT\+\_\+\+EVENT\+\_\+\+SET\+: An event has been set (e.\+g., a flag or signal).
+\item MT\+\_\+\+EVENT\+\_\+\+RESET\+: An event has been reset (e.\+g., a flag or signal).
+\item MT\+\_\+\+INCOMPLETE\+: The operation is incomplete or only partially completed.
+\item MT\+\_\+\+ERROR\+: An error occurred during the operation. 
+\end{DoxyItemize}\begin{DoxyEnumFields}{Enumerator}
+\raisebox{\heightof{T}}[0pt][0pt]{\index{MT\_SUCCESS@{MT\_SUCCESS}!mental\_xv\_core.h@{mental\_xv\_core.h}}\index{mental\_xv\_core.h@{mental\_xv\_core.h}!MT\_SUCCESS@{MT\_SUCCESS}}}\Hypertarget{mental__xv__core_8h_af7302d331733011c84091974c3ba1e99a078bb99cd4b22a8242ae80d329a15b48}\label{mental__xv__core_8h_af7302d331733011c84091974c3ba1e99a078bb99cd4b22a8242ae80d329a15b48} 
+MT\+\_\+\+SUCCESS&Operation completed successfully. \\
+\hline
+
+\raisebox{\heightof{T}}[0pt][0pt]{\index{MT\_NOT\_READY@{MT\_NOT\_READY}!mental\_xv\_core.h@{mental\_xv\_core.h}}\index{mental\_xv\_core.h@{mental\_xv\_core.h}!MT\_NOT\_READY@{MT\_NOT\_READY}}}\Hypertarget{mental__xv__core_8h_af7302d331733011c84091974c3ba1e99a257f20243d6089a1f80b98212076ee6f}\label{mental__xv__core_8h_af7302d331733011c84091974c3ba1e99a257f20243d6089a1f80b98212076ee6f} 
+MT\+\_\+\+NOT\+\_\+\+READY&Operation is not ready or not yet complete. \\
+\hline
+
+\raisebox{\heightof{T}}[0pt][0pt]{\index{MT\_EVENT\_SET@{MT\_EVENT\_SET}!mental\_xv\_core.h@{mental\_xv\_core.h}}\index{mental\_xv\_core.h@{mental\_xv\_core.h}!MT\_EVENT\_SET@{MT\_EVENT\_SET}}}\Hypertarget{mental__xv__core_8h_af7302d331733011c84091974c3ba1e99a78ff5b702dc962d56b91b15acb9c9c95}\label{mental__xv__core_8h_af7302d331733011c84091974c3ba1e99a78ff5b702dc962d56b91b15acb9c9c95} 
+MT\+\_\+\+EVENT\+\_\+\+SET&Event has been set. \\
+\hline
+
+\raisebox{\heightof{T}}[0pt][0pt]{\index{MT\_EVENT\_RESET@{MT\_EVENT\_RESET}!mental\_xv\_core.h@{mental\_xv\_core.h}}\index{mental\_xv\_core.h@{mental\_xv\_core.h}!MT\_EVENT\_RESET@{MT\_EVENT\_RESET}}}\Hypertarget{mental__xv__core_8h_af7302d331733011c84091974c3ba1e99a3bdf3a9790312087808d00e29188136d}\label{mental__xv__core_8h_af7302d331733011c84091974c3ba1e99a3bdf3a9790312087808d00e29188136d} 
+MT\+\_\+\+EVENT\+\_\+\+RESET&Event has been reset. \\
+\hline
+
+\raisebox{\heightof{T}}[0pt][0pt]{\index{MT\_INCOMPLETE@{MT\_INCOMPLETE}!mental\_xv\_core.h@{mental\_xv\_core.h}}\index{mental\_xv\_core.h@{mental\_xv\_core.h}!MT\_INCOMPLETE@{MT\_INCOMPLETE}}}\Hypertarget{mental__xv__core_8h_af7302d331733011c84091974c3ba1e99a89e7f0e8457ef03254f379fa0313d894}\label{mental__xv__core_8h_af7302d331733011c84091974c3ba1e99a89e7f0e8457ef03254f379fa0313d894} 
+MT\+\_\+\+INCOMPLETE&Operation is incomplete or partially completed. \\
+\hline
+
+\raisebox{\heightof{T}}[0pt][0pt]{\index{MT\_ERROR@{MT\_ERROR}!mental\_xv\_core.h@{mental\_xv\_core.h}}\index{mental\_xv\_core.h@{mental\_xv\_core.h}!MT\_ERROR@{MT\_ERROR}}}\Hypertarget{mental__xv__core_8h_af7302d331733011c84091974c3ba1e99a53ef8696bc290003828824a413777589}\label{mental__xv__core_8h_af7302d331733011c84091974c3ba1e99a53ef8696bc290003828824a413777589} 
+MT\+\_\+\+ERROR&An error occurred during the operation. \\
+\hline
+
+\end{DoxyEnumFields}
+\Hypertarget{mental__xv__core_8h_a4040728f3adc443389084c52cc3dacf8}\label{mental__xv__core_8h_a4040728f3adc443389084c52cc3dacf8} 
+\index{mental\_xv\_core.h@{mental\_xv\_core.h}!MentalStructureType@{MentalStructureType}}
+\index{MentalStructureType@{MentalStructureType}!mental\_xv\_core.h@{mental\_xv\_core.h}}
+\doxysubsubsection{\texorpdfstring{MentalStructureType}{MentalStructureType}}
+{\footnotesize\ttfamily enum \mbox{\hyperlink{mental__xv__core_8h_a4040728f3adc443389084c52cc3dacf8}{Mental\+Structure\+Type}}}
+
+
+
+Enumeration representing the possible structure types. 
+
+This enum defines a set of named integer constants that represent the various structure types used in the application. These constants make the code more readable and maintainable by replacing raw integer values with meaningful names.
+
+The possible values are\+:
+\begin{DoxyItemize}
+\item MT\+\_\+\+STRUCTURE\+\_\+\+TYPE\+\_\+\+APPLICATION\+\_\+\+INFO\+: The structure for application info.
+\item MT\+\_\+\+STRUCTURE\+\_\+\+TYPE\+\_\+\+ENGINE\+\_\+\+INFO\+: The structure for engine info. 
+\end{DoxyItemize}\begin{DoxyEnumFields}{Enumerator}
+\raisebox{\heightof{T}}[0pt][0pt]{\index{MT\_STRUCTURE\_TYPE\_APPLICATION\_INFO@{MT\_STRUCTURE\_TYPE\_APPLICATION\_INFO}!mental\_xv\_core.h@{mental\_xv\_core.h}}\index{mental\_xv\_core.h@{mental\_xv\_core.h}!MT\_STRUCTURE\_TYPE\_APPLICATION\_INFO@{MT\_STRUCTURE\_TYPE\_APPLICATION\_INFO}}}\Hypertarget{mental__xv__core_8h_a4040728f3adc443389084c52cc3dacf8a8a101966e58321e3f45a94199d024d2b}\label{mental__xv__core_8h_a4040728f3adc443389084c52cc3dacf8a8a101966e58321e3f45a94199d024d2b} 
+MT\+\_\+\+STRUCTURE\+\_\+\+TYPE\+\_\+\+APPLICATION\+\_\+\+INFO&Structure for application info. \\
+\hline
+
+\raisebox{\heightof{T}}[0pt][0pt]{\index{MT\_STRUCTURE\_TYPE\_ENGINE\_INFO@{MT\_STRUCTURE\_TYPE\_ENGINE\_INFO}!mental\_xv\_core.h@{mental\_xv\_core.h}}\index{mental\_xv\_core.h@{mental\_xv\_core.h}!MT\_STRUCTURE\_TYPE\_ENGINE\_INFO@{MT\_STRUCTURE\_TYPE\_ENGINE\_INFO}}}\Hypertarget{mental__xv__core_8h_a4040728f3adc443389084c52cc3dacf8a10dc2ca6e0779e1e2bae1ae2ac1d2bbe}\label{mental__xv__core_8h_a4040728f3adc443389084c52cc3dacf8a10dc2ca6e0779e1e2bae1ae2ac1d2bbe} 
+MT\+\_\+\+STRUCTURE\+\_\+\+TYPE\+\_\+\+ENGINE\+\_\+\+INFO&Structure for engine info. \\
+\hline
+
+\end{DoxyEnumFields}

@@ -1,0 +1,95 @@
+\doxysection{Mental\+Instance\+Create\+Info Struct Reference}
+\hypertarget{structMentalInstanceCreateInfo}{}\label{structMentalInstanceCreateInfo}\index{MentalInstanceCreateInfo@{MentalInstanceCreateInfo}}
+
+
+Structure containing information for creating an instance.  
+
+
+
+
+{\ttfamily \#include $<$mental\+\_\+xv\+\_\+core.\+h$>$}
+
+
+
+Collaboration diagram for Mental\+Instance\+Create\+Info\+:
+% FIG 0
+\doxysubsubsection*{Data Fields}
+\begin{DoxyCompactItemize}
+\item 
+\mbox{\hyperlink{mental__xv__core_8h_a4040728f3adc443389084c52cc3dacf8}{Mental\+Structure\+Type}} \mbox{\hyperlink{structMentalInstanceCreateInfo_a98666ccff1ea1f483cbe13161023c8aa}{s\+Type}}
+\item 
+const void \texorpdfstring{$\ast$}{*} \mbox{\hyperlink{structMentalInstanceCreateInfo_adf1491d6421cfcb15ad3e5996f592848}{p\+Next}}
+\item 
+\mbox{\hyperlink{mental__xv__core_8h_a8001f712b14b0ececd970c22c972969a}{Mental\+Instance\+Create\+Flags}} \mbox{\hyperlink{structMentalInstanceCreateInfo_aaa26a260d2575c6a4581cddc5a8aaa62}{flags}}
+\item 
+const \mbox{\hyperlink{structMentalApplicationInfo}{Mental\+Application\+Info}} \texorpdfstring{$\ast$}{*} \mbox{\hyperlink{structMentalInstanceCreateInfo_a727f4c194e46fb87f1f093442a0a6674}{p\+Application\+Info}}
+\item 
+uint32\+\_\+t \mbox{\hyperlink{structMentalInstanceCreateInfo_a89911e7d11c0208b449d1c4b7a127da5}{enabled\+Layer\+Count}}
+\item 
+const char \texorpdfstring{$\ast$}{*}const  \texorpdfstring{$\ast$}{*} \mbox{\hyperlink{structMentalInstanceCreateInfo_aa39f2523416b30281105df7ebb1a9a22}{pp\+Enabled\+Layer\+Names}}
+\item 
+uint32\+\_\+t \mbox{\hyperlink{structMentalInstanceCreateInfo_af29f97fa6365e2f365699ccf5fa6cc86}{enabled\+Extension\+Count}}
+\item 
+const char \texorpdfstring{$\ast$}{*}const  \texorpdfstring{$\ast$}{*} \mbox{\hyperlink{structMentalInstanceCreateInfo_a859a0d0dd65217b9e66a28958be09d52}{pp\+Enabled\+Extension\+Names}}
+\end{DoxyCompactItemize}
+
+
+\doxysubsection{Detailed Description}
+Structure containing information for creating an instance. 
+
+This structure holds various pieces of information required to create an instance, such as application info, enabled layers, and enabled extensions. 
+
+\doxysubsection{Field Documentation}
+\Hypertarget{structMentalInstanceCreateInfo_af29f97fa6365e2f365699ccf5fa6cc86}\label{structMentalInstanceCreateInfo_af29f97fa6365e2f365699ccf5fa6cc86} 
+\index{MentalInstanceCreateInfo@{MentalInstanceCreateInfo}!enabledExtensionCount@{enabledExtensionCount}}
+\index{enabledExtensionCount@{enabledExtensionCount}!MentalInstanceCreateInfo@{MentalInstanceCreateInfo}}
+\doxysubsubsection{\texorpdfstring{enabledExtensionCount}{enabledExtensionCount}}
+{\footnotesize\ttfamily uint32\+\_\+t Mental\+Instance\+Create\+Info\+::enabled\+Extension\+Count}
+
+Number of enabled extensions. \Hypertarget{structMentalInstanceCreateInfo_a89911e7d11c0208b449d1c4b7a127da5}\label{structMentalInstanceCreateInfo_a89911e7d11c0208b449d1c4b7a127da5} 
+\index{MentalInstanceCreateInfo@{MentalInstanceCreateInfo}!enabledLayerCount@{enabledLayerCount}}
+\index{enabledLayerCount@{enabledLayerCount}!MentalInstanceCreateInfo@{MentalInstanceCreateInfo}}
+\doxysubsubsection{\texorpdfstring{enabledLayerCount}{enabledLayerCount}}
+{\footnotesize\ttfamily uint32\+\_\+t Mental\+Instance\+Create\+Info\+::enabled\+Layer\+Count}
+
+Number of enabled layers. \Hypertarget{structMentalInstanceCreateInfo_aaa26a260d2575c6a4581cddc5a8aaa62}\label{structMentalInstanceCreateInfo_aaa26a260d2575c6a4581cddc5a8aaa62} 
+\index{MentalInstanceCreateInfo@{MentalInstanceCreateInfo}!flags@{flags}}
+\index{flags@{flags}!MentalInstanceCreateInfo@{MentalInstanceCreateInfo}}
+\doxysubsubsection{\texorpdfstring{flags}{flags}}
+{\footnotesize\ttfamily \mbox{\hyperlink{mental__xv__core_8h_a8001f712b14b0ececd970c22c972969a}{Mental\+Instance\+Create\+Flags}} Mental\+Instance\+Create\+Info\+::flags}
+
+Flags for instance creation. \Hypertarget{structMentalInstanceCreateInfo_a727f4c194e46fb87f1f093442a0a6674}\label{structMentalInstanceCreateInfo_a727f4c194e46fb87f1f093442a0a6674} 
+\index{MentalInstanceCreateInfo@{MentalInstanceCreateInfo}!pApplicationInfo@{pApplicationInfo}}
+\index{pApplicationInfo@{pApplicationInfo}!MentalInstanceCreateInfo@{MentalInstanceCreateInfo}}
+\doxysubsubsection{\texorpdfstring{pApplicationInfo}{pApplicationInfo}}
+{\footnotesize\ttfamily const \mbox{\hyperlink{structMentalApplicationInfo}{Mental\+Application\+Info}}\texorpdfstring{$\ast$}{*} Mental\+Instance\+Create\+Info\+::p\+Application\+Info}
+
+Pointer to application info. \Hypertarget{structMentalInstanceCreateInfo_adf1491d6421cfcb15ad3e5996f592848}\label{structMentalInstanceCreateInfo_adf1491d6421cfcb15ad3e5996f592848} 
+\index{MentalInstanceCreateInfo@{MentalInstanceCreateInfo}!pNext@{pNext}}
+\index{pNext@{pNext}!MentalInstanceCreateInfo@{MentalInstanceCreateInfo}}
+\doxysubsubsection{\texorpdfstring{pNext}{pNext}}
+{\footnotesize\ttfamily const void\texorpdfstring{$\ast$}{*} Mental\+Instance\+Create\+Info\+::p\+Next}
+
+Pointer to the next structure in a chain. \Hypertarget{structMentalInstanceCreateInfo_a859a0d0dd65217b9e66a28958be09d52}\label{structMentalInstanceCreateInfo_a859a0d0dd65217b9e66a28958be09d52} 
+\index{MentalInstanceCreateInfo@{MentalInstanceCreateInfo}!ppEnabledExtensionNames@{ppEnabledExtensionNames}}
+\index{ppEnabledExtensionNames@{ppEnabledExtensionNames}!MentalInstanceCreateInfo@{MentalInstanceCreateInfo}}
+\doxysubsubsection{\texorpdfstring{ppEnabledExtensionNames}{ppEnabledExtensionNames}}
+{\footnotesize\ttfamily const char\texorpdfstring{$\ast$}{*} const\texorpdfstring{$\ast$}{*} Mental\+Instance\+Create\+Info\+::pp\+Enabled\+Extension\+Names}
+
+Array of enabled extension names. \Hypertarget{structMentalInstanceCreateInfo_aa39f2523416b30281105df7ebb1a9a22}\label{structMentalInstanceCreateInfo_aa39f2523416b30281105df7ebb1a9a22} 
+\index{MentalInstanceCreateInfo@{MentalInstanceCreateInfo}!ppEnabledLayerNames@{ppEnabledLayerNames}}
+\index{ppEnabledLayerNames@{ppEnabledLayerNames}!MentalInstanceCreateInfo@{MentalInstanceCreateInfo}}
+\doxysubsubsection{\texorpdfstring{ppEnabledLayerNames}{ppEnabledLayerNames}}
+{\footnotesize\ttfamily const char\texorpdfstring{$\ast$}{*} const\texorpdfstring{$\ast$}{*} Mental\+Instance\+Create\+Info\+::pp\+Enabled\+Layer\+Names}
+
+Array of enabled layer names. \Hypertarget{structMentalInstanceCreateInfo_a98666ccff1ea1f483cbe13161023c8aa}\label{structMentalInstanceCreateInfo_a98666ccff1ea1f483cbe13161023c8aa} 
+\index{MentalInstanceCreateInfo@{MentalInstanceCreateInfo}!sType@{sType}}
+\index{sType@{sType}!MentalInstanceCreateInfo@{MentalInstanceCreateInfo}}
+\doxysubsubsection{\texorpdfstring{sType}{sType}}
+{\footnotesize\ttfamily \mbox{\hyperlink{mental__xv__core_8h_a4040728f3adc443389084c52cc3dacf8}{Mental\+Structure\+Type}} Mental\+Instance\+Create\+Info\+::s\+Type}
+
+Type of the structure. 
+
+The documentation for this struct was generated from the following file\+:\begin{DoxyCompactItemize}
+\item 
+include/\mbox{\hyperlink{mental__xv__core_8h}{mental\+\_\+xv\+\_\+core.\+h}}\end{DoxyCompactItemize}
